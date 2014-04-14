@@ -1,0 +1,40 @@
+{
+  "name": "closure-ts",
+  "version": "0.0.0",
+  "description": "Generate TypeScript declarations of Closure Library",
+  "main": "index.js",
+  "bin": {
+    "clsourets": "./bin/closurets.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:teppeis/closure-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "closure"
+  ],
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "expect.js": "^0.3.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.10.2",
+    "load-grunt-tasks": "^0.4.0",
+    "mocha": "^1.18.2",
+    "sinon": "^1.9.1"
+  },
+  "dependencies": {
+    "cli-color": "^0.2.3",
+    "commander": "^2.2.0",
+    "doctrine": "^0.5.0",
+    "esprima": "^1.1.1",
+    "estraverse": "^1.5.0"
+  }
+}

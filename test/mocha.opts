@@ -1,0 +1,4 @@
+--ui bdd
+--reporter spec
+--no-colors
+--compilers coffee:coffee-script/register
