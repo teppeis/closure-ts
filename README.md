@@ -30,7 +30,7 @@ declare module goog.string {
 }
 ```
 
-You can see more in `examples` dir.
+You can see more in [examples](https://github.com/teppeis/closure-ts/tree/master/examples) dir.
 
 ## Usage
 
