@@ -6,5 +6,5 @@ declare module goog.functions {
      * @param {string} str
      * @return {Date}
      */
-    export var foo: (num: number, str: string) => Date;
+    export function foo(num: number, str: string): Date;
 }

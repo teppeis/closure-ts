@@ -2,5 +2,5 @@ declare module goog.functions {
 
     /**
      */
-    export var foo: () => void;
+    export function foo(): void;
 }

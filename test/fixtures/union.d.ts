@@ -3,5 +3,5 @@ declare module goog.functions {
     /**
      * @param {number|string} arg
      */
-    export var foo: (arg: number) => void;
+    export function foo(arg: number): void;
 }
