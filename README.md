@@ -26,7 +26,7 @@ declare module goog.string {
      * @param {boolean=} opt_protectEscapedCharacters
      * @return {string}
      */
-    export var truncate: (str: string, chars: number, opt_protectEscapedCharacters?: boolean) => string;
+    export function truncate(str: string, chars: number, opt_protectEscapedCharacters?: boolean): string;
 }
 ```
 
