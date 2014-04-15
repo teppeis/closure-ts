@@ -14,7 +14,7 @@ declare module goog.string {
      * @param {string} prefix A string to look for at the start of {@code str}.
      * @return {boolean} True if {@code str} begins with {@code prefix}.
      */
-    export var startsWith: (str: string, prefix: string) => boolean;
+    export function startsWith(str: string, prefix: string): boolean;
 
     /**
      * Fast suffix-checker.
@@ -22,7 +22,7 @@ declare module goog.string {
      * @param {string} suffix A string to look for at the end of {@code str}.
      * @return {boolean} True if {@code str} ends with {@code suffix}.
      */
-    export var endsWith: (str: string, suffix: string) => boolean;
+    export function endsWith(str: string, suffix: string): boolean;
 
     /**
      * Case-insensitive prefix-checker.
@@ -31,7 +31,7 @@ declare module goog.string {
      * @return {boolean} True if {@code str} begins with {@code prefix} (ignoring
      *     case).
      */
-    export var caseInsensitiveStartsWith: (str: string, prefix: string) => boolean;
+    export function caseInsensitiveStartsWith(str: string, prefix: string): boolean;
 
     /**
      * Case-insensitive suffix-checker.
@@ -40,7 +40,7 @@ declare module goog.string {
      * @return {boolean} True if {@code str} ends with {@code suffix} (ignoring
      *     case).
      */
-    export var caseInsensitiveEndsWith: (str: string, suffix: string) => boolean;
+    export function caseInsensitiveEndsWith(str: string, suffix: string): boolean;
 
     /**
      * Case-insensitive equality checker.
@@ -49,7 +49,7 @@ declare module goog.string {
      * @return {boolean} True if {@code str1} and {@code str2} are the same string,
      *     ignoring case.
      */
-    export var caseInsensitiveEquals: (str1: string, str2: string) => boolean;
+    export function caseInsensitiveEquals(str1: string, str2: string): boolean;
 
     /**
      * Does simple python-style string substitution.
@@ -59,7 +59,7 @@ declare module goog.string {
      * @return {string} A copy of {@code str} in which each occurrence of
      *     {@code %s} has been replaced an argument from {@code var_args}.
      */
-    export var subs: (str: string, ...var_args: any[]) => string;
+    export function subs(str: string, ...var_args: any[]): string;
 
     /**
      * Converts multiple whitespace chars (spaces, non-breaking-spaces, new lines
@@ -67,14 +67,14 @@ declare module goog.string {
      * @param {string} str Input string.
      * @return {string} A copy of {@code str} with collapsed whitespace.
      */
-    export var collapseWhitespace: (str: string) => string;
+    export function collapseWhitespace(str: string): string;
 
     /**
      * Checks if a string is empty or contains only whitespaces.
      * @param {string} str The string to check.
      * @return {boolean} True if {@code str} is empty or whitespace only.
      */
-    export var isEmpty: (str: string) => boolean;
+    export function isEmpty(str: string): boolean;
 
     /**
      * Checks if a string is null, undefined, empty or contains only whitespaces.
@@ -82,21 +82,21 @@ declare module goog.string {
      * @return {boolean} True if{@code str} is null, undefined, empty, or
      *     whitespace only.
      */
-    export var isEmptySafe: (str: any) => boolean;
+    export function isEmptySafe(str: any): boolean;
 
     /**
      * Checks if a string is all breaking whitespace.
      * @param {string} str The string to check.
      * @return {boolean} Whether the string is all breaking whitespace.
      */
-    export var isBreakingWhitespace: (str: string) => boolean;
+    export function isBreakingWhitespace(str: string): boolean;
 
     /**
      * Checks if a string contains all letters.
      * @param {string} str string to check.
      * @return {boolean} True if {@code str} consists entirely of letters.
      */
-    export var isAlpha: (str: string) => boolean;
+    export function isAlpha(str: string): boolean;
 
     /**
      * Checks if a string contains only numbers.
@@ -104,28 +104,28 @@ declare module goog.string {
      *     casted to one.
      * @return {boolean} True if {@code str} is numeric.
      */
-    export var isNumeric: (str: any) => boolean;
+    export function isNumeric(str: any): boolean;
 
     /**
      * Checks if a string contains only numbers or letters.
      * @param {string} str string to check.
      * @return {boolean} True if {@code str} is alphanumeric.
      */
-    export var isAlphaNumeric: (str: string) => boolean;
+    export function isAlphaNumeric(str: string): boolean;
 
     /**
      * Checks if a character is a space character.
      * @param {string} ch Character to check.
      * @return {boolean} True if {code ch} is a space.
      */
-    export var isSpace: (ch: string) => boolean;
+    export function isSpace(ch: string): boolean;
 
     /**
      * Checks if a character is a valid unicode character.
      * @param {string} ch Character to check.
      * @return {boolean} True if {code ch} is a valid unicode character.
      */
-    export var isUnicodeChar: (ch: string) => boolean;
+    export function isUnicodeChar(ch: string): boolean;
 
     /**
      * Takes a string and replaces newlines with a space. Multiple lines are
@@ -133,14 +133,14 @@ declare module goog.string {
      * @param {string} str The string from which to strip newlines.
      * @return {string} A copy of {@code str} stripped of newlines.
      */
-    export var stripNewlines: (str: string) => string;
+    export function stripNewlines(str: string): string;
 
     /**
      * Replaces Windows and Mac new lines with unix style: \r or \r\n with \n.
      * @param {string} str The string to in which to canonicalize newlines.
      * @return {string} {@code str} A copy of {@code} with canonicalized newlines.
      */
-    export var canonicalizeNewlines: (str: string) => string;
+    export function canonicalizeNewlines(str: string): string;
 
     /**
      * Normalizes whitespace in a string, replacing all whitespace chars with
@@ -148,7 +148,7 @@ declare module goog.string {
      * @param {string} str The string in which to normalize whitespace.
      * @return {string} A copy of {@code str} with all whitespace normalized.
      */
-    export var normalizeWhitespace: (str: string) => string;
+    export function normalizeWhitespace(str: string): string;
 
     /**
      * Normalizes spaces in a string, replacing all consecutive spaces and tabs
@@ -157,7 +157,7 @@ declare module goog.string {
      * @return {string} A copy of {@code str} with all consecutive spaces and tabs
      *    replaced with a single space.
      */
-    export var normalizeSpaces: (str: string) => string;
+    export function normalizeSpaces(str: string): string;
 
     /**
      * Removes the breaking spaces from the left and right of the string and
@@ -166,28 +166,28 @@ declare module goog.string {
      * @param {string} str A string in which to collapse spaces.
      * @return {string} Copy of the string with normalized breaking spaces.
      */
-    export var collapseBreakingSpaces: (str: string) => string;
+    export function collapseBreakingSpaces(str: string): string;
 
     /**
      * Trims white spaces to the left and right of a string.
      * @param {string} str The string to trim.
      * @return {string} A trimmed copy of {@code str}.
      */
-    export var trim: (str: string) => string;
+    export function trim(str: string): string;
 
     /**
      * Trims whitespaces at the left end of a string.
      * @param {string} str The string to left trim.
      * @return {string} A trimmed copy of {@code str}.
      */
-    export var trimLeft: (str: string) => string;
+    export function trimLeft(str: string): string;
 
     /**
      * Trims whitespaces at the right end of a string.
      * @param {string} str The string to right trim.
      * @return {string} A trimmed copy of {@code str}.
      */
-    export var trimRight: (str: string) => string;
+    export function trimRight(str: string): string;
 
     /**
      * A string comparator that ignores case.
@@ -199,7 +199,7 @@ declare module goog.string {
      * @param {string} str2 The string to compare {@code str1} to.
      * @return {number} The comparator result, as described above.
      */
-    export var caseInsensitiveCompare: (str1: string, str2: string) => number;
+    export function caseInsensitiveCompare(str1: string, str2: string): number;
 
     /**
      * String comparison function that handles numbers in a way humans might expect.
@@ -217,7 +217,7 @@ declare module goog.string {
      * @return {number} less than 0 if str1 < str2, 0 if str1 == str2, greater than
      *     0 if str1 > str2.
      */
-    export var numerateCompare: (str1: string, str2: string) => number;
+    export function numerateCompare(str1: string, str2: string): number;
 
     /**
      * URL-encodes a string
@@ -226,7 +226,7 @@ declare module goog.string {
      *     Note that '#', ':', and other characters used to delimit portions
      *     of URLs *will* be encoded.
      */
-    export var urlEncode: (str: any) => string;
+    export function urlEncode(str: any): string;
 
     /**
      * URL-decodes the string. We need to specially handle '+'s because
@@ -234,7 +234,7 @@ declare module goog.string {
      * @param {string} str The string to url decode.
      * @return {string} The decoded {@code str}.
      */
-    export var urlDecode: (str: string) => string;
+    export function urlDecode(str: string): string;
 
     /**
      * Converts \n to <br>s or <br />s.
@@ -242,7 +242,7 @@ declare module goog.string {
      * @param {boolean=} opt_xml Whether to use XML compatible tags.
      * @return {string} A copy of {@code str} with converted newlines.
      */
-    export var newLineToBr: (str: string, opt_xml?: boolean) => string;
+    export function newLineToBr(str: string, opt_xml?: boolean): string;
 
     /**
      * Escape double quote '"' characters in addition to '&', '<', and '>' so that a
@@ -284,7 +284,7 @@ declare module goog.string {
      *     characters to occur in your strings, such as if you are escaping HTML.
      * @return {string} An escaped copy of {@code str}.
      */
-    export var htmlEscape: (str: string, opt_isLikelyToContainHtmlChars?: boolean) => string;
+    export function htmlEscape(str: string, opt_isLikelyToContainHtmlChars?: boolean): string;
 
     /**
      * Unescapes an HTML string.
@@ -292,7 +292,7 @@ declare module goog.string {
      * @param {string} str The string to unescape.
      * @return {string} An unescaped copy of {@code str}.
      */
-    export var unescapeEntities: (str: string) => string;
+    export function unescapeEntities(str: string): string;
 
     /**
      * Unescapes a HTML string using the provided document.
@@ -301,7 +301,7 @@ declare module goog.string {
      * @param {!Document} document A document to use in escaping the string.
      * @return {string} An unescaped copy of {@code str}.
      */
-    export var unescapeEntitiesWithDocument: (str: string, document: Document) => string;
+    export function unescapeEntitiesWithDocument(str: string, document: Document): string;
 
     /**
      * Do escaping of whitespace to preserve spatial formatting. We use character
@@ -310,7 +310,7 @@ declare module goog.string {
      * @param {boolean=} opt_xml Whether to use XML compatible tags.
      * @return {string} An escaped copy of {@code str}.
      */
-    export var whitespaceEscape: (str: string, opt_xml?: boolean) => string;
+    export function whitespaceEscape(str: string, opt_xml?: boolean): string;
 
     /**
      * Strip quote characters around a string.  The second argument is a string of
@@ -327,7 +327,7 @@ declare module goog.string {
      * @param {string} quoteChars The quote characters to strip.
      * @return {string} A copy of {@code str} without the quotes.
      */
-    export var stripQuotes: (str: string, quoteChars: string) => string;
+    export function stripQuotes(str: string, quoteChars: string): string;
 
     /**
      * Truncates a string to a certain length and adds '...' if necessary.  The
@@ -339,7 +339,7 @@ declare module goog.string {
      *     characters from being cut off in the middle.
      * @return {string} The truncated {@code str} string.
      */
-    export var truncate: (str: string, chars: number, opt_protectEscapedCharacters?: boolean) => string;
+    export function truncate(str: string, chars: number, opt_protectEscapedCharacters?: boolean): string;
 
     /**
      * Truncate a string in the middle, adding "..." if necessary,
@@ -353,7 +353,7 @@ declare module goog.string {
      *     middle as possible.
      * @return {string} A truncated copy of {@code str}.
      */
-    export var truncateMiddle: (str: string, chars: number, opt_protectEscapedCharacters?: boolean, opt_trailingChars?: number) => string;
+    export function truncateMiddle(str: string, chars: number, opt_protectEscapedCharacters?: boolean, opt_trailingChars?: number): string;
 
     /**
      * Encloses a string in double quotes and escapes characters so that the
@@ -361,14 +361,14 @@ declare module goog.string {
      * @param {string} s The string to quote.
      * @return {string} A copy of {@code s} surrounded by double quotes.
      */
-    export var quote: (s: string) => string;
+    export function quote(s: string): string;
 
     /**
      * Takes a string and returns the escaped string for that character.
      * @param {string} str The string to escape.
      * @return {string} An escaped string representing {@code str}.
      */
-    export var escapeString: (str: string) => string;
+    export function escapeString(str: string): string;
 
     /**
      * Takes a character and returns the escaped string for that character. For
@@ -376,7 +376,7 @@ declare module goog.string {
      * @param {string} c The character to escape.
      * @return {string} An escaped string representing {@code c}.
      */
-    export var escapeChar: (c: string) => string;
+    export function escapeChar(c: string): string;
 
     /**
      * Takes a string and creates a map (Object) in which the keys are the
@@ -385,7 +385,7 @@ declare module goog.string {
      * @param {string} s The string to build the map from.
      * @return {Object} The map of characters used.
      */
-    export var toMap: (s: string) => Object;
+    export function toMap(s: string): Object;
 
     /**
      * Determines whether a string contains a substring.
@@ -393,7 +393,7 @@ declare module goog.string {
      * @param {string} subString The substring to search for.
      * @return {boolean} Whether {@code str} contains {@code subString}.
      */
-    export var contains: (str: string, subString: string) => boolean;
+    export function contains(str: string, subString: string): boolean;
 
     /**
      * Determines whether a string contains a substring, ignoring case.
@@ -401,7 +401,7 @@ declare module goog.string {
      * @param {string} subString The substring to search for.
      * @return {boolean} Whether {@code str} contains {@code subString}.
      */
-    export var caseInsensitiveContains: (str: string, subString: string) => boolean;
+    export function caseInsensitiveContains(str: string, subString: string): boolean;
 
     /**
      * Returns the non-overlapping occurrences of ss in s.
@@ -410,7 +410,7 @@ declare module goog.string {
      * @param {string} ss The string to look for.
      * @return {number} Number of occurrences of ss in s.
      */
-    export var countOf: (s: string, ss: string) => number;
+    export function countOf(s: string, ss: string): number;
 
     /**
      * Removes a substring of a specified length at a specific
@@ -421,7 +421,7 @@ declare module goog.string {
      * @return {string} A copy of {@code s} with the substring removed or the full
      *     string if nothing is removed or the input is invalid.
      */
-    export var removeAt: (s: string, index: number, stringLength: number) => string;
+    export function removeAt(s: string, index: number, stringLength: number): string;
 
     /**
      *  Removes the first occurrence of a substring from a string.
@@ -430,7 +430,7 @@ declare module goog.string {
      *  @return {string} A copy of {@code s} with {@code ss} removed or the full
      *      string if nothing is removed.
      */
-    export var remove: (s: string, ss: string) => string;
+    export function remove(s: string, ss: string): string;
 
     /**
      *  Removes all occurrences of a substring from a string.
@@ -439,7 +439,7 @@ declare module goog.string {
      *  @return {string} A copy of {@code s} with {@code ss} removed or the full
      *      string if nothing is removed.
      */
-    export var removeAll: (s: string, ss: string) => string;
+    export function removeAll(s: string, ss: string): string;
 
     /**
      * Escapes characters in the string that are not safe to use in a RegExp.
@@ -447,7 +447,7 @@ declare module goog.string {
      *     to one.
      * @return {string} A RegExp safe, escaped copy of {@code s}.
      */
-    export var regExpEscape: (s: any) => string;
+    export function regExpEscape(s: any): string;
 
     /**
      * Repeats a string n times.
@@ -456,7 +456,7 @@ declare module goog.string {
      * @return {string} A string containing {@code length} repetitions of
      *     {@code string}.
      */
-    export var repeat: (string: string, length: number) => string;
+    export function repeat(string: string, length: number): string;
 
     /**
      * Pads number to given length and optionally rounds it to a given precision.
@@ -471,7 +471,7 @@ declare module goog.string {
      * @param {number=} opt_precision The desired precision.
      * @return {string} {@code num} as a string with the given options.
      */
-    export var padNumber: (num: number, length: number, opt_precision?: number) => string;
+    export function padNumber(num: number, length: number, opt_precision?: number): string;
 
     /**
      * Returns a string representation of the given object, with
@@ -480,7 +480,7 @@ declare module goog.string {
      * @param {*} obj The object to convert.
      * @return {string} A string representation of the {@code obj}.
      */
-    export var makeSafe: (obj: any) => string;
+    export function makeSafe(obj: any): string;
 
     /**
      * Concatenates string expressions. This is useful
@@ -496,7 +496,7 @@ declare module goog.string {
      *     it will be casted to one.
      * @return {string} The concatenation of {@code var_args}.
      */
-    export var buildString: (...var_args: any[]) => string;
+    export function buildString(...var_args: any[]): string;
 
     /**
      * Returns a string with at least 64-bits of randomness.
@@ -507,7 +507,7 @@ declare module goog.string {
      *
      * @return {string} A random string, e.g. sn1s7vb4gcic.
      */
-    export var getRandomString: () => string;
+    export function getRandomString(): string;
 
     /**
      * Compares two version numbers.
@@ -519,7 +519,7 @@ declare module goog.string {
      *                   0 if arguments are equal.
      *                  -1 if {@code version2} is higher.
      */
-    export var compareVersions: (version1: string, version2: string) => number;
+    export function compareVersions(version1: string, version2: string): number;
 
     /**
      * String hash function similar to java.lang.String.hashCode().
@@ -532,14 +532,14 @@ declare module goog.string {
      * @return {number} Hash value for {@code str}, between 0 (inclusive) and 2^32
      *  (exclusive). The empty string returns 0.
      */
-    export var hashCode: (str: string) => number;
+    export function hashCode(str: string): number;
 
     /**
      * Generates and returns a string which is unique in the current document.
      * This is useful, for example, to create unique IDs for DOM elements.
      * @return {string} A unique id.
      */
-    export var createUniqueString: () => string;
+    export function createUniqueString(): string;
 
     /**
      * Converts the supplied string to a number, which may be Infinity or NaN.
@@ -552,7 +552,7 @@ declare module goog.string {
      * @param {string} str The string to convert.
      * @return {number} The number the supplied string represents, or NaN.
      */
-    export var toNumber: (str: string) => number;
+    export function toNumber(str: string): number;
 
     /**
      * Returns whether the given string is lower camel case (e.g. "isFooBar").
@@ -563,7 +563,7 @@ declare module goog.string {
      * @param {string} str String to test.
      * @return {boolean} Whether the string is lower camel case.
      */
-    export var isLowerCamelCase: (str: string) => boolean;
+    export function isLowerCamelCase(str: string): boolean;
 
     /**
      * Returns whether the given string is upper camel case (e.g. "FooBarBaz").
@@ -574,7 +574,7 @@ declare module goog.string {
      * @param {string} str String to test.
      * @return {boolean} Whether the string is upper camel case.
      */
-    export var isUpperCamelCase: (str: string) => boolean;
+    export function isUpperCamelCase(str: string): boolean;
 
     /**
      * Converts a string from selector-case to camelCase (e.g. from
@@ -583,7 +583,7 @@ declare module goog.string {
      * @param {string} str The string in selector-case form.
      * @return {string} The string in camelCase form.
      */
-    export var toCamelCase: (str: string) => string;
+    export function toCamelCase(str: string): string;
 
     /**
      * Converts a string from camelCase to selector-case (e.g. from
@@ -592,7 +592,7 @@ declare module goog.string {
      * @param {string} str The string in camelCase form.
      * @return {string} The string in selector-case form.
      */
-    export var toSelectorCase: (str: string) => string;
+    export function toSelectorCase(str: string): string;
 
     /**
      * Converts a string into TitleCase. First character of the string is always
@@ -625,7 +625,7 @@ declare module goog.string {
      *      overridden and must be explicitly included if needed.
      * @return {string} String value in TitleCase form.
      */
-    export var toTitleCase: (str: string, opt_delimiters?: string) => string;
+    export function toTitleCase(str: string, opt_delimiters?: string): string;
 
     /**
      * Parse a string in decimal or hexidecimal ('0xFFFF') form.
@@ -644,7 +644,7 @@ declare module goog.string {
      * @return {number} The number, parsed. If the string failed to parse, this
      *     will be NaN.
      */
-    export var parseInt: (value: string) => number;
+    export function parseInt(value: string): number;
 
     /**
      * Splits a string on a separator a limited number of times.
@@ -664,5 +664,5 @@ declare module goog.string {
      *     as zero.
      * @return {!Array.<string>} The string, split.
      */
-    export var splitLimit: (str: string, separator: string, limit: number) => Array<string>;
+    export function splitLimit(str: string, separator: string, limit: number): Array<string>;
 }
