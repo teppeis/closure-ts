@@ -52,7 +52,8 @@ Just PoC
 * Enum with `@enum` to TypeScript `Interface`
 * Namespace to TypeScript `module`
 * Support `*` to `any`
-* Generics (partialy)
+* Generic type
+* Generic function with `@template`
 * Union type (partialy)
 * Rest parameter
 * Optional parameter
@@ -63,7 +64,6 @@ Just PoC
 
 * Classes
 * Interfaces
-* Generic functions and classes with `@template`
 * Other annotations
     * `@this`
     * `@typedef`
