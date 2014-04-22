@@ -409,7 +409,7 @@ declare module goog.array {
      *     added, while primitives and objects will be added as is.
      * @return {!Array} The new resultant array.
      */
-    export function concat(...var_args: any[]): Array;
+    export function concat(...var_args: any[]): Array<any>;
 
     /**
      * Returns a new array that contains the contents of all the arrays passed.
@@ -506,7 +506,7 @@ declare module goog.array {
      *     value for each item in the array it should consider unique.
      * @template T
      */
-    export function removeDuplicates<T>(arr: Array<T>, opt_rv?: Array, opt_hashFn?: (arg0: T) => string): void;
+    export function removeDuplicates<T>(arr: Array<T>, opt_rv?: Array<any>, opt_hashFn?: (arg0: T) => string): void;
 
     /**
      * Searches the specified array for the specified target using the binary
@@ -818,7 +818,7 @@ declare module goog.array {
      * @param {...*} var_args The values to flatten.
      * @return {!Array} An array containing the flattened values.
      */
-    export function flatten(...var_args: any[]): Array;
+    export function flatten(...var_args: any[]): Array<any>;
 
     /**
      * Rotates an array in-place. After calling this method, the element at
@@ -846,7 +846,7 @@ declare module goog.array {
      *     {@code arr.length - 1}.
      * @param {number} toIndex Target index between 0 and {@code arr.length - 1}.
      */
-    export function moveItem(arr: Array, fromIndex: number, toIndex: number): void;
+    export function moveItem(arr: Array<any>, fromIndex: number, toIndex: number): void;
 
     /**
      * Creates a new array for which the element at position i is an array of the
@@ -860,7 +860,7 @@ declare module goog.array {
      * @param {...!goog.array.ArrayLike} var_args Arrays to be combined.
      * @return {!Array.<!Array>} A new array of arrays created from provided arrays.
      */
-    export function zip(...var_args: goog.array.ArrayLike[]): Array<Array>;
+    export function zip(...var_args: goog.array.ArrayLike[]): Array<Array<any>>;
 
     /**
      * Shuffles the values in the specified array using the Fisher-Yates in-place
@@ -876,5 +876,5 @@ declare module goog.array {
      *     Takes no arguments, and returns a random number on the interval [0, 1).
      *     Defaults to Math.random() using JavaScript's built-in Math library.
      */
-    export function shuffle(arr: Array, opt_randFn?: () => number): void;
+    export function shuffle(arr: Array<any>, opt_randFn?: () => number): void;
 }
