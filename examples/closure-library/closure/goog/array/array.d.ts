@@ -777,7 +777,7 @@ declare module goog.array {
      * @return {!Object.<T>} The new object.
      * @template T,S
      */
-    export function toObject<T, S>(arr: Array<T>, keyFunc: (arg0: T, arg1: number, arg2: any) => string, opt_obj?: S): Object<T>;
+    export function toObject<T, S>(arr: Array<T>, keyFunc: (arg0: T, arg1: number, arg2: any) => string, opt_obj?: S): Object;
 
     /**
      * Creates a range of numbers in an arithmetic progression.
