@@ -55,10 +55,12 @@ Just PoC
 * Generic type
 * Generic function with `@template`
 * Union type (partialy)
+* Record type
 * Rest parameter
 * Optional parameter
 * Nullable, Non-Nullable
 * Ignore `@private` definitions
+* `@typedef`
 
 ### TODO
 
@@ -66,7 +68,6 @@ Just PoC
 * Interfaces
 * Other annotations
     * `@this`
-    * `@typedef`
     * `@license` and `@fileoverview`
 * `Object.<string, any>`
 * Union type
