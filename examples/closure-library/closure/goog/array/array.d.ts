@@ -7,6 +7,14 @@ declare module goog.array {
     }
 
     /**
+     * Returns the last element in an array without removing it.
+     * @param {Array.<T>|goog.array.ArrayLike} array The array.
+     * @return {T} Last item in array.
+     * @template T
+     */
+    export function peek<T>(array: Array<T>): T;
+
+    /**
      * Returns the index of the first element of an array with a specified value, or
      * -1 if the element is not present in the array.
      *
@@ -19,7 +27,7 @@ declare module goog.array {
      * @return {number} The index of the first matching array element.
      * @template T
      */
-    export var indexOf: any;
+    export function indexOf<T>(arr: Array<T>, obj: T, opt_fromIndex?: number): number;
 
     /**
      * Returns the index of the last element of an array with a specified value, or
@@ -34,7 +42,7 @@ declare module goog.array {
      * @return {number} The index of the last matching array element.
      * @template T
      */
-    export var lastIndexOf: any;
+    export function lastIndexOf<T>(arr: Array<T>, obj: T, opt_fromIndex?: number): number;
 
     /**
      * Calls a function for each element in an array. Skips holes in the array.
@@ -48,7 +56,23 @@ declare module goog.array {
      * @param {S=} opt_obj The object to be used as the value of 'this' within f.
      * @template T,S
      */
-    export var forEach: any;
+    export function forEach<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => any, opt_obj?: S): void;
+
+    /**
+     * Calls a function for each element in an array, starting from the last
+     * element rather than the first.
+     *
+     * @param {Array.<T>|goog.array.ArrayLike} arr Array or array
+     *     like object over which to iterate.
+     * @param {?function(this: S, T, number, ?): ?} f The function to call for every
+     *     element. This function
+     *     takes 3 arguments (the element, the index and the array). The return
+     *     value is ignored.
+     * @param {S=} opt_obj The object to be used as the value of 'this'
+     *     within f.
+     * @template T,S
+     */
+    export function forEachRight<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => any, opt_obj?: S): void;
 
     /**
      * Calls a function for each element in an array, and if the function returns
@@ -69,7 +93,7 @@ declare module goog.array {
      *     are present.
      * @template T,S
      */
-    export var filter: any;
+    export function filter<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => boolean, opt_obj?: S): Array<T>;
 
     /**
      * Calls a function for each element in an array and inserts the result into a
@@ -87,7 +111,7 @@ declare module goog.array {
      * @return {!Array.<RESULT>} a new array with the results from f.
      * @template THIS, VALUE, RESULT
      */
-    export var map: any;
+    export function map<THIS, VALUE, RESULT>(arr: Array<VALUE>, f: (arg0: VALUE, arg1: number, arg2: any) => RESULT, opt_obj?: THIS): Array<RESULT>;
 
     /**
      * Passes every element of an array into a function and accumulates the result.
@@ -113,7 +137,7 @@ declare module goog.array {
      * @return {R} Result of evaluating f repeatedly across the values of the array.
      * @template T,S,R
      */
-    export var reduce: any;
+    export function reduce<T, S, R>(arr: Array<T>, f: (arg0: R, arg1: T, arg2: number, arg3: any) => R, val: any, opt_obj?: S): R;
 
     /**
      * Passes every element of an array into a function and accumulates the result,
@@ -141,7 +165,7 @@ declare module goog.array {
      *     values of the array.
      * @template T,S,R
      */
-    export var reduceRight: any;
+    export function reduceRight<T, S, R>(arr: Array<T>, f: (arg0: R, arg1: T, arg2: number, arg3: any) => R, val: any, opt_obj?: S): R;
 
     /**
      * Calls f for each element of an array. If any call returns true, some()
@@ -160,7 +184,7 @@ declare module goog.array {
      * @return {boolean} true if any element passes the test.
      * @template T,S
      */
-    export var some: any;
+    export function some<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => boolean, opt_obj?: S): boolean;
 
     /**
      * Call f for each element of an array. If all calls return true, every()
@@ -179,40 +203,7 @@ declare module goog.array {
      * @return {boolean} false if any element fails the test.
      * @template T,S
      */
-    export var every: any;
-
-    /**
-     * Does a shallow copy of an array.
-     * @param {Array.<T>|goog.array.ArrayLike} arr  Array or array-like object to
-     *     clone.
-     * @return {!Array.<T>} Clone of the input array.
-     * @template T
-     */
-    export var clone: any;
-
-    /**
-     * Returns the last element in an array without removing it.
-     * @param {Array.<T>|goog.array.ArrayLike} array The array.
-     * @return {T} Last item in array.
-     * @template T
-     */
-    export function peek<T>(array: Array<T>): T;
-
-    /**
-     * Calls a function for each element in an array, starting from the last
-     * element rather than the first.
-     *
-     * @param {Array.<T>|goog.array.ArrayLike} arr Array or array
-     *     like object over which to iterate.
-     * @param {?function(this: S, T, number, ?): ?} f The function to call for every
-     *     element. This function
-     *     takes 3 arguments (the element, the index and the array). The return
-     *     value is ignored.
-     * @param {S=} opt_obj The object to be used as the value of 'this'
-     *     within f.
-     * @template T,S
-     */
-    export function forEachRight<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => any, opt_obj?: S): void;
+    export function every<T, S>(arr: Array<T>, f: (arg0: T, arg1: number, arg2: any) => boolean, opt_obj?: S): boolean;
 
     /**
      * Counts the array elements that fulfill the predicate, i.e. for which the
@@ -430,6 +421,15 @@ declare module goog.array {
      * @template T
      */
     export function toArray<T>(object: Array<T>): Array<T>;
+
+    /**
+     * Does a shallow copy of an array.
+     * @param {Array.<T>|goog.array.ArrayLike} arr  Array or array-like object to
+     *     clone.
+     * @return {!Array.<T>} Clone of the input array.
+     * @template T
+     */
+    export function clone<T>(arr: Array<T>): Array<T>;
 
     /**
      * Extends an array with another array, element, or "array like" object.
