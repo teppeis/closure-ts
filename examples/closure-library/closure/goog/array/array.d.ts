@@ -563,38 +563,6 @@ declare module goog.array {
     export function binarySelect<THIS, VALUE>(arr: Array<VALUE>, evaluator: (arg0: VALUE, arg1: number, arg2: any) => number, opt_obj?: THIS): number;
 
     /**
-     * Implementation of a binary search algorithm which knows how to use both
-     * comparison functions and evaluators. If an evaluator is provided, will call
-     * the evaluator with the given optional data object, conforming to the
-     * interface defined in binarySelect. Otherwise, if a comparison function is
-     * provided, will call the comparison function against the given data object.
-     *
-     * This implementation purposefully does not use goog.bind or goog.partial for
-     * performance reasons.
-     *
-     * Runtime: O(log n)
-     *
-     * @param {Array.<VALUE>|goog.array.ArrayLike} arr The array to be searched.
-     * @param {function(TARGET, VALUE): number|
-     *         function(this:THIS, VALUE, number, ?): number} compareFn Either an
-     *     evaluator or a comparison function, as defined by binarySearch
-     *     and binarySelect above.
-     * @param {boolean} isEvaluator Whether the function is an evaluator or a
-     *     comparison function.
-     * @param {TARGET=} opt_target If the function is a comparison function, then
-     *     this is the target to binary search for.
-     * @param {THIS=} opt_selfObj If the function is an evaluator, this is an
-      *    optional this object for the evaluator.
-     * @return {number} Lowest index of the target value if found, otherwise
-     *     (-(insertion point) - 1). The insertion point is where the value should
-     *     be inserted into arr to preserve the sorted property.  Return value >= 0
-     *     iff target is found.
-     * @template THIS, VALUE, TARGET
-     * @private
-     */
-    export function binarySearch_(arr: Array<VALUE>): void;
-
-    /**
      * Sorts the specified array into ascending order.  If no opt_compareFn is
      * specified, elements are compared using
      * <code>goog.array.defaultCompare</code>, which compares the elements using
