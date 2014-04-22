@@ -28,28 +28,6 @@ declare module goog {
     export var DEPENDENCIES_ENABLED: any;
 
     /**
-     * Adds a hash code field to an object. The hash code is unique for the
-     * given object.
-     * @param {Object} obj The object to get the hash code for.
-     * @return {number} The hash code for the object.
-     * @deprecated Use goog.getUid instead.
-     */
-    export var getHashCode: any;
-
-    /**
-     * Removes the hash code field from an object.
-     * @param {Object} obj The object to remove the field from.
-     * @deprecated Use goog.removeUid instead.
-     */
-    export var removeHashCode: any;
-
-    /**
-     * @return {number} An integer value representing the number of milliseconds
-     *     between midnight, January 1, 1970 and the current time.
-     */
-    export var now: any;
-
-    /**
      * Defines a named value. In uncompiled mode, the value is retreived from
      * CLOSURE_DEFINES or CLOSURE_UNCOMPILED_DEFINES if the object is defined and
      * has the property specified, and otherwise used the defined defaultValue.
@@ -135,7 +113,7 @@ declare module goog {
      * @param {Array} requires An array of strings with the names of the objects
      *                         this file requires.
      */
-    export function addDependency(relPath: string, provides: Array, requires: Array): void;
+    export function addDependency(relPath: string, provides: Array<any>, requires: Array<any>): void;
 
     /**
      * Implements a system for the dynamic resolution of dependencies that works in
@@ -311,6 +289,22 @@ declare module goog {
     export function removeUid(obj: Object): void;
 
     /**
+     * Adds a hash code field to an object. The hash code is unique for the
+     * given object.
+     * @param {Object} obj The object to get the hash code for.
+     * @return {number} The hash code for the object.
+     * @deprecated Use goog.getUid instead.
+     */
+    export function getHashCode(obj: Object): number;
+
+    /**
+     * Removes the hash code field from an object.
+     * @param {Object} obj The object to remove the field from.
+     * @deprecated Use goog.removeUid instead.
+     */
+    export function removeHashCode(obj: Object): void;
+
+    /**
      * Clones a value. The input may be an Object, Array, or basic type. Objects and
      * arrays will be cloned recursively.
      *
@@ -351,7 +345,7 @@ declare module goog {
      * @template T
      * @suppress {deprecated} See above.
      */
-    export function bind(fn: any, selfObj: T, ...var_args: any[]): Function;
+    export function bind<T>(fn: any, selfObj: T, ...var_args: any[]): Function;
 
     /**
      * Like bind(), except that a 'this object' is not required. Useful when the
@@ -376,6 +370,12 @@ declare module goog {
      * @param {Object} source Source.
      */
     export function mixin(target: Object, source: Object): void;
+
+    /**
+     * @return {number} An integer value representing the number of milliseconds
+     *     between midnight, January 1, 1970 and the current time.
+     */
+    export function now(): number;
 
     /**
      * Evals JavaScript in the global scope.  In IE this uses execScript, other
@@ -601,7 +601,7 @@ declare module goog.global {
      *
      * @type {Object.<string, (string|number|boolean)>|undefined}
      */
-    export var CLOSURE_UNCOMPILED_DEFINES: Object<string, string>;
+    export var CLOSURE_UNCOMPILED_DEFINES: Object;
 
     /**
      * A hook for overriding the define values in uncompiled or compiled mode,
@@ -621,7 +621,7 @@ declare module goog.global {
      *
      * @type {Object.<string, (string|number|boolean)>|undefined}
      */
-    export var CLOSURE_DEFINES: Object<string, string>;
+    export var CLOSURE_DEFINES: Object;
 
     /**
      * A hook for overriding the base path.
