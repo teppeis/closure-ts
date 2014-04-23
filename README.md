@@ -56,20 +56,25 @@ Just PoC
 * Generic function with `@template`
 * Union type (partialy)
 * Record type
-* Rest parameter
+* Variable rest parameter in `param`
 * Optional parameter
-* Nullable, Non-Nullable
-* Ignore `@private` definitions
-* `@typedef`
+* Support `@typedef` (partialy)
+* Exclude `@private` definitions
+* Ignore features TypeScript doesn't have
+    * `@this`
+    * Nullable, Non-Nullable
+    * `Object.<string, any>`
 
 ### TODO
 
 * Classes
 * Interfaces
-* Other annotations
-    * `@this`
+* Types
+    * Function `new` Type
+    * Variable parameters
+* Annotations
+    * `@lends`
     * `@license` and `@fileoverview`
-* `Object.<string, any>`
-* Union type
+* Expand union type
 * Dependencies of Closure Library files
 * One stop build system with Grunt or Gulp
