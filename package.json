@@ -1,8 +1,8 @@
 {
   "name": "closure-ts",
-  "version": "0.0.0",
-  "description": "Generate TypeScript declarations of Closure Library",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Generate TypeScript declarations(d.ts) of Closure Library",
+  "main": "lib/generator.js",
   "bin": {
     "clsourets": "./bin/closurets.js"
   },
@@ -15,7 +15,9 @@
   },
   "keywords": [
     "typescript",
-    "closure"
+    "closure",
+    "doctrine",
+    "jsdoc"
   ],
   "author": "Teppei Sato <teppeis@gmail.com>",
   "license": "MIT",
