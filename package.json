@@ -7,7 +7,7 @@
     "clsourets": "./bin/closurets.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
