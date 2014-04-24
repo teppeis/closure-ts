@@ -1,4 +1,4 @@
-closure-ts
+closure-ts [![Build Status](https://travis-ci.org/teppeis/closure-ts.svg?branch=master)](https://travis-ci.org/teppeis/closure-ts)
 ====
 
 > Generates TypeScript declaration files (.d.ts) from [Closure Library JSDoc annotations](https://developers.google.com/closure/compiler/docs/js-for-compiler).
