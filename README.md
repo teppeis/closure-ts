@@ -35,7 +35,7 @@ You can see more in [examples](https://github.com/teppeis/closure-ts/tree/master
 ## Usage
 
 ```bash
-$ closure-ts some-jsdoced-code.js
+$ closurets some-jsdoced-code.js
 $ ls
 some-jsdoced-code.d.ts
 some-jsdoced-code.js
