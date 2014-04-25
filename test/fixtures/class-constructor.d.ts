@@ -1,10 +1,10 @@
 declare module goog.dom {
 
     /**
-     * @param {Document=} opt_document
+     * @param {Document} document
      * @constructor
      */
     export class DomHelper {
-        constructor(opt_document?: Document);
+        constructor(document: Document);
     }
 }
