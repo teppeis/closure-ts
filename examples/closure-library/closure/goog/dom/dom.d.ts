@@ -1,9 +1,3 @@
-/// <reference path="../base.d.ts" />
-/// <reference path="../math/coordinate.d.ts" />
-/// <reference path="../math/math.d.ts" />
-/// <reference path="../math/size.d.ts" />
-/// <reference path="./tagname.d.ts" />
-
 declare module goog.dom {
 
     /**
@@ -615,7 +609,7 @@ declare module goog.dom {
          * @return {Element} The first ancestor that matches the passed criteria, or
          *     null if none match.
          */
-        getAncestorByClass(element: Node, class_: string): Element;
+        getAncestorByClass(element: Node, class: string): Element;
         
         /**
          * Walks up the DOM hierarchy returning the first ancestor that passes the

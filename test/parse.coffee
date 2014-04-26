@@ -8,4 +8,4 @@ describe 'Generator', ->
     it file, ->
       code = fs.readFileSync(__dirname + '/fixtures/' + file, 'utf8')
       expected = fs.readFileSync(__dirname + '/fixtures/' + file.replace(/\.js$/, '.d.ts'), 'utf8')
-      expect(generator.generate(code)).to.be(expected.replace(/\n+$/, ''))
+      expect(generator.generate(code)).to.be(expected)
