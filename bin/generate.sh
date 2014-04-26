@@ -9,5 +9,4 @@ find $BASEDIR/closure-library/closure/goog -type f -name '*.js'|grep -v _test|so
     grep -v goog/labs/promise/promise.js|
     grep -v goog/testing/async/mockcontrol.js|
     grep -v goog/ui/imagelessbuttonrenderer.js|
-    grep -v goog/ui/style/app/buttonrenderer.js|
     xargs $BASEDIR/bin/closurets.js
