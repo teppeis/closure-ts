@@ -7,5 +7,4 @@ find $BASEDIR/closure-library/closure/goog -type f -name '*.js'|grep -v _test|so
     grep -v goog/iter/iter.js|
     grep -v goog/labs/promise/promise.js|
     grep -v goog/testing/async/mockcontrol.js|
-    grep -v goog/ui/imagelessbuttonrenderer.js|
     xargs $BASEDIR/bin/closurets.js
