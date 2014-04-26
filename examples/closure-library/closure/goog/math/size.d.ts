@@ -11,6 +11,15 @@ declare module goog.math {
         constructor(width: number, height: number);
         
         /**
+         * Compares sizes for equality.
+         * @param {goog.math.Size} a A Size.
+         * @param {goog.math.Size} b A Size.
+         * @return {boolean} True iff the sizes have equal widths and equal
+         *     heights, or if both are null.
+         */
+        static equals(a: goog.math.Size, b: goog.math.Size): boolean;
+        
+        /**
          * @return {!goog.math.Size} A new copy of the Size.
          */
         clone(): goog.math.Size;
@@ -91,16 +100,4 @@ declare module goog.math {
          */
         scaleToFit(target: goog.math.Size): goog.math.Size;
     }
-}
-
-declare module goog.math.Size {
-
-    /**
-     * Compares sizes for equality.
-     * @param {goog.math.Size} a A Size.
-     * @param {goog.math.Size} b A Size.
-     * @return {boolean} True iff the sizes have equal widths and equal
-     *     heights, or if both are null.
-     */
-    export function equals(a: goog.math.Size, b: goog.math.Size): boolean;
 }
