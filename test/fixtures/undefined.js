@@ -1,6 +1,11 @@
 goog.provide('goog.functions');
 
 /**
- * @type {function(undefined): undefined}
+ * @type {undefined}
  */
 goog.functions.foo;
+
+/**
+ * @type {function(undefined): undefined}
+ */
+goog.functions.bar;
