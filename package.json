@@ -35,7 +35,7 @@
   "dependencies": {
     "cli-color": "^0.2.3",
     "commander": "^2.2.0",
-    "doctrine": "teppeis/doctrine#multi-line-type",
+    "doctrine": "teppeis/doctrine#fork",
     "esprima": "^1.1.1",
     "estraverse": "^1.5.0"
   }
