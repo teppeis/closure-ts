@@ -3,6 +3,10 @@ closure-ts [![Build Status](https://travis-ci.org/teppeis/closure-ts.svg?branch=
 
 > Generates TypeScript declaration files (.d.ts) from [Closure Library JSDoc annotations](https://developers.google.com/closure/compiler/docs/js-for-compiler).
 
+The result is [closure-library.d.ts](https://github.com/teppeis/closure-library.d.ts "teppeis/closure-library.d.ts").
+
+## Example
+
 From this JavaScript code with annotations,
 ```javascript
 /**
@@ -30,8 +34,6 @@ declare module goog.string {
 }
 ```
 
-You can see more in [examples](https://github.com/teppeis/closure-ts/tree/master/examples) dir.
-
 ## Usage
 
 ```bash
@@ -54,7 +56,7 @@ Just PoC
 * Classes (`@constructor` and `@extends`)
 * Convert `*` to `any`
 * Generic type like `Array<number>`
-* Generic function with `@template`
+* Generic classes and function with `@template`
 * Union type (partialy)
 * Record type
 * Rest parameters in `@param` and FunctionType
@@ -69,7 +71,6 @@ Just PoC
 ### TODO
 
 * Interfaces
-* Generic classes
 * Function `new` Type
 * `@lends`
 * Expand union type
