@@ -44,8 +44,6 @@
    1 closure-library/closure/goog/debug/logger.d.ts
    1 closure-library/closure/goog/debug/gcdiagnostics.d.ts
    1 closure-library/closure/goog/debug/error.d.ts
-   1 closure-library/closure/goog/db/transaction.d.ts
-   1 closure-library/closure/goog/db/indexeddb.d.ts
    1 closure-library/closure/goog/db/error.d.ts
    1 closure-library/closure/goog/datasource/jsdatasource.d.ts
    1 closure-library/closure/goog/cssom/iframe/style.d.ts
