@@ -14,6 +14,7 @@ module.exports = function (grunt) {
           'lib/**/*.js',
           'test/**/*.js',
           '!test/fixtures/**/*.js',
+          '!test/all.*'
         ]
       }
     },
@@ -33,7 +34,8 @@ module.exports = function (grunt) {
         files: [
           'Gruntfile.js',
           'lib/**/*',
-          'test/**/*'
+          'test/**/*',
+          '!test/all.*'
         ],
         tasks: ['jshint:libtest', 'mochaTest']
       }
