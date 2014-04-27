@@ -28,7 +28,8 @@ closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts(18,18): er
 	Types of property 'handleSelectionChange' of types 'AbstractBubblePlugin' and 'Plugin' are incompatible:
 		Call signatures of types '() => void' and '(opt_e?: events.BrowserEvent, opt_target?: Node) => boolean' are incompatible.
 closure-library/closure/goog/editor/plugins/blockquote.d.ts(15,18): error TS2141: Class 'goog.editor.plugins.Blockquote' cannot extend class 'goog.editor.Plugin':
-	Class 'goog.editor.plugins.Blockquote' defines instance member property 'isSilentCommand', but extended class 'goog.editor.Plugin' defines it as instance member function.
+	Types of property 'isSilentCommand' of types 'Blockquote' and 'Plugin' are incompatible:
+		Call signatures of types '() => void' and '(command: string) => boolean' are incompatible.
 closure-library/closure/goog/editor/plugins/firststrong.d.ts(9,18): error TS2141: Class 'goog.editor.plugins.FirstStrong' cannot extend class 'goog.editor.Plugin':
 	Types of property 'handleKeyUp' of types 'FirstStrong' and 'Plugin' are incompatible:
 		Call signatures of types '() => void' and '(e: events.BrowserEvent) => boolean' are incompatible.
