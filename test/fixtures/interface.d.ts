@@ -8,12 +8,17 @@ declare module goog.functions {
         /**
          * @type {number}
          */
-        bar: number;
+        foo: number;
         
         /**
          * @param {number} num
          * @return {string}
          */
-        foo(num: number): string;
+        bar(num: number): string;
+        
+        /**
+         * No @param and @return.
+         */
+        baz(): void;
     }
 }
