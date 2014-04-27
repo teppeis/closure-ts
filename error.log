@@ -1,6 +1,5 @@
 closure-library/closure/goog/a11y/aria/aria.d.ts(94,81): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/a11y/aria/aria.d.ts(132,105): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/async/throttle.d.ts(19,74): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/crypt/sha2_64bit.d.ts(14,18): error TS2141: Class 'goog.crypt.Sha2_64bit' cannot extend class 'goog.crypt.Hash':
 	Class 'goog.crypt.Sha2_64bit' defines instance member function 'reset', but extended class 'goog.crypt.Hash' defines it as instance member property.
 closure-library/closure/goog/cssom/iframe/style.d.ts(62,90): error TS2094: The property 'CssRuleSet_' does not exist on value of type 'style'.
@@ -22,9 +21,21 @@ closure-library/closure/goog/datasource/jsxmlhttpdatasource.d.ts(18,18): error T
 	Class 'goog.ds.JsXmlHttpDataSource' defines instance member function 'load', but extended class 'goog.ds.FastDataNode' defines it as instance member property.
 closure-library/closure/goog/datasource/xmldatasource.d.ts(13,18): error TS2141: Class 'goog.ds.XmlDataSource' cannot extend class 'goog.ds.DataNode':
 	Class 'goog.ds.XmlDataSource' defines instance member function 'load', but extended class 'goog.ds.DataNode' defines it as instance member property.
+closure-library/closure/goog/date/daterange.d.ts(46,21): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/date/daterange.d.ts(180,35): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/cursor.d.ts(35,29): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/cursor.d.ts(43,19): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/db.d.ts(59,165): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/db.d.ts(70,92): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/error.d.ts(70,34): error TS2095: Could not find symbol 'IDBDatabaseException'.
+closure-library/closure/goog/db/index.d.ts(40,31): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/index.d.ts(51,34): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/index.d.ts(61,39): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/db/index.d.ts(71,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/indexeddb.d.ts(59,71): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
+closure-library/closure/goog/db/indexeddb.d.ts(88,38): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/transaction.d.ts(37,44): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
+closure-library/closure/goog/db/transaction.d.ts(44,17): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/debug/error.d.ts(9,18): error TS2100: Class 'goog.debug.Error' is recursively referenced as a base type of itself.
 closure-library/closure/goog/debug/gcdiagnostics.d.ts(7,42): error TS2094: The property 'GcDiagnostics_' does not exist on value of type 'debug'.
 closure-library/closure/goog/debug/logger.d.ts(375,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
@@ -33,7 +44,9 @@ closure-library/closure/goog/debug/tracer.d.ts(28,34): error TS2094: The propert
 closure-library/closure/goog/dom/classlist.d.ts(43,60): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(63,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(86,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/dom/tagiterator.d.ts(71,38): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
+closure-library/closure/goog/dom/forms.d.ts(10,60): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/dom/iter.d.ts(13,42): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/dom/iter.d.ts(40,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/editor/contenteditablefield.d.ts(16,18): error TS2141: Class 'goog.editor.ContentEditableField' cannot extend class 'goog.editor.Field':
 	Class 'goog.editor.ContentEditableField' defines instance member property 'restoreDom', but extended class 'goog.editor.Field' defines it as instance member function.
 closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts(18,18): error TS2141: Class 'goog.editor.plugins.AbstractBubblePlugin' cannot extend class 'goog.editor.Plugin':
@@ -46,15 +59,39 @@ closure-library/closure/goog/editor/plugins/firststrong.d.ts(9,18): error TS2141
 		Call signatures of types '() => void' and '(e: events.BrowserEvent) => boolean' are incompatible.
 closure-library/closure/goog/editor/plugins/linkbubble.d.ts(10,18): error TS2141: Class 'goog.editor.plugins.LinkBubble' cannot extend class 'goog.editor.plugins.AbstractBubblePlugin':
 	Class 'goog.editor.plugins.LinkBubble' defines instance member function 'onShow', but extended class 'goog.editor.plugins.AbstractBubblePlugin' defines it as instance member property.
-closure-library/closure/goog/editor/plugins/linkdialogplugin.d.ts(107,31): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,58): error TS2094: The property 'UndoState_' does not exist on value of type 'UndoRedo'.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,132): error TS2094: The property 'CursorPosition_' does not exist on value of type 'UndoRedo'.
+closure-library/closure/goog/editor/style.d.ts(37,70): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/events/actioneventwrapper.d.ts(7,48): error TS2094: The property 'ActionEventWrapper_' does not exist on value of type 'events'.
-closure-library/closure/goog/events/eventhandler.d.ts(13,33): error TS2095: Could not find symbol 'SCOPE'.
+closure-library/closure/goog/events/eventhandler.d.ts(30,131): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(48,143): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(67,135): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(87,147): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(104,131): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(123,150): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(145,153): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventhandler.d.ts(162,153): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
-closure-library/closure/goog/events/pastehandler.d.ts(37,31): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
-closure-library/closure/goog/fs/entry.d.ts(194,25): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
-closure-library/closure/goog/fs/entry.d.ts(202,17): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
+closure-library/closure/goog/events/eventwrapper.d.ts(23,138): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/events/eventwrapper.d.ts(37,140): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(40,28): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(48,24): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(60,71): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(72,71): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(107,19): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(115,22): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(135,80): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(146,85): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(159,35): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(168,26): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/entry.d.ts(177,30): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/filereader.d.ts(46,48): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/filereader.d.ts(60,47): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/filereader.d.ts(76,63): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/filereader.d.ts(90,43): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/fs.d.ts(18,49): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/fs.d.ts(28,50): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/fs/fs.d.ts(64,70): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/fx/animation.d.ts(14,18): error TS2141: Class 'goog.fx.Animation' cannot extend class 'goog.fx.TransitionBase':
 	Class 'goog.fx.Animation' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
@@ -74,7 +111,7 @@ closure-library/closure/goog/fx/dom.d.ts(200,18): error TS2141: Class 'goog.fx.d
 	Class 'goog.fx.dom.Fade' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
 closure-library/closure/goog/fx/dom.d.ts(308,18): error TS2141: Class 'goog.fx.dom.ColorTransform' cannot extend class 'goog.fx.dom.PredefinedEffect':
 	Class 'goog.fx.dom.ColorTransform' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dragger.d.ts(120,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
+closure-library/closure/goog/fx/dom.d.ts(331,108): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/graphics/canvaselement.d.ts(17,18): error TS2141: Class 'goog.graphics.CanvasGroupElement' cannot extend class 'goog.graphics.GroupElement':
 	Class 'goog.graphics.CanvasGroupElement' defines instance member function 'clear', but extended class 'goog.graphics.GroupElement' defines it as instance member property.
 closure-library/closure/goog/graphics/canvasgraphics.d.ts(21,18): error TS2141: Class 'goog.graphics.CanvasGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
@@ -102,88 +139,36 @@ closure-library/closure/goog/html/safehtml.d.ts(129,89): error TS2094: The prope
 closure-library/closure/goog/html/safehtml.d.ts(138,46): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
-closure-library/closure/goog/iter/iter.d.ts(26,17): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/iter/iter.d.ts(38,43): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(52,49): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(52,77): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(72,52): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(72,114): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(92,51): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(92,113): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(92,169): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(112,56): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(112,118): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(112,174): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(132,87): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(142,43): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(161,56): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(161,118): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(161,173): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(181,51): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(199,49): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(199,111): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(217,50): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(217,112): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(228,47): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(228,77): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(240,77): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(257,54): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(257,116): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(257,172): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(273,54): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(273,116): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(273,172): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(282,46): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(295,46): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(295,84): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(307,50): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(320,49): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(320,81): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(332,44): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(332,72): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(343,67): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(352,50): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(364,42): error TS2125: Type 'goog.iter.Iterable' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(364,71): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(379,45): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(379,75): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(395,70): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(395,100): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(416,47): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(416,85): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(416,113): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(435,51): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(435,120): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(459,53): error TS2125: Type 'goog.iter.Iterable' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(459,141): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(471,42): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(471,94): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(484,48): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(484,96): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(498,44): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(498,91): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(512,46): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(512,89): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(526,44): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(526,105): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(545,51): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(545,100): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(563,51): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(563,95): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(582,66): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(582,110): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/labs/mock/mock.d.ts(69,62): error TS2094: The property 'StubBinder_' does not exist on value of type 'mock'.
 closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not find symbol 'Image'.
-closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/labs/promise/promise.d.ts(23,45): error TS2095: Could not find symbol 'TYPE'.
-closure-library/closure/goog/labs/promise/promise.d.ts(23,108): error TS2095: Could not find symbol 'RESOLVER_CONTEXT'.
+closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
+closure-library/closure/goog/labs/net/image.d.ts(16,72): error TS2095: Could not find symbol 'Image'.
+closure-library/closure/goog/math/rangeset.d.ts(138,43): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/messaging/deferredchannel.d.ts(15,38): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/module/modulemanager.d.ts(120,58): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/module/modulemanager.d.ts(177,62): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/browserchannel.d.ts(750,40): error TS2000: Duplicate identifier 'Event'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(57,9)
 closure-library/closure/goog/net/browserchannel.d.ts(773,40): error TS2000: Duplicate identifier 'LogSaver'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(81,9)
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
+closure-library/closure/goog/net/filedownloader.d.ts(41,32): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(53,39): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(72,41): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(91,35): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(103,36): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(116,30): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/filedownloader.d.ts(138,62): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/filedownloader.d.ts(157,55): error TS2094: The property 'Download_' does not exist on value of type 'FileDownloader'.
+closure-library/closure/goog/net/jsloader.d.ts(89,81): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/jsloader.d.ts(111,114): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/xhriopool.d.ts(12,36): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/xhriopool.d.ts(13,35): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/net/xhrmanager.d.ts(16,60): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/xpc/frameelementmethodtransport.d.ts(18,18): error TS2141: Class 'goog.net.xpc.FrameElementMethodTransport' cannot extend class 'goog.net.xpc.Transport':
 	Class 'goog.net.xpc.FrameElementMethodTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
 closure-library/closure/goog/net/xpc/iframepollingtransport.d.ts(19,18): error TS2141: Class 'goog.net.xpc.IframePollingTransport' cannot extend class 'goog.net.xpc.Transport':
@@ -194,171 +179,63 @@ closure-library/closure/goog/net/xpc/nativemessagingtransport.d.ts(24,18): error
 	Class 'goog.net.xpc.NativeMessagingTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
 closure-library/closure/goog/net/xpc/nixtransport.d.ts(16,18): error TS2141: Class 'goog.net.xpc.NixTransport' cannot extend class 'goog.net.xpc.Transport':
 	Class 'goog.net.xpc.NixTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
-closure-library/closure/goog/promise/promise.d.ts(52,45): error TS2095: Could not find symbol 'TYPE'.
-closure-library/closure/goog/promise/promise.d.ts(52,108): error TS2095: Could not find symbol 'RESOLVER_CONTEXT'.
-closure-library/closure/goog/promise/promise.d.ts(60,49): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/promise.d.ts(60,49): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
+closure-library/closure/goog/promise/promise.d.ts(67,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/promise/promise.d.ts(75,43): error TS2125: Type 'goog.Thenable' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(75,66): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/promise.d.ts(75,66): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/promise/promise.d.ts(84,42): error TS2125: Type 'goog.Thenable' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(84,65): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/promise.d.ts(84,65): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/promise/promise.d.ts(93,53): error TS2125: Type 'goog.Thenable' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(93,76): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/promise.d.ts(93,76): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/promise/promise.d.ts(101,38): error TS2125: Type 'goog.promise.Resolver' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(141,71): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/promise.d.ts(141,71): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
+closure-library/closure/goog/promise/promise.d.ts(156,78): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/promise/thenable.d.ts(11,39): error TS2095: Could not find symbol 'IThenable'.
 closure-library/closure/goog/promise/thenable.d.ts(40,53): error TS2095: Could not find symbol 'TYPE'.
-closure-library/closure/goog/promise/thenable.d.ts(40,128): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(22,44): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(34,48): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(45,46): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(61,33): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(69,36): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/pubsub/typedpubsub.d.ts(78,39): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
+closure-library/closure/goog/promise/thenable.d.ts(40,128): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
+closure-library/closure/goog/result/deferredadaptor.d.ts(12,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/soy/renderer.d.ts(124,45): error TS2094: The property 'Renderer' does not exist on value of type 'soy'.
 closure-library/closure/goog/storage/mechanism/errorhandlingmechanism.d.ts(36,126): error TS2094: The property 'ErrorHandler' does not exist on value of type 'ErrorHandlingMechanism'.
-closure-library/closure/goog/structs/avltree.d.ts(26,20): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(38,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(38,27): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(53,25): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(69,33): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(77,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(85,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(102,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(126,43): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(144,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/avltree.d.ts(144,44): error TS2125: Type 'goog.structs.AvlTree.Node' does not have type parameters.
-closure-library/closure/goog/structs/avltree.d.ts(151,15): error TS2125: Type 'goog.structs.AvlTree.Node' does not have type parameters.
-closure-library/closure/goog/structs/avltree.d.ts(158,16): error TS2125: Type 'goog.structs.AvlTree.Node' does not have type parameters.
-closure-library/closure/goog/structs/circularbuffer.d.ts(19,19): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(19,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(27,29): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(35,34): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(54,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(62,50): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(79,30): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/circularbuffer.d.ts(86,20): error TS2095: Could not find symbol 'T'.
+closure-library/closure/goog/storage/mechanism/iterablemechanism.d.ts(30,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/collection.d.ts(13,20): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/collection.d.ts(18,23): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/collection.d.ts(24,25): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/heap.d.ts(19,21): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/heap.d.ts(19,31): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(32,19): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(39,17): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(46,20): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(52,28): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(58,26): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/heap.d.ts(65,28): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/heap.d.ts(72,26): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/inversionmap.d.ts(14,66): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/inversionmap.d.ts(24,70): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/inversionmap.d.ts(32,29): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/linkedmap.d.ts(45,36): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(45,44): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(55,42): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(55,50): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(64,33): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(70,17): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(76,21): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(83,18): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(90,16): error TS2095: Could not find symbol 'VALUE'.
+closure-library/closure/goog/structs/heap.d.ts(12,32): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/heap.d.ts(25,25): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/heap.d.ts(79,18): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/linkedmap.d.ts(106,39): error TS2094: The property 'LinkedMap' does not exist on value of type 'structs'.
-closure-library/closure/goog/structs/linkedmap.d.ts(135,28): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(143,25): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/linkedmap.d.ts(181,51): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/map.d.ts(23,28): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(43,28): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(53,68): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(53,77): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(91,52): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(99,30): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(113,30): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/map.d.ts(113,39): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/map.d.ts(113,48): error TS2125: Type 'goog.structs.Map' does not have type parameters.
-closure-library/closure/goog/structs/node.d.ts(12,26): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/node.d.ts(12,36): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/node.d.ts(18,19): error TS2095: Could not find symbol 'K'.
-closure-library/closure/goog/structs/node.d.ts(24,21): error TS2095: Could not find symbol 'V'.
-closure-library/closure/goog/structs/node.d.ts(31,18): error TS2125: Type 'goog.structs.Node' does not have type parameters.
-closure-library/closure/goog/structs/pool.d.ts(40,22): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(48,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(56,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(73,25): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(81,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(90,32): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/pool.d.ts(97,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/prioritypool.d.ts(11,39): error TS2125: Type 'goog.structs.Pool' does not have type parameters.
-closure-library/closure/goog/structs/prioritypool.d.ts(26,68): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/prioritypool.d.ts(37,28): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/priorityqueue.d.ts(11,40): error TS2125: Type 'goog.structs.Heap' does not have type parameters.
-closure-library/closure/goog/structs/priorityqueue.d.ts(20,42): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/priorityqueue.d.ts(27,20): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/queue.d.ts(16,26): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/queue.d.ts(23,20): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/queue.d.ts(30,17): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/queue.d.ts(54,23): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/queue.d.ts(61,21): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/queue.d.ts(67,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(20,40): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(33,22): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(40,27): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(47,30): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(55,25): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(74,27): error TS2095: Could not find symbol 'T'.
+closure-library/closure/goog/structs/map.d.ts(53,26): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/map.d.ts(119,18): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/map.d.ts(130,22): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/map.d.ts(142,27): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/map.d.ts(149,29): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/map.d.ts(159,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/set.d.ts(83,26): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
-closure-library/closure/goog/structs/set.d.ts(93,41): error TS2125: Type 'goog.structs.Set' does not have type parameters.
-closure-library/closure/goog/structs/set.d.ts(103,31): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(109,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(116,18): error TS2125: Type 'goog.structs.Set' does not have type parameters.
+closure-library/closure/goog/structs/set.d.ts(103,36): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/set.d.ts(127,21): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
 closure-library/closure/goog/structs/set.d.ts(137,25): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
-closure-library/closure/goog/structs/simplepool.d.ts(48,22): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/simplepool.d.ts(55,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/simplepool.d.ts(62,25): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/simplepool.d.ts(70,28): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/treenode.d.ts(15,35): error TS2125: Type 'goog.structs.Node' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(16,26): error TS2095: Could not find symbol 'KEY'.
-closure-library/closure/goog/structs/treenode.d.ts(16,38): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/treenode.d.ts(34,22): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(62,30): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(70,36): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(86,31): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(93,20): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(110,33): error TS2095: Could not find symbol 'KEY'.
-closure-library/closure/goog/structs/treenode.d.ts(117,24): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(127,60): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(127,98): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(136,27): error TS2095: Could not find symbol 'KEY'.
-closure-library/closure/goog/structs/treenode.d.ts(136,33): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(147,38): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(147,99): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(156,37): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(169,34): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(178,27): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(184,25): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(191,27): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(201,34): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(201,85): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(212,32): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(212,77): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(212,113): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(219,39): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(226,28): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/treenode.d.ts(226,64): error TS2125: Type 'goog.structs.TreeNode' does not have type parameters.
-closure-library/closure/goog/structs/trie.d.ts(13,32): error TS2125: Type 'goog.structs.Trie' does not have type parameters.
-closure-library/closure/goog/structs/trie.d.ts(21,33): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(29,33): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(46,27): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(66,28): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(98,30): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(111,30): error TS2095: Could not find symbol 'VALUE'.
-closure-library/closure/goog/structs/trie.d.ts(119,18): error TS2125: Type 'goog.structs.Trie' does not have type parameters.
+closure-library/closure/goog/structs/set.d.ts(144,43): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/stringset.d.ts(171,43): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/treenode.d.ts(23,18): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/structs/treenode.d.ts(28,22): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/asserts.d.ts(65,42): error TS2073: A class may only extend another class.
+closure-library/closure/goog/testing/async/mockcontrol.d.ts(46,39): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/async/mockcontrol.d.ts(58,57): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/async/mockcontrol.d.ts(58,86): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/continuationtestcase.d.ts(13,18): error TS2141: Class 'goog.testing.ContinuationTestCase' cannot extend class 'goog.testing.TestCase':
 	Types of static property 'Test' of class 'ContinuationTestCase' and class 'TestCase' are incompatible:
 		Construct signatures of types 'typeof ContinuationTestCase.Test' and 'typeof TestCase.Test' are incompatible:
 			Type 'String' is missing property 'execute' from type 'TestCase.Test'.
+closure-library/closure/goog/testing/deferredtestcase.d.ts(42,41): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/deferredtestcase.d.ts(51,44): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/dom.d.ts(15,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/events/events.d.ts(15,18): error TS2100: Class 'goog.testing.events.Event' is recursively referenced as a base type of itself.
+closure-library/closure/goog/testing/fs/entry.d.ts(44,42): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/fs/fs.d.ts(11,49): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/fs/fs.d.ts(21,50): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/fs/fs.d.ts(63,86): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/testing/performancetimer.d.ts(108,65): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/performancetimer.d.ts(132,57): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/performancetimer.d.ts(138,50): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/performancetimer.d.ts(147,56): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
@@ -366,14 +243,20 @@ closure-library/closure/goog/testing/performancetimer.d.ts(153,51): error TS2094
 closure-library/closure/goog/testing/performancetimer.d.ts(162,62): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/performancetimer.d.ts(168,54): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/recordfunction.d.ts(13,64): error TS2095: Could not find symbol 'Arguments'.
+closure-library/closure/goog/ui/abstractspellchecker.d.ts(14,18): error TS2141: Class 'goog.ui.AbstractSpellChecker' cannot extend class 'goog.ui.Component':
+	Types of property 'getHandler' of types 'AbstractSpellChecker' and 'Component' are incompatible:
+		Call signatures of types '() => spell.SpellCheck' and '<T>() => events.EventHandler<T>' are incompatible:
+			Type 'spell.SpellCheck' is missing property 'listen' from type 'events.EventHandler<any>'.
 closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts(8,18): error TS2141: Class 'goog.ui.ColorMenuButtonRenderer' cannot extend class 'goog.ui.MenuButtonRenderer':
 	Types of static property 'wrapCaption' of class 'ColorMenuButtonRenderer' and class 'MenuButtonRenderer' are incompatible:
 		Call signatures of types '(content: ControlContent, dom: dom.DomHelper) => Element' and '(content: ControlContent, cssClass: string, dom: dom.DomHelper) => Element' are incompatible:
 			Type 'String' is missing property 'getDomHelper' from type 'dom.DomHelper'.
-closure-library/closure/goog/ui/component.d.ts(122,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
-closure-library/closure/goog/ui/editor/bubble.d.ts(53,31): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
-closure-library/closure/goog/ui/editor/toolbarcontroller.d.ts(56,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
+closure-library/closure/goog/ui/dialog.d.ts(328,36): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/ui/emoji/emojipaletterenderer.d.ts(37,63): error TS2095: Could not find symbol 'Image'.
+closure-library/closure/goog/ui/iframemask.d.ts(16,74): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/ui/media/flashobject.d.ts(50,27): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/ui/media/flashobject.d.ts(74,32): error TS2173: Generic type references must include all type arguments.
+closure-library/closure/goog/ui/media/flashobject.d.ts(79,25): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/ui/menu.d.ts(11,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
 	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
 		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
@@ -389,7 +272,6 @@ closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class
 		Call signatures of types '(palette: Control, element: Element) => void' and '(control: Control, element: Element) => Element' are incompatible.
 closure-library/closure/goog/ui/popup.d.ts(19,18): error TS2141: Class 'goog.ui.Popup' cannot extend class 'goog.ui.PopupBase':
 	Class 'goog.ui.Popup' defines instance member function 'reposition', but extended class 'goog.ui.PopupBase' defines it as instance member property.
-closure-library/closure/goog/ui/popupbase.d.ts(165,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
 closure-library/closure/goog/ui/select.d.ts(24,18): error TS2141: Class 'goog.ui.Select' cannot extend class 'goog.ui.MenuButton':
 	Types of property 'addItem' of types 'Select' and 'MenuButton' are incompatible:
 		Call signatures of types '(item: Control) => void' and '(item: MenuItem) => void' are incompatible:
@@ -398,6 +280,7 @@ closure-library/closure/goog/ui/select.d.ts(24,18): error TS2141: Class 'goog.ui
 				Call signatures of types '() => void' and '() => string' are incompatible.
 closure-library/closure/goog/ui/textarearenderer.d.ts(12,18): error TS2141: Class 'goog.ui.TextareaRenderer' cannot extend class 'goog.ui.ControlRenderer':
 	Class 'goog.ui.TextareaRenderer' defines instance member property 'setRightToLeft', but extended class 'goog.ui.ControlRenderer' defines it as instance member function.
+closure-library/closure/goog/ui/tooltip.d.ts(199,24): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/ui/tree/basenode.d.ts(14,18): error TS2141: Class 'goog.ui.tree.BaseNode' cannot extend class 'goog.ui.Component':
 	Types of property 'removeChild' of types 'BaseNode' and 'Component' are incompatible:
 		Call signatures of types '(childNode: Component, opt_unrender?: boolean) => BaseNode' and '(child: string, opt_unrender?: boolean) => Component' are incompatible:
@@ -408,10 +291,22 @@ closure-library/closure/goog/ui/tree/treenode.d.ts(13,18): error TS2141: Class '
 	Class 'goog.ui.tree.TreeNode' defines instance member function 'getTree', but extended class 'goog.ui.tree.BaseNode' defines it as instance member property.
 closure-library/closure/goog/ui/twothumbslider.d.ts(9,18): error TS2141: Class 'goog.ui.TwoThumbSlider' cannot extend class 'goog.ui.SliderBase':
 	Class 'goog.ui.TwoThumbSlider' defines instance member function 'createThumbs', but extended class 'goog.ui.SliderBase' defines it as instance member property.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(71,31): error TS2095: Could not find symbol 'VALUE'.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(99,35): error TS2095: Could not find symbol 'VALUE'.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(120,63): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(148,36): error TS2095: Could not find symbol 'VALUE'.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(201,48): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,58): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
+closure-library/closure/goog/uri/uri.d.ts(423,35): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(99,66): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(130,59): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(148,91): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(171,38): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(171,60): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(184,38): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(184,60): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(224,43): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(242,32): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(249,28): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(283,82): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(303,31): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(314,31): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(45,39): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(46,33): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(60,42): error TS2173: Generic type references must include all type arguments.
+closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(60,65): error TS2173: Generic type references must include all type arguments.
