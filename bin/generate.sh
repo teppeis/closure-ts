@@ -8,6 +8,7 @@ find $BASEDIR/closure-library -type f -name '*.js'|grep -v _test|sort|
     grep -v /goog/result/|
     grep -v /goog/testing/|
     grep -v /goog/net/mockiframeio.js|
+    grep -v tester.js|
     xargs $BASEDIR/bin/closurets.js
 $BASEDIR/bin/generate-alldts.sh
 $BASEDIR/bin/check-error.sh
