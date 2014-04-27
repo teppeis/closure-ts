@@ -1,9 +1,6 @@
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
-closure-library/closure/goog/ui/menu.d.ts(11,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
-	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
-		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
 closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class 'goog.ui.PaletteRenderer' cannot extend class 'goog.ui.ControlRenderer':
 	Types of property 'decorate' of types 'PaletteRenderer' and 'ControlRenderer' are incompatible:
 		Call signatures of types '(palette: Control, element: Element) => void' and '(control: Control, element: Element) => Element' are incompatible.
