@@ -12,11 +12,8 @@
    1 closure-library/closure/goog/promise/thenable.d.ts
    1 closure-library/closure/goog/net/cookies.d.ts
    1 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts
-   1 closure-library/closure/goog/graphics/svggraphics.d.ts
    1 closure-library/closure/goog/graphics/ext/element.d.ts
-   1 closure-library/closure/goog/graphics/canvasgraphics.d.ts
    1 closure-library/closure/goog/functions/functions.d.ts
    1 closure-library/closure/goog/events/eventtargettester.d.ts
    1 closure-library/closure/goog/debug/logger.d.ts
    1 closure-library/closure/goog/debug/error.d.ts
-   1 closure-library/closure/goog/datasource/fastdatanode.d.ts
