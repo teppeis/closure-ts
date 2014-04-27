@@ -21,8 +21,6 @@ closure-library/closure/goog/datasource/jsxmlhttpdatasource.d.ts(18,18): error T
 	Class 'goog.ds.JsXmlHttpDataSource' defines instance member function 'load', but extended class 'goog.ds.FastDataNode' defines it as instance member property.
 closure-library/closure/goog/datasource/xmldatasource.d.ts(13,18): error TS2141: Class 'goog.ds.XmlDataSource' cannot extend class 'goog.ds.DataNode':
 	Class 'goog.ds.XmlDataSource' defines instance member function 'load', but extended class 'goog.ds.DataNode' defines it as instance member property.
-closure-library/closure/goog/date/daterange.d.ts(46,21): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/date/daterange.d.ts(180,35): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/cursor.d.ts(35,29): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/cursor.d.ts(43,19): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/db.d.ts(59,165): error TS2173: Generic type references must include all type arguments.
