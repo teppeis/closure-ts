@@ -49,19 +49,8 @@ closure-library/closure/goog/editor/plugins/linkbubble.d.ts(10,18): error TS2141
 	Class 'goog.editor.plugins.LinkBubble' defines instance member function 'onShow', but extended class 'goog.editor.plugins.AbstractBubblePlugin' defines it as instance member property.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,58): error TS2094: The property 'UndoState_' does not exist on value of type 'UndoRedo'.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,132): error TS2094: The property 'CursorPosition_' does not exist on value of type 'UndoRedo'.
-closure-library/closure/goog/editor/style.d.ts(37,70): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/events/actioneventwrapper.d.ts(7,48): error TS2094: The property 'ActionEventWrapper_' does not exist on value of type 'events'.
-closure-library/closure/goog/events/eventhandler.d.ts(30,131): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(48,143): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(67,135): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(87,147): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(104,131): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(123,150): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(145,153): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventhandler.d.ts(162,153): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
-closure-library/closure/goog/events/eventwrapper.d.ts(23,138): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/events/eventwrapper.d.ts(37,140): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/fx/animation.d.ts(14,18): error TS2141: Class 'goog.fx.Animation' cannot extend class 'goog.fx.TransitionBase':
 	Class 'goog.fx.Animation' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
@@ -81,7 +70,6 @@ closure-library/closure/goog/fx/dom.d.ts(200,18): error TS2141: Class 'goog.fx.d
 	Class 'goog.fx.dom.Fade' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
 closure-library/closure/goog/fx/dom.d.ts(308,18): error TS2141: Class 'goog.fx.dom.ColorTransform' cannot extend class 'goog.fx.dom.PredefinedEffect':
 	Class 'goog.fx.dom.ColorTransform' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(331,108): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/graphics/canvaselement.d.ts(17,18): error TS2141: Class 'goog.graphics.CanvasGroupElement' cannot extend class 'goog.graphics.GroupElement':
 	Class 'goog.graphics.CanvasGroupElement' defines instance member function 'clear', but extended class 'goog.graphics.GroupElement' defines it as instance member property.
 closure-library/closure/goog/graphics/canvasgraphics.d.ts(21,18): error TS2141: Class 'goog.graphics.CanvasGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
