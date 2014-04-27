@@ -39,7 +39,3 @@ closure-library/closure/goog/ui/menubase.d.ts(87,33): error TS2000: Duplicate id
 closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class 'goog.ui.PaletteRenderer' cannot extend class 'goog.ui.ControlRenderer':
 	Types of property 'decorate' of types 'PaletteRenderer' and 'ControlRenderer' are incompatible:
 		Call signatures of types '(palette: Control, element: Element) => void' and '(control: Control, element: Element) => Element' are incompatible.
-closure-library/closure/goog/ui/tree/basenode.d.ts(14,18): error TS2141: Class 'goog.ui.tree.BaseNode' cannot extend class 'goog.ui.Component':
-	Types of property 'removeChild' of types 'BaseNode' and 'Component' are incompatible:
-		Call signatures of types '(childNode: Component, opt_unrender?: boolean) => BaseNode' and '(child: string, opt_unrender?: boolean) => Component' are incompatible:
-			Type 'String' is missing property 'dom_' from type 'Component'.
