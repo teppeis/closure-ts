@@ -9,14 +9,14 @@ goog.dom.DomHelper = function(document) {
 };
 
 /**
+ * @type {string}
+ */
+goog.dom.DomHelper.prototype.foo = '';
+
+/**
  * @param {string} str
  * @return {number}
  */
-goog.dom.DomHelper.prototype.foo = function(str) {
+goog.dom.DomHelper.prototype.bar = function(str) {
     return 1;
 };
-
-/**
- * @type {string}
- */
-goog.dom.DomHelper.prototype.bar = '';
