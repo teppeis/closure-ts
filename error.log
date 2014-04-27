@@ -35,7 +35,6 @@ closure-library/closure/goog/graphics/svggraphics.d.ts(22,18): error TS2141: Cla
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
 closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not find symbol 'Image'.
-closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/labs/net/image.d.ts(16,72): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/net/browserchannel.d.ts(750,40): error TS2000: Duplicate identifier 'Event'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(57,9)
@@ -43,13 +42,7 @@ closure-library/closure/goog/net/browserchannel.d.ts(773,40): error TS2000: Dupl
 	closure-library/closure/goog/net/browserchannel.d.ts(81,9)
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
-closure-library/closure/goog/promise/promise.d.ts(60,49): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/closure/goog/promise/promise.d.ts(75,66): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/closure/goog/promise/promise.d.ts(84,65): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/closure/goog/promise/promise.d.ts(93,76): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/closure/goog/promise/promise.d.ts(141,71): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/promise/thenable.d.ts(11,45): error TS2095: Could not find symbol 'IThenable'.
-closure-library/closure/goog/promise/thenable.d.ts(40,128): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/result/result_interface.d.ts(12,37): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/structs/linkedmap.d.ts(106,26): error TS2173: Generic type references must include all type arguments.
@@ -98,4 +91,3 @@ closure-library/closure/goog/ui/tree/basenode.d.ts(14,18): error TS2141: Class '
 	Types of property 'removeChild' of types 'BaseNode' and 'Component' are incompatible:
 		Call signatures of types '(childNode: Component, opt_unrender?: boolean) => BaseNode' and '(child: string, opt_unrender?: boolean) => Component' are incompatible:
 			Type 'String' is missing property 'dom_' from type 'Component'.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).

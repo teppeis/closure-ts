@@ -1,11 +1,8 @@
-   5 closure-library/closure/goog/promise/promise.d.ts
    3 closure-library/closure/goog/structs/linkedmap.d.ts
-   3 closure-library/closure/goog/labs/net/image.d.ts
    3 closure-library/closure/goog/datasource/fastdatanode.d.ts
    2 closure-library/closure/goog/result/result_interface.d.ts
-   2 closure-library/closure/goog/promise/thenable.d.ts
    2 closure-library/closure/goog/net/browserchannel.d.ts
-   1 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts
+   2 closure-library/closure/goog/labs/net/image.d.ts
    1 closure-library/closure/goog/ui/tree/basenode.d.ts
    1 closure-library/closure/goog/ui/textarearenderer.d.ts
    1 closure-library/closure/goog/ui/select.d.ts
@@ -21,6 +18,7 @@
    1 closure-library/closure/goog/testing/events/events.d.ts
    1 closure-library/closure/goog/testing/continuationtestcase.d.ts
    1 closure-library/closure/goog/testing/asserts.d.ts
+   1 closure-library/closure/goog/promise/thenable.d.ts
    1 closure-library/closure/goog/net/cookies.d.ts
    1 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts
    1 closure-library/closure/goog/graphics/svggraphics.d.ts
