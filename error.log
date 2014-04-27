@@ -42,11 +42,6 @@ closure-library/closure/goog/graphics/canvasgraphics.d.ts(21,18): error TS2141: 
 closure-library/closure/goog/graphics/svggraphics.d.ts(22,18): error TS2141: Class 'goog.graphics.SvgGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
 	Types of property 'getTextWidth' of types 'SvgGraphics' and 'AbstractGraphics' are incompatible:
 		Call signatures of types '(text: string, font: Font) => void' and '(text: string, font: Font) => number' are incompatible.
-closure-library/closure/goog/html/safehtml.d.ts(83,43): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
-closure-library/closure/goog/html/safehtml.d.ts(90,61): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
-closure-library/closure/goog/html/safehtml.d.ts(105,43): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
-closure-library/closure/goog/html/safehtml.d.ts(129,89): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
-closure-library/closure/goog/html/safehtml.d.ts(138,46): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
 closure-library/closure/goog/iter/iter.d.ts(320,49): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.

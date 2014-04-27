@@ -1,5 +1,4 @@
    9 closure-library/closure/goog/promise/promise.d.ts
-   5 closure-library/closure/goog/html/safehtml.d.ts
    3 closure-library/closure/goog/structs/set.d.ts
    3 closure-library/closure/goog/structs/collection.d.ts
    3 closure-library/closure/goog/promise/thenable.d.ts
