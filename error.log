@@ -1,5 +1,4 @@
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/graphics/ext/element.d.ts(360,68): error TS2094: The property 'PositionType_' does not exist on value of type 'Element'.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
 closure-library/closure/goog/promise/thenable.d.ts(11,22): error TS2143: Interface 'goog.Thenable<TYPE>' cannot extend interface 'IThenable<TYPE>':
