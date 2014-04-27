@@ -21,19 +21,9 @@ closure-library/closure/goog/datasource/jsxmlhttpdatasource.d.ts(18,18): error T
 	Class 'goog.ds.JsXmlHttpDataSource' defines instance member function 'load', but extended class 'goog.ds.FastDataNode' defines it as instance member property.
 closure-library/closure/goog/datasource/xmldatasource.d.ts(13,18): error TS2141: Class 'goog.ds.XmlDataSource' cannot extend class 'goog.ds.DataNode':
 	Class 'goog.ds.XmlDataSource' defines instance member function 'load', but extended class 'goog.ds.DataNode' defines it as instance member property.
-closure-library/closure/goog/db/cursor.d.ts(35,29): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/cursor.d.ts(43,19): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/db.d.ts(59,165): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/db.d.ts(70,92): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/error.d.ts(70,34): error TS2095: Could not find symbol 'IDBDatabaseException'.
-closure-library/closure/goog/db/index.d.ts(40,31): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/index.d.ts(51,34): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/index.d.ts(61,39): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/db/index.d.ts(71,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/indexeddb.d.ts(59,71): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
-closure-library/closure/goog/db/indexeddb.d.ts(88,38): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/db/transaction.d.ts(37,44): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
-closure-library/closure/goog/db/transaction.d.ts(44,17): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/debug/error.d.ts(9,18): error TS2100: Class 'goog.debug.Error' is recursively referenced as a base type of itself.
 closure-library/closure/goog/debug/gcdiagnostics.d.ts(7,42): error TS2094: The property 'GcDiagnostics_' does not exist on value of type 'debug'.
 closure-library/closure/goog/debug/logger.d.ts(375,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
@@ -72,24 +62,6 @@ closure-library/closure/goog/events/eventhandler.d.ts(162,153): error TS2173: Ge
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
 closure-library/closure/goog/events/eventwrapper.d.ts(23,138): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/events/eventwrapper.d.ts(37,140): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(40,28): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(48,24): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(60,71): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(72,71): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(107,19): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(115,22): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(135,80): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(146,85): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(159,35): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(168,26): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/entry.d.ts(177,30): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/filereader.d.ts(46,48): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/filereader.d.ts(60,47): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/filereader.d.ts(76,63): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/filereader.d.ts(90,43): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/fs.d.ts(18,49): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/fs.d.ts(28,50): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/fs/fs.d.ts(64,70): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/fx/animation.d.ts(14,18): error TS2141: Class 'goog.fx.Animation' cannot extend class 'goog.fx.TransitionBase':
 	Class 'goog.fx.Animation' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
@@ -145,25 +117,13 @@ closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not
 closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/labs/net/image.d.ts(16,72): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/math/rangeset.d.ts(138,43): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/messaging/deferredchannel.d.ts(15,38): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/module/modulemanager.d.ts(120,58): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/module/modulemanager.d.ts(177,62): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/browserchannel.d.ts(750,40): error TS2000: Duplicate identifier 'Event'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(57,9)
 closure-library/closure/goog/net/browserchannel.d.ts(773,40): error TS2000: Duplicate identifier 'LogSaver'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(81,9)
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
-closure-library/closure/goog/net/filedownloader.d.ts(41,32): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(53,39): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(72,41): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(91,35): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(103,36): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(116,30): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/filedownloader.d.ts(138,62): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/filedownloader.d.ts(157,55): error TS2094: The property 'Download_' does not exist on value of type 'FileDownloader'.
-closure-library/closure/goog/net/jsloader.d.ts(89,81): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/jsloader.d.ts(111,114): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/xhriopool.d.ts(12,36): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/xhriopool.d.ts(13,35): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/xhrmanager.d.ts(16,60): error TS2173: Generic type references must include all type arguments.
@@ -191,7 +151,6 @@ closure-library/closure/goog/promise/promise.d.ts(156,78): error TS2173: Generic
 closure-library/closure/goog/promise/thenable.d.ts(11,39): error TS2095: Could not find symbol 'IThenable'.
 closure-library/closure/goog/promise/thenable.d.ts(40,53): error TS2095: Could not find symbol 'TYPE'.
 closure-library/closure/goog/promise/thenable.d.ts(40,128): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/closure/goog/result/deferredadaptor.d.ts(12,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/soy/renderer.d.ts(124,45): error TS2094: The property 'Renderer' does not exist on value of type 'soy'.
 closure-library/closure/goog/storage/mechanism/errorhandlingmechanism.d.ts(36,126): error TS2094: The property 'ErrorHandler' does not exist on value of type 'ErrorHandlingMechanism'.
@@ -218,22 +177,12 @@ closure-library/closure/goog/structs/stringset.d.ts(171,43): error TS2173: Gener
 closure-library/closure/goog/structs/treenode.d.ts(23,18): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/treenode.d.ts(28,22): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/asserts.d.ts(65,42): error TS2073: A class may only extend another class.
-closure-library/closure/goog/testing/async/mockcontrol.d.ts(46,39): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/async/mockcontrol.d.ts(58,57): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/async/mockcontrol.d.ts(58,86): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/continuationtestcase.d.ts(13,18): error TS2141: Class 'goog.testing.ContinuationTestCase' cannot extend class 'goog.testing.TestCase':
 	Types of static property 'Test' of class 'ContinuationTestCase' and class 'TestCase' are incompatible:
 		Construct signatures of types 'typeof ContinuationTestCase.Test' and 'typeof TestCase.Test' are incompatible:
 			Type 'String' is missing property 'execute' from type 'TestCase.Test'.
-closure-library/closure/goog/testing/deferredtestcase.d.ts(42,41): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/deferredtestcase.d.ts(51,44): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/dom.d.ts(15,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/events/events.d.ts(15,18): error TS2100: Class 'goog.testing.events.Event' is recursively referenced as a base type of itself.
-closure-library/closure/goog/testing/fs/entry.d.ts(44,42): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/fs/fs.d.ts(11,49): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/fs/fs.d.ts(21,50): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/fs/fs.d.ts(63,86): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/testing/performancetimer.d.ts(108,65): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/testing/performancetimer.d.ts(132,57): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/performancetimer.d.ts(138,50): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
 closure-library/closure/goog/testing/performancetimer.d.ts(147,56): error TS2094: The property 'TestFunction' does not exist on value of type 'PerformanceTimer'.
@@ -290,21 +239,4 @@ closure-library/closure/goog/ui/tree/treenode.d.ts(13,18): error TS2141: Class '
 closure-library/closure/goog/ui/twothumbslider.d.ts(9,18): error TS2141: Class 'goog.ui.TwoThumbSlider' cannot extend class 'goog.ui.SliderBase':
 	Class 'goog.ui.TwoThumbSlider' defines instance member function 'createThumbs', but extended class 'goog.ui.SliderBase' defines it as instance member property.
 closure-library/closure/goog/uri/uri.d.ts(423,35): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(99,66): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(130,59): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(148,91): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(171,38): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(171,60): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(184,38): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(184,60): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(224,43): error TS2173: Generic type references must include all type arguments.
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(242,32): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(249,28): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(283,82): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(303,31): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(314,31): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(45,39): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(46,33): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(60,42): error TS2173: Generic type references must include all type arguments.
-closure-library/third_party/closure/goog/mochikit/async/deferredlist.d.ts(60,65): error TS2173: Generic type references must include all type arguments.
