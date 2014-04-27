@@ -1,7 +1,6 @@
 closure-library/closure/goog/a11y/aria/aria.d.ts(94,81): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/a11y/aria/aria.d.ts(132,105): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/async/throttle.d.ts(19,74): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/crypt/cbc.d.ts(16,40): error TS2094: The property 'BlockCipher' does not exist on value of type 'crypt'.
 closure-library/closure/goog/crypt/sha2_64bit.d.ts(14,18): error TS2141: Class 'goog.crypt.Sha2_64bit' cannot extend class 'goog.crypt.Hash':
 	Class 'goog.crypt.Sha2_64bit' defines instance member function 'reset', but extended class 'goog.crypt.Hash' defines it as instance member property.
 closure-library/closure/goog/cssom/iframe/style.d.ts(62,90): error TS2094: The property 'CssRuleSet_' does not exist on value of type 'style'.
@@ -35,7 +34,7 @@ closure-library/closure/goog/db/index.d.ts(61,26): error TS2095: Could not find 
 closure-library/closure/goog/db/index.d.ts(71,30): error TS2095: Could not find symbol 'IDBKeyType'.
 closure-library/closure/goog/db/index.d.ts(104,74): error TS2094: The property 'Cursor' does not exist on value of type 'db'.
 closure-library/closure/goog/db/indexeddb.d.ts(11,9): error TS2000: Duplicate identifier 'ERROR'. Additional locations:
-closure-library/closure/goog/db/cursor.d.ts(25,9)
+	closure-library/closure/goog/db/cursor.d.ts(25,9)
 closure-library/closure/goog/db/indexeddb.d.ts(71,71): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
 closure-library/closure/goog/db/indexeddb.d.ts(114,73): error TS2094: The property 'Transaction' does not exist on value of type 'db'.
 closure-library/closure/goog/db/indexeddb.d.ts(130,45): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
@@ -47,8 +46,6 @@ closure-library/closure/goog/db/keyrange.d.ts(55,34): error TS2095: Could not fi
 closure-library/closure/goog/db/transaction.d.ts(47,28): error TS2094: The property 'Transaction' does not exist on value of type 'db'.
 closure-library/closure/goog/db/transaction.d.ts(63,44): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
 closure-library/closure/goog/debug/devcss/devcss.d.ts(28,48): error TS2094: The property 'DevCss' does not exist on value of type 'debug'.
-closure-library/closure/goog/debug/entrypointregistry.d.ts(34,52): error TS2094: The property 'EntryPointMonitor' does not exist on value of type 'debug'.
-closure-library/closure/goog/debug/entrypointregistry.d.ts(46,64): error TS2094: The property 'EntryPointMonitor' does not exist on value of type 'debug'.
 closure-library/closure/goog/debug/error.d.ts(9,18): error TS2100: Class 'goog.debug.Error' is recursively referenced as a base type of itself.
 closure-library/closure/goog/debug/errorreporter.d.ts(131,41): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/debug/gcdiagnostics.d.ts(7,42): error TS2094: The property 'GcDiagnostics_' does not exist on value of type 'debug'.
@@ -73,13 +70,12 @@ closure-library/closure/goog/debug/logger.d.ts(352,59): error TS2094: The proper
 closure-library/closure/goog/debug/logger.d.ts(359,73): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/logger.d.ts(366,81): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/logger.d.ts(369,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
-closure-library/closure/goog/debug/logger.d.ts(272,16)
+	closure-library/closure/goog/debug/logger.d.ts(272,16)
 closure-library/closure/goog/debug/logrecord.d.ts(16,46): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/logrecord.d.ts(28,40): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/logrecord.d.ts(76,39): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/logrecord.d.ts(82,43): error TS2094: The property 'Level' does not exist on value of type 'Logger'.
 closure-library/closure/goog/debug/tracer.d.ts(28,34): error TS2094: The property 'Trace_' does not exist on value of type 'debug'.
-closure-library/closure/goog/disposable/disposable.d.ts(70,56): error TS2094: The property 'IDisposable' does not exist on value of type 'disposable'.
 closure-library/closure/goog/dom/classlist.d.ts(43,60): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(63,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(86,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
@@ -110,257 +106,237 @@ closure-library/closure/goog/events/actioneventwrapper.d.ts(7,48): error TS2094:
 closure-library/closure/goog/events/browserevent.d.ts(23,39): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'Event'.
 closure-library/closure/goog/events/browserevent.d.ts(56,38): error TS2094: The property 'BrowserEvent' does not exist on value of type 'events'.
 closure-library/closure/goog/events/eventhandler.d.ts(13,33): error TS2095: Could not find symbol 'SCOPE'.
-closure-library/closure/goog/events/eventhandler.d.ts(104,66): error TS2094: The property 'EventWrapper' does not exist on value of type 'events'.
-closure-library/closure/goog/events/eventhandler.d.ts(123,77): error TS2094: The property 'EventWrapper' does not exist on value of type 'events'.
-closure-library/closure/goog/events/eventhandler.d.ts(162,68): error TS2094: The property 'EventWrapper' does not exist on value of type 'events'.
-closure-library/closure/goog/events/events.d.ts(97,81): error TS2094: The property 'EventWrapper' does not exist on value of type 'events'.
-closure-library/closure/goog/events/events.d.ts(141,80): error TS2094: The property 'EventWrapper' does not exist on value of type 'events'.
-closure-library/closure/goog/events/events.d.ts(193,165): error TS2094: The property 'ListenableKey' does not exist on value of type 'events'.
-closure-library/closure/goog/events/events.d.ts(263,52): error TS2094: The property 'Listenable' does not exist on value of type 'events'.
-closure-library/closure/goog/events/eventtargettester.d.ts(74,66): error TS2094: The property 'Listenable' does not exist on value of type 'goog.events'.
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
 closure-library/closure/goog/events/filedrophandler.d.ts(8,9): error TS2000: Duplicate identifier 'DROP'. Additional locations:
-closure-library/closure/goog/events/eventtype.d.ts(36,9)
+	closure-library/closure/goog/events/eventtype.d.ts(36,9)
 closure-library/closure/goog/events/focushandler.d.ts(8,9): error TS2000: Duplicate identifier 'FOCUSIN'. Additional locations:
-closure-library/closure/goog/events/eventtype.d.ts(24,9)
+	closure-library/closure/goog/events/eventtype.d.ts(24,9)
 closure-library/closure/goog/events/focushandler.d.ts(9,9): error TS2000: Duplicate identifier 'FOCUSOUT'. Additional locations:
-closure-library/closure/goog/events/eventtype.d.ts(25,9)
+	closure-library/closure/goog/events/eventtype.d.ts(25,9)
 closure-library/closure/goog/events/imehandler.d.ts(44,18): error TS2000: Duplicate identifier 'Event'. Additional locations:
-closure-library/closure/goog/events/event.d.ts(24,5)
+	closure-library/closure/goog/events/event.d.ts(24,5)
 closure-library/closure/goog/events/imehandler.d.ts(44,18): error TS2100: Class 'goog.events.Event' is recursively referenced as a base type of itself.
 closure-library/closure/goog/events/imehandler.d.ts(44,32): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'Event'.
 closure-library/closure/goog/events/imehandler.d.ts(45,39): error TS2094: The property 'ImeHandler' does not exist on value of type 'goog.events'.
 closure-library/closure/goog/events/inputhandler.d.ts(8,9): error TS2000: Duplicate identifier 'INPUT'. Additional locations:
-closure-library/closure/goog/events/eventtype.d.ts(29,9)
+	closure-library/closure/goog/events/eventtype.d.ts(29,9)
 closure-library/closure/goog/events/keynames.d.ts(21,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(22,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(23,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(24,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(25,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(26,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(27,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(28,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(29,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(30,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(31,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(32,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(33,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(34,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(35,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(36,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(37,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(38,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(39,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(40,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(41,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(42,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(43,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(44,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(45,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(46,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(47,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(48,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(49,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(50,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(51,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(52,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(53,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(54,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(55,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(56,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(57,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(58,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(59,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(60,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(61,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(62,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(63,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(64,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(65,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(66,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(67,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(68,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(69,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(70,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(71,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(72,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(73,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(74,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(75,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(76,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(77,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(78,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(79,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(80,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(81,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(82,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(83,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(84,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(85,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(86,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(87,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(88,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(89,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(90,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(91,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(92,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(93,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(94,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(95,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(96,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(97,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(98,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(99,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(100,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(101,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(102,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(103,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(104,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(105,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(106,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(107,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(108,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(109,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(110,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(111,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(112,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(113,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(114,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(115,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(116,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/keynames.d.ts(117,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/events/keynames.d.ts(20,9)
-closure-library/closure/goog/events/listenermap.d.ts(41,133): error TS2094: The property 'ListenableKey' does not exist on value of type 'events'.
-closure-library/closure/goog/events/listenermap.d.ts(59,43): error TS2094: The property 'ListenableKey' does not exist on value of type 'events'.
-closure-library/closure/goog/events/listenermap.d.ts(78,73): error TS2094: The property 'ListenableKey' does not exist on value of type 'events'.
-closure-library/closure/goog/events/listenermap.d.ts(92,114): error TS2094: The property 'ListenableKey' does not exist on value of type 'events'.
+	closure-library/closure/goog/events/keynames.d.ts(20,9)
 closure-library/closure/goog/events/pastehandler.d.ts(8,9): error TS2000: Duplicate identifier 'PASTE'. Additional locations:
-closure-library/closure/goog/events/eventtype.d.ts(60,9)
+	closure-library/closure/goog/events/eventtype.d.ts(60,9)
 closure-library/closure/goog/events/pastehandler.d.ts(47,33): error TS2094: The property 'PasteHandler' does not exist on value of type 'events'.
 closure-library/closure/goog/events/pastehandler.d.ts(56,31): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
 closure-library/closure/goog/format/jsonprettyprinter.d.ts(29,45): error TS2094: The property 'JsonPrettyPrinter' does not exist on value of type 'format'.
 closure-library/closure/goog/format/jsonprettyprinter.d.ts(58,53): error TS2094: The property 'JsonPrettyPrinter' does not exist on value of type 'format'.
-closure-library/closure/goog/fs/entryimpl.d.ts(11,33): error TS2094: The property 'FileSystem' does not exist on value of type 'fs'.
-closure-library/closure/goog/fs/entryimpl.d.ts(11,52): error TS2095: Could not find symbol 'Entry'.
-closure-library/closure/goog/fs/entryimpl.d.ts(29,33): error TS2094: The property 'FileSystem' does not exist on value of type 'fs'.
-closure-library/closure/goog/fs/entryimpl.d.ts(29,50): error TS4022: Type reference cannot refer to container 'goog.fs.DirectoryEntry'.
-closure-library/closure/goog/fs/entryimpl.d.ts(46,33): error TS2094: The property 'FileSystem' does not exist on value of type 'fs'.
-closure-library/closure/goog/fs/entryimpl.d.ts(46,51): error TS2095: Could not find symbol 'FileEntry'.
+closure-library/closure/goog/fs/entry.d.ts(194,25): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
+closure-library/closure/goog/fs/entry.d.ts(202,17): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
 closure-library/closure/goog/fs/filereader.d.ts(47,34): error TS2094: The property 'FileReader' does not exist on value of type 'fs'.
 closure-library/closure/goog/fs/filesaver.d.ts(9,9): error TS2000: Duplicate identifier 'INIT'. Additional locations:
-closure-library/closure/goog/fs/filereader.d.ts(9,9)
+	closure-library/closure/goog/fs/filereader.d.ts(9,9)
 closure-library/closure/goog/fs/filesaver.d.ts(11,9): error TS2000: Duplicate identifier 'DONE'. Additional locations:
-closure-library/closure/goog/fs/filereader.d.ts(11,9)
+	closure-library/closure/goog/fs/filereader.d.ts(11,9)
 closure-library/closure/goog/fs/filesaver.d.ts(21,9): error TS2000: Duplicate identifier 'PROGRESS'. Additional locations:
-closure-library/closure/goog/fs/filereader.d.ts(21,9)
+	closure-library/closure/goog/fs/filereader.d.ts(21,9)
 closure-library/closure/goog/fs/filesaver.d.ts(23,9): error TS2000: Duplicate identifier 'ABORT'. Additional locations:
-closure-library/closure/goog/fs/filereader.d.ts(23,9)
+	closure-library/closure/goog/fs/filereader.d.ts(23,9)
 closure-library/closure/goog/fs/filesaver.d.ts(24,9): error TS2000: Duplicate identifier 'ERROR'. Additional locations:
-closure-library/closure/goog/fs/filereader.d.ts(24,9)
+	closure-library/closure/goog/fs/filereader.d.ts(24,9)
 closure-library/closure/goog/fs/filesaver.d.ts(59,34): error TS2094: The property 'FileSaver' does not exist on value of type 'fs'.
-closure-library/closure/goog/fs/filesystemimpl.d.ts(15,25): error TS2095: Could not find symbol 'FileSystem'.
-closure-library/closure/goog/fs/filesystemimpl.d.ts(20,33): error TS2095: Could not find symbol 'FileSystem'.
 closure-library/closure/goog/fs/progressevent.d.ts(12,40): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/fx/abstractdragdrop.d.ts(309,40): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
-closure-library/closure/goog/fx/anim/anim.d.ts(24,63): error TS2094: The property 'Animated' does not exist on value of type 'anim'.
-closure-library/closure/goog/fx/anim/anim.d.ts(31,65): error TS2094: The property 'Animated' does not exist on value of type 'anim'.
 closure-library/closure/goog/fx/animation.d.ts(24,44): error TS2094: The property 'TransitionBase' does not exist on value of type 'fx'.
 closure-library/closure/goog/fx/animation.d.ts(37,18): error TS2141: Class 'goog.fx.Animation' cannot extend class 'goog.fx.TransitionBase':
 	Class 'goog.fx.Animation' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
@@ -382,7 +358,7 @@ closure-library/closure/goog/fx/dom.d.ts(200,18): error TS2141: Class 'goog.fx.d
 closure-library/closure/goog/fx/dom.d.ts(308,18): error TS2141: Class 'goog.fx.dom.ColorTransform' cannot extend class 'goog.fx.dom.PredefinedEffect':
 	Class 'goog.fx.dom.ColorTransform' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
 closure-library/closure/goog/fx/dragger.d.ts(12,9): error TS2000: Duplicate identifier 'END'. Additional locations:
-closure-library/closure/goog/fx/animation.d.ts(11,9)
+	closure-library/closure/goog/fx/animation.d.ts(11,9)
 closure-library/closure/goog/fx/dragger.d.ts(132,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
 closure-library/closure/goog/fx/dragger.d.ts(275,36): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/fx/draglistgroup.d.ts(229,45): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
@@ -416,7 +392,7 @@ closure-library/closure/goog/html/safehtml.d.ts(105,43): error TS2094: The prope
 closure-library/closure/goog/html/safehtml.d.ts(129,89): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/html/safehtml.d.ts(138,46): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
-closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
+	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
 closure-library/closure/goog/iter/iter.d.ts(26,17): error TS2095: Could not find symbol 'VALUE'.
 closure-library/closure/goog/iter/iter.d.ts(38,43): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(52,49): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
@@ -487,287 +463,266 @@ closure-library/closure/goog/iter/iter.d.ts(563,51): error TS2125: Type 'goog.it
 closure-library/closure/goog/iter/iter.d.ts(563,95): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(582,66): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
 closure-library/closure/goog/iter/iter.d.ts(582,110): error TS2125: Type 'goog.iter.Iterator' does not have type parameters.
-closure-library/closure/goog/labs/events/nondisposableeventtarget.d.ts(48,50): error TS2094: The property 'Listenable' does not exist on value of type 'goog.events'.
 closure-library/closure/goog/labs/i18n/listformat.d.ts(62,53): error TS2094: The property 'GenderInfo' does not exist on value of type 'i18n'.
 closure-library/closure/goog/labs/i18n/listformat.d.ts(62,89): error TS2094: The property 'GenderInfo' does not exist on value of type 'i18n'.
 closure-library/closure/goog/labs/mock/mock.d.ts(69,62): error TS2094: The property 'StubBinder_' does not exist on value of type 'mock'.
 closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/labs/net/webchannel.d.ts(96,39): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
-closure-library/closure/goog/labs/net/webchannel.d.ts(113,37): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
-closure-library/closure/goog/labs/net/webchannel/basetestchannel.d.ts(17,55): error TS2094: The property 'Channel' does not exist on value of type 'webChannel'.
-closure-library/closure/goog/labs/net/webchannel/channelrequest.d.ts(18,55): error TS2094: The property 'Channel' does not exist on value of type 'webChannel'.
-closure-library/closure/goog/labs/net/webchanneltransportfactory.d.ts(8,59): error TS2094: The property 'WebChannelTransport' does not exist on value of type 'net'.
+closure-library/closure/goog/labs/net/webchannel.d.ts(121,39): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
+closure-library/closure/goog/labs/net/webchannel.d.ts(138,37): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/labs/promise/promise.d.ts(23,45): error TS2095: Could not find symbol 'TYPE'.
 closure-library/closure/goog/labs/promise/promise.d.ts(23,108): error TS2095: Could not find symbol 'RESOLVER_CONTEXT'.
 closure-library/closure/goog/labs/style/pixeldensitymonitor.d.ts(52,39): error TS2094: The property 'PixelDensityMonitor' does not exist on value of type 'style'.
-closure-library/closure/goog/labs/testing/assertthat.d.ts(22,72): error TS2094: The property 'Matcher' does not exist on value of type 'testing'.
-closure-library/closure/goog/labs/testing/logicmatcher.d.ts(14,55): error TS2094: The property 'Matcher' does not exist on value of type 'testing'.
-closure-library/closure/goog/labs/testing/logicmatcher.d.ts(43,55): error TS2094: The property 'Matcher' does not exist on value of type 'testing'.
-closure-library/closure/goog/labs/testing/logicmatcher.d.ts(71,48): error TS2094: The property 'Matcher' does not exist on value of type 'testing'.
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(9,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(10,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(11,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(12,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(13,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(14,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(15,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(16,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(17,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(18,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(19,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(20,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(21,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(22,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(23,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(24,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(25,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(26,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(27,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(28,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(29,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(30,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(31,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(32,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(33,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(34,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(35,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(36,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(37,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(38,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(39,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(40,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(41,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(42,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(43,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(44,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(45,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(46,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(47,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(48,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(49,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(50,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(51,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(52,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(53,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(54,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(55,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(56,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(57,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(58,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(59,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(60,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(61,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(62,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(63,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(64,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(65,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(66,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(67,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(68,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(69,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(70,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(71,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(72,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(73,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(74,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(75,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(76,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(77,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(78,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(79,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(80,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(81,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(82,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(83,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(84,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(85,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(86,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(87,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(88,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(89,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(90,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(91,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(92,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(93,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(94,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(95,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(96,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(97,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(98,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(99,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(100,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(101,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(102,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(103,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(104,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(105,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(106,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(107,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(108,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(109,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(110,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(111,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(112,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(113,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(114,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(115,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(116,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(117,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(118,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(119,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(120,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(121,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(122,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(123,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(124,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(125,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(126,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(127,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(128,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/locale/timezonefingerprint.d.ts(129,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
-closure-library/closure/goog/messaging/bufferedchannel.d.ts(19,52): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/loggerclient.d.ts(16,45): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/loggerserver.d.ts(18,45): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/messaging.d.ts(9,51): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/messaging.d.ts(9,92): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/multichannel.d.ts(18,55): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
+	closure-library/closure/goog/locale/timezonefingerprint.d.ts(8,9)
 closure-library/closure/goog/messaging/multichannel.d.ts(28,60): error TS2094: The property 'MultiChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/portcaller.d.ts(17,50): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/portchannel.d.ts(77,68): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/portoperator.d.ts(25,52): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
-closure-library/closure/goog/messaging/respondingchannel.d.ts(14,52): error TS2094: The property 'MessageChannel' does not exist on value of type 'messaging'.
 closure-library/closure/goog/module/moduleinfo.d.ts(111,36): error TS2094: The property 'ModuleManager' does not exist on value of type 'module'.
 closure-library/closure/goog/module/moduleloader.d.ts(83,32): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/module/moduleloader.d.ts(84,39): error TS2094: The property 'ModuleLoader' does not exist on value of type 'module'.
-closure-library/closure/goog/module/modulemanager.d.ts(101,34): error TS2094: The property 'AbstractModuleLoader' does not exist on value of type 'module'.
-closure-library/closure/goog/module/modulemanager.d.ts(109,39): error TS2094: The property 'AbstractModuleLoader' does not exist on value of type 'module'.
 closure-library/closure/goog/module/modulemanager.d.ts(273,45): error TS2094: The property 'ModuleManager' does not exist on value of type 'module'.
 closure-library/closure/goog/net/browserchannel.d.ts(266,47): error TS2094: The property 'Handler' does not exist on value of type 'BrowserChannel'.
 closure-library/closure/goog/net/browserchannel.d.ts(272,53): error TS2094: The property 'Handler' does not exist on value of type 'BrowserChannel'.
 closure-library/closure/goog/net/browserchannel.d.ts(368,45): error TS2094: The property 'State' does not exist on value of type 'BrowserChannel'.
-closure-library/closure/goog/net/browserchannel.d.ts(393,40): error TS2094: The property 'Parser' does not exist on value of type 'string$'.
 closure-library/closure/goog/net/browserchannel.d.ts(408,93): error TS2094: The property 'ChannelRequest' does not exist on value of type 'net'.
 closure-library/closure/goog/net/browserchannel.d.ts(533,81): error TS2094: The property 'ServerReachability' does not exist on value of type 'BrowserChannel'.
 closure-library/closure/goog/net/browserchannel.d.ts(539,62): error TS2094: The property 'Stat' does not exist on value of type 'BrowserChannel'.
@@ -777,31 +732,29 @@ closure-library/closure/goog/net/browserchannel.d.ts(614,38): error TS2186: Type
 closure-library/closure/goog/net/browserchannel.d.ts(629,50): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/net/browserchannel.d.ts(630,96): error TS2094: The property 'ServerReachability' does not exist on value of type 'BrowserChannel'.
 closure-library/closure/goog/net/browserchannel.d.ts(642,40): error TS2000: Duplicate identifier 'Event'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(129,9)
+	closure-library/closure/goog/net/browserchannel.d.ts(129,9)
 closure-library/closure/goog/net/browserchannel.d.ts(665,40): error TS2000: Duplicate identifier 'LogSaver'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(153,9)
-closure-library/closure/goog/net/browsertestchannel.d.ts(29,40): error TS2094: The property 'Parser' does not exist on value of type 'string$'.
+	closure-library/closure/goog/net/browserchannel.d.ts(153,9)
 closure-library/closure/goog/net/browsertestchannel.d.ts(100,81): error TS2094: The property 'ServerReachability' does not exist on value of type 'BrowserChannel'.
 closure-library/closure/goog/net/channelrequest.d.ts(9,9): error TS2000: Duplicate identifier 'NO_DATA'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(22,9)
+	closure-library/closure/goog/net/browserchannel.d.ts(22,9)
 closure-library/closure/goog/net/channelrequest.d.ts(11,9): error TS2000: Duplicate identifier 'UNKNOWN_SESSION_ID'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(23,9)
+	closure-library/closure/goog/net/browserchannel.d.ts(23,9)
 closure-library/closure/goog/net/channelrequest.d.ts(12,9): error TS2000: Duplicate identifier 'BAD_DATA'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(27,9)
+	closure-library/closure/goog/net/browserchannel.d.ts(27,9)
 closure-library/closure/goog/net/channelrequest.d.ts(15,9): error TS2000: Duplicate identifier 'ACTIVE_X_BLOCKED'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(29,9)
+	closure-library/closure/goog/net/browserchannel.d.ts(29,9)
 closure-library/closure/goog/net/channelrequest.d.ts(55,56): error TS2094: The property 'ChannelRequest' does not exist on value of type 'net'.
 closure-library/closure/goog/net/channelrequest.d.ts(149,34): error TS2094: The property 'ChannelRequest' does not exist on value of type 'net'.
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
-closure-library/closure/goog/net/cookies.d.ts(161,16)
-closure-library/closure/goog/net/filedownloader.d.ts(17,34): error TS2094: The property 'DirectoryEntry' does not exist on value of type 'fs'.
+	closure-library/closure/goog/net/cookies.d.ts(161,16)
 closure-library/closure/goog/net/filedownloader.d.ts(153,18): error TS2000: Duplicate identifier 'Error'. Additional locations:
-closure-library/closure/goog/net/browserchannel.d.ts(18,5)
+	closure-library/closure/goog/net/browserchannel.d.ts(18,5)
 closure-library/closure/goog/net/filedownloader.d.ts(154,40): error TS2094: The property 'FileDownloader' does not exist on value of type 'net'.
 closure-library/closure/goog/net/iframeio.d.ts(251,47): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/net/imageloader.d.ts(59,76): error TS2094: The property 'ImageLoader' does not exist on value of type 'net'.
 closure-library/closure/goog/net/websocket.d.ts(9,9): error TS2000: Duplicate identifier 'ERROR'. Additional locations:
-closure-library/closure/goog/net/eventtype.d.ts(10,9)
+	closure-library/closure/goog/net/eventtype.d.ts(10,9)
 closure-library/closure/goog/net/websocket.d.ts(85,39): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/net/websocket.d.ts(98,37): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/net/xhrio.d.ts(122,40): error TS2094: The property 'XhrIo' does not exist on value of type 'net'.
@@ -823,51 +776,54 @@ closure-library/closure/goog/net/xpc/nixtransport.d.ts(16,18): error TS2141: Cla
 closure-library/closure/goog/promise/promise.d.ts(52,45): error TS2095: Could not find symbol 'TYPE'.
 closure-library/closure/goog/promise/promise.d.ts(52,108): error TS2095: Could not find symbol 'RESOLVER_CONTEXT'.
 closure-library/closure/goog/promise/promise.d.ts(60,49): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(75,48): error TS2094: The property 'Thenable' does not exist on value of type 'goog'.
+closure-library/closure/goog/promise/promise.d.ts(75,43): error TS2125: Type 'goog.Thenable' does not have type parameters.
 closure-library/closure/goog/promise/promise.d.ts(75,66): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(84,47): error TS2094: The property 'Thenable' does not exist on value of type 'goog'.
+closure-library/closure/goog/promise/promise.d.ts(84,42): error TS2125: Type 'goog.Thenable' does not have type parameters.
 closure-library/closure/goog/promise/promise.d.ts(84,65): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(93,58): error TS2094: The property 'Thenable' does not exist on value of type 'goog'.
+closure-library/closure/goog/promise/promise.d.ts(93,53): error TS2125: Type 'goog.Thenable' does not have type parameters.
 closure-library/closure/goog/promise/promise.d.ts(93,76): error TS2125: Type 'goog.Promise' does not have type parameters.
-closure-library/closure/goog/promise/promise.d.ts(101,51): error TS2094: The property 'Resolver' does not exist on value of type 'promise'.
+closure-library/closure/goog/promise/promise.d.ts(101,38): error TS2125: Type 'goog.promise.Resolver' does not have type parameters.
 closure-library/closure/goog/promise/promise.d.ts(141,71): error TS2125: Type 'goog.Promise' does not have type parameters.
+closure-library/closure/goog/promise/thenable.d.ts(11,39): error TS2095: Could not find symbol 'IThenable'.
+closure-library/closure/goog/promise/thenable.d.ts(40,53): error TS2095: Could not find symbol 'TYPE'.
+closure-library/closure/goog/promise/thenable.d.ts(40,128): error TS2125: Type 'goog.Promise' does not have type parameters.
 closure-library/closure/goog/proto2/fielddescriptor.d.ts(74,37): error TS2094: The property 'FieldDescriptor' does not exist on value of type 'proto2'.
 closure-library/closure/goog/proto2/message.d.ts(17,9): error TS2000: Duplicate identifier 'DOUBLE'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(10,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(10,9)
 closure-library/closure/goog/proto2/message.d.ts(18,9): error TS2000: Duplicate identifier 'FLOAT'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(11,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(11,9)
 closure-library/closure/goog/proto2/message.d.ts(19,9): error TS2000: Duplicate identifier 'INT64'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(12,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(12,9)
 closure-library/closure/goog/proto2/message.d.ts(20,9): error TS2000: Duplicate identifier 'UINT64'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(13,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(13,9)
 closure-library/closure/goog/proto2/message.d.ts(21,9): error TS2000: Duplicate identifier 'INT32'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(14,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(14,9)
 closure-library/closure/goog/proto2/message.d.ts(22,9): error TS2000: Duplicate identifier 'FIXED64'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(15,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(15,9)
 closure-library/closure/goog/proto2/message.d.ts(23,9): error TS2000: Duplicate identifier 'FIXED32'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(16,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(16,9)
 closure-library/closure/goog/proto2/message.d.ts(24,9): error TS2000: Duplicate identifier 'BOOL'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(17,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(17,9)
 closure-library/closure/goog/proto2/message.d.ts(25,9): error TS2000: Duplicate identifier 'STRING'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(18,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(18,9)
 closure-library/closure/goog/proto2/message.d.ts(26,9): error TS2000: Duplicate identifier 'GROUP'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(19,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(19,9)
 closure-library/closure/goog/proto2/message.d.ts(27,9): error TS2000: Duplicate identifier 'MESSAGE'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(20,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(20,9)
 closure-library/closure/goog/proto2/message.d.ts(28,9): error TS2000: Duplicate identifier 'BYTES'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(21,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(21,9)
 closure-library/closure/goog/proto2/message.d.ts(29,9): error TS2000: Duplicate identifier 'UINT32'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(22,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(22,9)
 closure-library/closure/goog/proto2/message.d.ts(30,9): error TS2000: Duplicate identifier 'ENUM'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(23,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(23,9)
 closure-library/closure/goog/proto2/message.d.ts(31,9): error TS2000: Duplicate identifier 'SFIXED32'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(24,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(24,9)
 closure-library/closure/goog/proto2/message.d.ts(32,9): error TS2000: Duplicate identifier 'SFIXED64'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(25,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(25,9)
 closure-library/closure/goog/proto2/message.d.ts(33,9): error TS2000: Duplicate identifier 'SINT32'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(26,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(26,9)
 closure-library/closure/goog/proto2/message.d.ts(34,9): error TS2000: Duplicate identifier 'SINT64'. Additional locations:
-closure-library/closure/goog/proto2/fielddescriptor.d.ts(27,9)
+	closure-library/closure/goog/proto2/fielddescriptor.d.ts(27,9)
 closure-library/closure/goog/proto2/objectserializer.d.ts(24,49): error TS2094: The property 'ObjectSerializer' does not exist on value of type 'proto2'.
 closure-library/closure/goog/proto2/test.pb.d.ts(528,36): error TS2094: The property 'TestAllTypes' does not exist on value of type 'proto2'.
 closure-library/closure/goog/proto2/test.pb.d.ts(534,45): error TS2094: The property 'TestAllTypes' does not exist on value of type 'proto2'.
@@ -896,30 +852,7 @@ closure-library/closure/goog/pubsub/typedpubsub.d.ts(45,46): error TS2125: Type 
 closure-library/closure/goog/pubsub/typedpubsub.d.ts(61,33): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
 closure-library/closure/goog/pubsub/typedpubsub.d.ts(69,36): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
 closure-library/closure/goog/pubsub/typedpubsub.d.ts(78,39): error TS2125: Type 'goog.pubsub.TopicId' does not have type parameters.
-closure-library/closure/goog/result/deferredadaptor.d.ts(13,41): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/result_interface.d.ts(36,38): error TS2073: A class may only extend another class.
-closure-library/closure/goog/result/resultutil.d.ts(20,63): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(39,64): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(57,51): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(81,49): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(81,85): error TS2094: The property 'Result' does not exist on value of type 'goog.result'.
-closure-library/closure/goog/result/resultutil.d.ts(107,58): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(107,105): error TS2094: The property 'Result' does not exist on value of type 'goog.result'.
-closure-library/closure/goog/result/resultutil.d.ts(133,56): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(133,103): error TS2094: The property 'Result' does not exist on value of type 'goog.result'.
-closure-library/closure/goog/result/resultutil.d.ts(172,51): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(172,105): error TS2094: The property 'DependentResult' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(243,50): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(243,93): error TS2094: The property 'Result' does not exist on value of type 'goog.result'.
-closure-library/closure/goog/result/resultutil.d.ts(243,116): error TS2094: The property 'Result' does not exist on value of type 'goog.result'.
-closure-library/closure/goog/result/resultutil.d.ts(243,152): error TS2094: The property 'DependentResult' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(273,54): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(273,77): error TS2094: The property 'DependentResult' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(318,63): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(318,86): error TS2094: The property 'DependentResult' does not exist on value of type 'result'.
-closure-library/closure/goog/result/resultutil.d.ts(353,70): error TS2094: The property 'DependentResult' does not exist on value of type 'result'.
-closure-library/closure/goog/result/simpleresult.d.ts(58,55): error TS2094: The property 'Result' does not exist on value of type 'result'.
-closure-library/closure/goog/soy/renderer.d.ts(21,57): error TS2094: The property 'InjectedDataSupplier' does not exist on value of type 'soy'.
+closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/soy/renderer.d.ts(124,45): error TS2094: The property 'Renderer' does not exist on value of type 'soy'.
 closure-library/closure/goog/spell/spellcheck.d.ts(117,45): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
 closure-library/closure/goog/spell/spellcheck.d.ts(138,56): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
@@ -946,6 +879,9 @@ closure-library/closure/goog/structs/circularbuffer.d.ts(54,28): error TS2095: C
 closure-library/closure/goog/structs/circularbuffer.d.ts(62,50): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/circularbuffer.d.ts(79,30): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/circularbuffer.d.ts(86,20): error TS2095: Could not find symbol 'T'.
+closure-library/closure/goog/structs/collection.d.ts(13,20): error TS2095: Could not find symbol 'T'.
+closure-library/closure/goog/structs/collection.d.ts(18,23): error TS2095: Could not find symbol 'T'.
+closure-library/closure/goog/structs/collection.d.ts(24,25): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/heap.d.ts(19,21): error TS2095: Could not find symbol 'K'.
 closure-library/closure/goog/structs/heap.d.ts(19,31): error TS2095: Could not find symbol 'V'.
 closure-library/closure/goog/structs/heap.d.ts(32,19): error TS2095: Could not find symbol 'V'.
@@ -981,7 +917,7 @@ closure-library/closure/goog/structs/map.d.ts(113,30): error TS2095: Could not f
 closure-library/closure/goog/structs/map.d.ts(113,39): error TS2095: Could not find symbol 'K'.
 closure-library/closure/goog/structs/map.d.ts(113,48): error TS2125: Type 'goog.structs.Map' does not have type parameters.
 closure-library/closure/goog/structs/node.d.ts(11,18): error TS2000: Duplicate identifier 'Node'. Additional locations:
-closure-library/closure/goog/structs/avltree.d.ts(140,5)
+	closure-library/closure/goog/structs/avltree.d.ts(140,5)
 closure-library/closure/goog/structs/node.d.ts(12,26): error TS2095: Could not find symbol 'K'.
 closure-library/closure/goog/structs/node.d.ts(12,36): error TS2095: Could not find symbol 'V'.
 closure-library/closure/goog/structs/node.d.ts(18,19): error TS2095: Could not find symbol 'K'.
@@ -1002,7 +938,7 @@ closure-library/closure/goog/structs/priorityqueue.d.ts(20,42): error TS2095: Co
 closure-library/closure/goog/structs/priorityqueue.d.ts(27,20): error TS2095: Could not find symbol 'VALUE'.
 closure-library/closure/goog/structs/quadtree.d.ts(30,37): error TS2094: The property 'QuadTree' does not exist on value of type 'structs'.
 closure-library/closure/goog/structs/quadtree.d.ts(124,18): error TS2000: Duplicate identifier 'Node'. Additional locations:
-closure-library/closure/goog/structs/avltree.d.ts(140,5)
+	closure-library/closure/goog/structs/avltree.d.ts(140,5)
 closure-library/closure/goog/structs/quadtree.d.ts(125,91): error TS2094: The property 'QuadTree' does not exist on value of type 'goog.structs'.
 closure-library/closure/goog/structs/queue.d.ts(16,26): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/queue.d.ts(23,20): error TS2095: Could not find symbol 'T'.
@@ -1016,13 +952,13 @@ closure-library/closure/goog/structs/set.d.ts(40,27): error TS2095: Could not fi
 closure-library/closure/goog/structs/set.d.ts(47,30): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/set.d.ts(55,25): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/set.d.ts(74,27): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/structs/set.d.ts(83,39): error TS2094: The property 'Collection' does not exist on value of type 'structs'.
+closure-library/closure/goog/structs/set.d.ts(83,26): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
 closure-library/closure/goog/structs/set.d.ts(93,41): error TS2125: Type 'goog.structs.Set' does not have type parameters.
 closure-library/closure/goog/structs/set.d.ts(103,31): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/set.d.ts(109,28): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/set.d.ts(116,18): error TS2125: Type 'goog.structs.Set' does not have type parameters.
-closure-library/closure/goog/structs/set.d.ts(127,34): error TS2094: The property 'Collection' does not exist on value of type 'structs'.
-closure-library/closure/goog/structs/set.d.ts(137,38): error TS2094: The property 'Collection' does not exist on value of type 'structs'.
+closure-library/closure/goog/structs/set.d.ts(127,21): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
+closure-library/closure/goog/structs/set.d.ts(137,25): error TS2125: Type 'goog.structs.Collection' does not have type parameters.
 closure-library/closure/goog/structs/simplepool.d.ts(48,22): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/simplepool.d.ts(55,28): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/structs/simplepool.d.ts(62,25): error TS2095: Could not find symbol 'T'.
@@ -1079,19 +1015,6 @@ closure-library/closure/goog/testing/fs/filereader.d.ts(28,34): error TS2094: Th
 closure-library/closure/goog/testing/fs/filewriter.d.ts(19,34): error TS2094: The property 'FileSaver' does not exist on value of type 'goog.fs'.
 closure-library/closure/goog/testing/fs/progressevent.d.ts(14,40): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'goog.events.Event'.
 closure-library/closure/goog/testing/fs/progressevent.d.ts(15,35): error TS2094: The property 'FileSaver' does not exist on value of type 'goog.fs'.
-closure-library/closure/goog/testing/functionmock.d.ts(13,100): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(24,108): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(34,101): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(44,106): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(54,114): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(71,122): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/functionmock.d.ts(80,107): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(17,36): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(17,65): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(76,94): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(87,102): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(99,110): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
-closure-library/closure/goog/testing/mockcontrol.d.ts(109,95): error TS2094: The property 'MockInterface' does not exist on value of type 'testing'.
 closure-library/closure/goog/testing/multitestrunner.d.ts(187,43): error TS2094: The property 'MultiTestRunner' does not exist on value of type 'testing'.
 closure-library/closure/goog/testing/net/xhrio.d.ts(7,52): error TS2094: The property 'XhrIo' does not exist on value of type 'goog.net'.
 closure-library/closure/goog/testing/net/xhrio.d.ts(76,40): error TS2094: The property 'XhrIo' does not exist on value of type 'goog.net'.
@@ -1111,7 +1034,7 @@ closure-library/closure/goog/testing/testcase.d.ts(355,38): error TS2094: The pr
 closure-library/closure/goog/testing/testcase.d.ts(364,36): error TS2094: The property 'TestCase' does not exist on value of type 'testing'.
 closure-library/closure/goog/testing/testcase.d.ts(372,59): error TS2094: The property 'TestCase' does not exist on value of type 'testing'.
 closure-library/closure/goog/testing/testcase.d.ts(389,18): error TS2000: Duplicate identifier 'Test'. Additional locations:
-closure-library/closure/goog/testing/continuationtestcase.d.ts(82,5)
+	closure-library/closure/goog/testing/continuationtestcase.d.ts(82,5)
 closure-library/closure/goog/ui/abstractspellchecker.d.ts(208,69): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
 closure-library/closure/goog/ui/abstractspellchecker.d.ts(234,60): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
 closure-library/closure/goog/ui/abstractspellchecker.d.ts(253,49): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
@@ -1123,7 +1046,6 @@ closure-library/closure/goog/ui/buttonrenderer.d.ts(47,58): error TS2094: The pr
 closure-library/closure/goog/ui/charcounter.d.ts(30,111): error TS2094: The property 'CharCounter' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/charcounter.d.ts(51,45): error TS2094: The property 'CharCounter' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/charcounter.d.ts(58,35): error TS2094: The property 'CharCounter' does not exist on value of type 'ui'.
-closure-library/closure/goog/ui/charpicker.d.ts(25,96): error TS2094: The property 'NameFetcher' does not exist on value of type 'i18n.uChar'.
 closure-library/closure/goog/ui/checkbox.d.ts(27,43): error TS2094: The property 'Checkbox' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/checkbox.d.ts(32,31): error TS2094: The property 'Checkbox' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/checkbox.d.ts(63,45): error TS2094: The property 'Checkbox' does not exist on value of type 'ui'.
@@ -1134,9 +1056,9 @@ closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts(8,18): error TS2141
 		Call signatures of types '(content: ControlContent, dom: dom.DomHelper) => Element' and '(content: ControlContent, cssClass: string, dom: dom.DomHelper) => Element' are incompatible:
 			Type 'String' is missing property 'getDomHelper' from type 'dom.DomHelper'.
 closure-library/closure/goog/ui/component.d.ts(31,9): error TS2000: Duplicate identifier 'CHANGE'. Additional locations:
-closure-library/closure/goog/ui/colorpicker.d.ts(8,9)
+	closure-library/closure/goog/ui/colorpicker.d.ts(8,9)
 closure-library/closure/goog/ui/component.d.ts(61,9): error TS2000: Duplicate identifier 'CHECKED'. Additional locations:
-closure-library/closure/goog/ui/checkbox.d.ts(8,9)
+	closure-library/closure/goog/ui/checkbox.d.ts(8,9)
 closure-library/closure/goog/ui/component.d.ts(94,55): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/component.d.ts(94,102): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/component.d.ts(185,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
@@ -1155,18 +1077,17 @@ closure-library/closure/goog/ui/controlrenderer.d.ts(237,59): error TS2094: The 
 closure-library/closure/goog/ui/controlrenderer.d.ts(249,58): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/controlrenderer.d.ts(353,41): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/controlrenderer.d.ts(364,55): error TS2094: The property 'Component' does not exist on value of type 'ui'.
-closure-library/closure/goog/ui/datepicker.d.ts(18,137): error TS2094: The property 'DatePickerRenderer' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/datepicker.d.ts(265,42): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/ui/dialog.d.ts(8,9): error TS2000: Duplicate identifier 'SELECT'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(20,9)
+	closure-library/closure/goog/ui/component.d.ts(20,9)
 closure-library/closure/goog/ui/dialog.d.ts(9,9): error TS2000: Duplicate identifier 'AFTER_HIDE'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(9,9)
+	closure-library/closure/goog/ui/container.d.ts(9,9)
 closure-library/closure/goog/ui/dialog.d.ts(10,9): error TS2000: Duplicate identifier 'AFTER_SHOW'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(8,9)
+	closure-library/closure/goog/ui/container.d.ts(8,9)
 closure-library/closure/goog/ui/dialog.d.ts(297,46): error TS2094: The property 'ButtonSet' does not exist on value of type 'Dialog'.
 closure-library/closure/goog/ui/dialog.d.ts(303,40): error TS2094: The property 'ButtonSet' does not exist on value of type 'Dialog'.
 closure-library/closure/goog/ui/dialog.d.ts(313,18): error TS2000: Duplicate identifier 'Event'. Additional locations:
-closure-library/closure/goog/ui/activitymonitor.d.ts(7,5)
+	closure-library/closure/goog/ui/activitymonitor.d.ts(7,5)
 closure-library/closure/goog/ui/dialog.d.ts(313,32): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/ui/dialog.d.ts(350,48): error TS2094: The property 'ButtonSet' does not exist on value of type 'Dialog'.
 closure-library/closure/goog/ui/dialog.d.ts(356,54): error TS2094: The property 'ButtonSet' does not exist on value of type 'Dialog'.
@@ -1194,16 +1115,16 @@ closure-library/closure/goog/ui/equation/palette.d.ts(115,39): error TS2186: Typ
 closure-library/closure/goog/ui/equation/palettemanager.d.ts(29,43): error TS2094: The property 'Palette' does not exist on value of type 'equation'.
 closure-library/closure/goog/ui/equation/palettemanager.d.ts(38,42): error TS2094: The property 'Palette' does not exist on value of type 'equation'.
 closure-library/closure/goog/ui/hovercard.d.ts(10,9): error TS2000: Duplicate identifier 'BEFORE_SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(11,9)
+	closure-library/closure/goog/ui/component.d.ts(11,9)
 closure-library/closure/goog/ui/hovercard.d.ts(11,9): error TS2000: Duplicate identifier 'SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(12,9)
+	closure-library/closure/goog/ui/component.d.ts(12,9)
 closure-library/closure/goog/ui/hovercard.d.ts(13,9): error TS2000: Duplicate identifier 'HIDE'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(13,9)
+	closure-library/closure/goog/ui/component.d.ts(13,9)
 closure-library/closure/goog/ui/hovercard.d.ts(74,41): error TS2094: The property 'HoverCard' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/hovercard.d.ts(149,39): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/ui/hovercard.d.ts(150,35): error TS2094: The property 'HoverCard' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/idletimer.d.ts(7,22): error TS2000: Duplicate identifier 'Event'. Additional locations:
-closure-library/closure/goog/ui/dialog.d.ts(313,5)
+	closure-library/closure/goog/ui/dialog.d.ts(313,5)
 closure-library/closure/goog/ui/itemevent.d.ts(15,36): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/ui/keyboardshortcuthandler.d.ts(275,48): error TS2186: Type name 'goog.events.Event' in extends clause does not reference constructor function for 'events.Event'.
 closure-library/closure/goog/ui/media/flashobject.d.ts(64,39): error TS2094: The property 'FlashObject' does not exist on value of type 'media'.
@@ -1227,28 +1148,24 @@ closure-library/closure/goog/ui/media/mediamodel.d.ts(241,56): error TS2094: The
 closure-library/closure/goog/ui/media/mediamodel.d.ts(248,64): error TS2094: The property 'SubTitle' does not exist on value of type 'MediaModel'.
 closure-library/closure/goog/ui/media/youtube.d.ts(66,53): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/menu.d.ts(9,9): error TS2000: Duplicate identifier 'BEFORE_SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(11,9)
+	closure-library/closure/goog/ui/component.d.ts(11,9)
 closure-library/closure/goog/ui/menu.d.ts(10,9): error TS2000: Duplicate identifier 'SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(12,9)
+	closure-library/closure/goog/ui/component.d.ts(12,9)
 closure-library/closure/goog/ui/menu.d.ts(11,9): error TS2000: Duplicate identifier 'BEFORE_HIDE'. Additional locations:
-closure-library/closure/goog/ui/hovercard.d.ts(12,9)
+	closure-library/closure/goog/ui/hovercard.d.ts(12,9)
 closure-library/closure/goog/ui/menu.d.ts(12,9): error TS2000: Duplicate identifier 'HIDE'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(13,9)
+	closure-library/closure/goog/ui/component.d.ts(13,9)
 closure-library/closure/goog/ui/menu.d.ts(23,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
 	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
 		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
 closure-library/closure/goog/ui/menubarrenderer.d.ts(27,42): error TS2094: The property 'Container' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/menubase.d.ts(97,33): error TS2000: Duplicate identifier 'Events'. Additional locations:
-closure-library/closure/goog/ui/menubase.d.ts(18,9)
+	closure-library/closure/goog/ui/menubase.d.ts(18,9)
 closure-library/closure/goog/ui/menuitem.d.ts(16,18): error TS2141: Class 'goog.ui.MenuItem' cannot extend class 'goog.ui.Control':
 	Types of property 'getCaption' of types 'MenuItem' and 'Control' are incompatible:
 		Call signatures of types '() => void' and '() => string' are incompatible.
 closure-library/closure/goog/ui/menuitemrenderer.d.ts(123,41): error TS2094: The property 'Component' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/menuitemrenderer.d.ts(136,55): error TS2094: The property 'Component' does not exist on value of type 'ui'.
-closure-library/closure/goog/ui/modalpopup.d.ts(88,52): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
-closure-library/closure/goog/ui/modalpopup.d.ts(88,93): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
-closure-library/closure/goog/ui/modalpopup.d.ts(88,131): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
-closure-library/closure/goog/ui/modalpopup.d.ts(88,169): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
 closure-library/closure/goog/ui/nativebuttonrenderer.d.ts(11,18): error TS2141: Class 'goog.ui.NativeButtonRenderer' cannot extend class 'goog.ui.ButtonRenderer':
 	Class 'goog.ui.NativeButtonRenderer' defines instance member property 'setAllowTextSelection', but extended class 'goog.ui.ButtonRenderer' defines it as instance member function.
 closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class 'goog.ui.PaletteRenderer' cannot extend class 'goog.ui.ControlRenderer':
@@ -1263,31 +1180,29 @@ closure-library/closure/goog/ui/popup.d.ts(178,51): error TS2094: The property '
 closure-library/closure/goog/ui/popup.d.ts(199,49): error TS2094: The property 'Popup' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/popup.d.ts(216,57): error TS2094: The property 'Popup' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/popupbase.d.ts(18,9): error TS2000: Duplicate identifier 'BEFORE_SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(11,9)
+	closure-library/closure/goog/ui/component.d.ts(11,9)
 closure-library/closure/goog/ui/popupbase.d.ts(19,9): error TS2000: Duplicate identifier 'SHOW'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(12,9)
+	closure-library/closure/goog/ui/component.d.ts(12,9)
 closure-library/closure/goog/ui/popupbase.d.ts(20,9): error TS2000: Duplicate identifier 'BEFORE_HIDE'. Additional locations:
-closure-library/closure/goog/ui/hovercard.d.ts(12,9)
+	closure-library/closure/goog/ui/hovercard.d.ts(12,9)
 closure-library/closure/goog/ui/popupbase.d.ts(21,9): error TS2000: Duplicate identifier 'HIDE'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(13,9)
+	closure-library/closure/goog/ui/component.d.ts(13,9)
 closure-library/closure/goog/ui/popupbase.d.ts(35,63): error TS2094: The property 'PopupBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/popupbase.d.ts(63,28): error TS2094: The property 'PopupBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/popupbase.d.ts(70,31): error TS2094: The property 'PopupBase' does not exist on value of type 'ui'.
-closure-library/closure/goog/ui/popupbase.d.ts(158,52): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
-closure-library/closure/goog/ui/popupbase.d.ts(158,93): error TS2094: The property 'Transition' does not exist on value of type 'fx'.
 closure-library/closure/goog/ui/popupbase.d.ts(186,26): error TS2125: Type 'goog.events.EventHandler' does not have type parameters.
 closure-library/closure/goog/ui/progressbar.d.ts(9,9): error TS2000: Duplicate identifier 'VERTICAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(18,9)
+	closure-library/closure/goog/ui/container.d.ts(18,9)
 closure-library/closure/goog/ui/progressbar.d.ts(10,9): error TS2000: Duplicate identifier 'HORIZONTAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(17,9)
+	closure-library/closure/goog/ui/container.d.ts(17,9)
 closure-library/closure/goog/ui/progressbar.d.ts(74,40): error TS2094: The property 'ProgressBar' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/progressbar.d.ts(80,35): error TS2094: The property 'ProgressBar' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/ratings.d.ts(8,9): error TS2000: Duplicate identifier 'CHANGE'. Additional locations:
-closure-library/closure/goog/ui/colorpicker.d.ts(8,9)
+	closure-library/closure/goog/ui/colorpicker.d.ts(8,9)
 closure-library/closure/goog/ui/ratings.d.ts(10,9): error TS2000: Duplicate identifier 'HIGHLIGHT'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(16,9)
+	closure-library/closure/goog/ui/component.d.ts(16,9)
 closure-library/closure/goog/ui/ratings.d.ts(11,9): error TS2000: Duplicate identifier 'UNHIGHLIGHT'. Additional locations:
-closure-library/closure/goog/ui/component.d.ts(17,9)
+	closure-library/closure/goog/ui/component.d.ts(17,9)
 closure-library/closure/goog/ui/richtextspellchecker.d.ts(71,66): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
 closure-library/closure/goog/ui/richtextspellchecker.d.ts(96,69): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
 closure-library/closure/goog/ui/richtextspellchecker.d.ts(112,49): error TS2094: The property 'SpellCheck' does not exist on value of type 'spell'.
@@ -1318,17 +1233,17 @@ closure-library/closure/goog/ui/serverchart.d.ts(842,42): error TS2186: Type nam
 closure-library/closure/goog/ui/slider.d.ts(9,50): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/slider.d.ts(41,37): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/sliderbase.d.ts(24,9): error TS2000: Duplicate identifier 'VERTICAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(18,9)
+	closure-library/closure/goog/ui/container.d.ts(18,9)
 closure-library/closure/goog/ui/sliderbase.d.ts(25,9): error TS2000: Duplicate identifier 'HORIZONTAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(17,9)
+	closure-library/closure/goog/ui/container.d.ts(17,9)
 closure-library/closure/goog/ui/sliderbase.d.ts(93,37): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/sliderbase.d.ts(212,50): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/sliderbase.d.ts(218,40): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/sliderbase.d.ts(223,35): error TS2094: The property 'SliderBase' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/splitpane.d.ts(18,9): error TS2000: Duplicate identifier 'HORIZONTAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(17,9)
+	closure-library/closure/goog/ui/container.d.ts(17,9)
 closure-library/closure/goog/ui/splitpane.d.ts(19,9): error TS2000: Duplicate identifier 'VERTICAL'. Additional locations:
-closure-library/closure/goog/ui/container.d.ts(18,9)
+	closure-library/closure/goog/ui/container.d.ts(18,9)
 closure-library/closure/goog/ui/splitpane.d.ts(38,113): error TS2094: The property 'SplitPane' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/splitpane.d.ts(105,45): error TS2094: The property 'SplitPane' does not exist on value of type 'ui'.
 closure-library/closure/goog/ui/splitpane.d.ts(111,35): error TS2094: The property 'SplitPane' does not exist on value of type 'ui'.
@@ -1370,449 +1285,449 @@ closure-library/closure/goog/uri/uri.d.ts(204,34): error TS2094: The property 'Q
 closure-library/closure/goog/uri/uri.d.ts(424,114): error TS2094: The property 'QueryData' does not exist on value of type 'Uri'.
 closure-library/closure/goog/uri/uri.d.ts(439,139): error TS2094: The property 'QueryData' does not exist on value of type 'Uri'.
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(28,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(29,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(30,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(31,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(32,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(33,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(34,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(35,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(36,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(37,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(38,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(39,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(40,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(41,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(42,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(43,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(44,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(45,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(46,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(47,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(48,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(49,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(50,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(51,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(52,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(53,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(54,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(55,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(56,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(57,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(58,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(59,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(60,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(61,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(62,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(63,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(64,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(65,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(66,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(67,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(68,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(69,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(70,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(71,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(72,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(73,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(74,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(75,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(76,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(77,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(78,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(79,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(80,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(81,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(82,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(83,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(84,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(85,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(86,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(87,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(88,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(89,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(90,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(91,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(92,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(93,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(94,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(95,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(96,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(97,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(98,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(99,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(100,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(101,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(102,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(103,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(104,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(105,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(106,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(107,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(108,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(109,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(110,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(111,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(112,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(113,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(114,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(115,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(116,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(117,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(118,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(119,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(120,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(121,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(122,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(123,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(124,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(125,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(126,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(127,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(128,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(129,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(130,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(131,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(132,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(133,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(134,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(135,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(136,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(137,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(138,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(139,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(140,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(141,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(142,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(143,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(144,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(145,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(146,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(147,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(148,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(149,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(150,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(151,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(152,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(153,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(154,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(155,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(156,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(157,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(158,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(159,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(160,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(161,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(162,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(163,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(164,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(165,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(166,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(167,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(168,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(169,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(170,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(171,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(172,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(173,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(174,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(175,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(176,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(177,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(178,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(179,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(180,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(181,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(182,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(183,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(184,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(185,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(186,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(187,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(188,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(189,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(190,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(191,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(192,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(193,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(194,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(195,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(196,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(197,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(198,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(199,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(200,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(201,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(202,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(203,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(204,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(205,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(206,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(207,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(208,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(209,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(210,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(211,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(212,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(213,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(214,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(215,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(216,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(217,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(218,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(219,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(220,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(221,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(222,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(223,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(224,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(225,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(226,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(227,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(228,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(229,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(230,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(231,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(232,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(233,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(234,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(235,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(236,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(237,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(238,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(239,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(240,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(241,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(242,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(243,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(244,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(245,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(246,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(247,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(248,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(249,9): error TS2000: Duplicate identifier 'undefined'. Additional locations:
-closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
+	closure-library/third_party/closure/goog/caja/string/html/htmlsanitizer.d.ts(27,9)
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(71,31): error TS2095: Could not find symbol 'VALUE'.
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(99,35): error TS2095: Could not find symbol 'VALUE'.
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(120,63): error TS2125: Type 'goog.async.Deferred' does not have type parameters.
