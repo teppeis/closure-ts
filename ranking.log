@@ -2,7 +2,6 @@
    3 closure-library/closure/goog/datasource/fastdatanode.d.ts
    2 closure-library/closure/goog/result/result_interface.d.ts
    2 closure-library/closure/goog/net/browserchannel.d.ts
-   2 closure-library/closure/goog/labs/net/image.d.ts
    1 closure-library/closure/goog/ui/tree/basenode.d.ts
    1 closure-library/closure/goog/ui/textarearenderer.d.ts
    1 closure-library/closure/goog/ui/select.d.ts
@@ -11,10 +10,8 @@
    1 closure-library/closure/goog/ui/menuitem.d.ts
    1 closure-library/closure/goog/ui/menubase.d.ts
    1 closure-library/closure/goog/ui/menu.d.ts
-   1 closure-library/closure/goog/ui/emoji/emojipaletterenderer.d.ts
    1 closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts
    1 closure-library/closure/goog/ui/abstractspellchecker.d.ts
-   1 closure-library/closure/goog/testing/recordfunction.d.ts
    1 closure-library/closure/goog/testing/events/events.d.ts
    1 closure-library/closure/goog/testing/continuationtestcase.d.ts
    1 closure-library/closure/goog/testing/asserts.d.ts
@@ -31,5 +28,4 @@
    1 closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts
    1 closure-library/closure/goog/debug/logger.d.ts
    1 closure-library/closure/goog/debug/error.d.ts
-   1 closure-library/closure/goog/db/error.d.ts
    1 closure-library/closure/goog/datasource/jsdatasource.d.ts

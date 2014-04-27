@@ -10,7 +10,6 @@ closure-library/closure/goog/datasource/fastdatanode.d.ts(260,18): error TS2141:
 closure-library/closure/goog/datasource/jsdatasource.d.ts(18,18): error TS2141: Class 'goog.ds.JsDataSource' cannot extend class 'goog.ds.DataNode':
 	Types of property 'getChildNodes' of types 'JsDataSource' and 'DataNode' are incompatible:
 		Call signatures of types '() => void' and '(opt_selector?: string) => DataNodeList' are incompatible.
-closure-library/closure/goog/db/error.d.ts(70,34): error TS2095: Could not find symbol 'IDBDatabaseException'.
 closure-library/closure/goog/debug/error.d.ts(9,18): error TS2100: Class 'goog.debug.Error' is recursively referenced as a base type of itself.
 closure-library/closure/goog/debug/logger.d.ts(375,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
 	closure-library/closure/goog/debug/logger.d.ts(240,16)
@@ -34,15 +33,17 @@ closure-library/closure/goog/graphics/svggraphics.d.ts(22,18): error TS2141: Cla
 		Call signatures of types '(text: string, font: Font) => void' and '(text: string, font: Font) => number' are incompatible.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
-closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not find symbol 'Image'.
-closure-library/closure/goog/labs/net/image.d.ts(16,72): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/net/browserchannel.d.ts(750,40): error TS2000: Duplicate identifier 'Event'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(57,9)
 closure-library/closure/goog/net/browserchannel.d.ts(773,40): error TS2000: Duplicate identifier 'LogSaver'. Additional locations:
 	closure-library/closure/goog/net/browserchannel.d.ts(81,9)
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
-closure-library/closure/goog/promise/thenable.d.ts(11,45): error TS2095: Could not find symbol 'IThenable'.
+closure-library/closure/goog/promise/thenable.d.ts(11,22): error TS2143: Interface 'goog.Thenable<TYPE>' cannot extend interface 'IThenable<TYPE>':
+	Types of property 'then' of types 'Thenable<TYPE>' and 'IThenable<TYPE>' are incompatible:
+		Call signatures of types '<RESULT, THIS>(opt_onFulfilled?: (arg0: TYPE) => RESULT, opt_onRejected?: (arg0: any) => any, opt_context?: THIS) => Promise<RESULT, any>' and '<RESULT>(opt_onFulfilled: (arg0: TYPE) => RESULT, opt_onRejected: (arg0: any) => any) => IThenable<RESULT>' are incompatible:
+			Types of property 'then' of types 'Promise<any, any>' and 'IThenable<any>' are incompatible:
+				Call signatures of types '() => void' and '<RESULT>(opt_onFulfilled: (arg0: any) => RESULT, opt_onRejected: (arg0: any) => any) => IThenable<RESULT>' are incompatible.
 closure-library/closure/goog/result/result_interface.d.ts(12,37): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/structs/linkedmap.d.ts(106,26): error TS2173: Generic type references must include all type arguments.
@@ -54,7 +55,6 @@ closure-library/closure/goog/testing/continuationtestcase.d.ts(13,18): error TS2
 		Construct signatures of types 'typeof ContinuationTestCase.Test' and 'typeof TestCase.Test' are incompatible:
 			Type 'String' is missing property 'execute' from type 'TestCase.Test'.
 closure-library/closure/goog/testing/events/events.d.ts(15,18): error TS2100: Class 'goog.testing.events.Event' is recursively referenced as a base type of itself.
-closure-library/closure/goog/testing/recordfunction.d.ts(13,64): error TS2095: Could not find symbol 'Arguments'.
 closure-library/closure/goog/ui/abstractspellchecker.d.ts(14,18): error TS2141: Class 'goog.ui.AbstractSpellChecker' cannot extend class 'goog.ui.Component':
 	Types of property 'getHandler' of types 'AbstractSpellChecker' and 'Component' are incompatible:
 		Call signatures of types '() => spell.SpellCheck' and '<T>() => events.EventHandler<T>' are incompatible:
@@ -63,7 +63,6 @@ closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts(8,18): error TS2141
 	Types of static property 'wrapCaption' of class 'ColorMenuButtonRenderer' and class 'MenuButtonRenderer' are incompatible:
 		Call signatures of types '(content: ControlContent, dom: dom.DomHelper) => Element' and '(content: ControlContent, cssClass: string, dom: dom.DomHelper) => Element' are incompatible:
 			Type 'String' is missing property 'getDomHelper' from type 'dom.DomHelper'.
-closure-library/closure/goog/ui/emoji/emojipaletterenderer.d.ts(37,63): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/ui/menu.d.ts(11,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
 	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
 		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
