@@ -51,30 +51,27 @@ Just PoC
 * Function with `@param` and `@return`
 * Enum with `@enum` to TypeScript `Interface`
 * Namespace to TypeScript `module`
-* Support `*` to `any`
-* Generic type
+* Classes (`@constructor` and `@extends`)
+* Convert `*` to `any`
+* Generic type like `Array<number>`
 * Generic function with `@template`
 * Union type (partialy)
 * Record type
-* Variable rest parameter in `param`
-* Optional parameter
-* Support `@typedef` (partialy)
+* Rest parameters in `@param` and FunctionType
+* Optional parameters
 * Exclude `@private` definitions
+* `@typedef` (partialy)
 * Ignore features TypeScript doesn't have
     * `@this`
     * Nullable, Non-Nullable
-    * `Object.<string, any>`
+    * `Object.<string, Some>`
 
 ### TODO
 
-* Classes
 * Interfaces
-* Types
-    * Function `new` Type
-    * Variable parameters
-* Annotations
-    * `@lends`
-    * `@license` and `@fileoverview`
+* Generic classes
+* Function `new` Type
+* `@lends`
 * Expand union type
 * Dependencies of Closure Library files
 * One stop build system with Grunt or Gulp
