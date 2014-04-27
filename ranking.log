@@ -3,10 +3,6 @@
    1 closure-library/closure/goog/ui/menu.d.ts
    1 closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts
    1 closure-library/closure/goog/ui/abstractspellchecker.d.ts
-   1 closure-library/closure/goog/testing/events/events.d.ts
-   1 closure-library/closure/goog/testing/continuationtestcase.d.ts
-   1 closure-library/closure/goog/testing/asserts.d.ts
-   1 closure-library/closure/goog/result/result_interface.d.ts
    1 closure-library/closure/goog/promise/thenable.d.ts
    1 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts
    1 closure-library/closure/goog/functions/functions.d.ts
