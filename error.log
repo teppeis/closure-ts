@@ -32,7 +32,6 @@ closure-library/closure/goog/debug/tracer.d.ts(28,34): error TS2094: The propert
 closure-library/closure/goog/dom/classlist.d.ts(43,60): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(63,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(86,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/dom/forms.d.ts(10,60): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/dom/iter.d.ts(13,42): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/dom/iter.d.ts(40,43): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/editor/contenteditablefield.d.ts(16,18): error TS2141: Class 'goog.editor.ContentEditableField' cannot extend class 'goog.editor.Field':
@@ -113,8 +112,6 @@ closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate i
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
 closure-library/closure/goog/net/filedownloader.d.ts(157,55): error TS2094: The property 'Download_' does not exist on value of type 'FileDownloader'.
 closure-library/closure/goog/net/xhriopool.d.ts(12,36): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/xhriopool.d.ts(13,35): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/net/xhrmanager.d.ts(16,60): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/net/xpc/frameelementmethodtransport.d.ts(18,18): error TS2141: Class 'goog.net.xpc.FrameElementMethodTransport' cannot extend class 'goog.net.xpc.Transport':
 	Class 'goog.net.xpc.FrameElementMethodTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
 closure-library/closure/goog/net/xpc/iframepollingtransport.d.ts(19,18): error TS2141: Class 'goog.net.xpc.IframePollingTransport' cannot extend class 'goog.net.xpc.Transport':
@@ -150,9 +147,6 @@ closure-library/closure/goog/structs/heap.d.ts(12,32): error TS2173: Generic typ
 closure-library/closure/goog/structs/heap.d.ts(25,25): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/heap.d.ts(79,18): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/linkedmap.d.ts(106,39): error TS2094: The property 'LinkedMap' does not exist on value of type 'structs'.
-closure-library/closure/goog/structs/map.d.ts(53,26): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/structs/map.d.ts(119,18): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/structs/map.d.ts(130,22): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/map.d.ts(142,27): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/map.d.ts(149,29): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/structs/map.d.ts(159,43): error TS2173: Generic type references must include all type arguments.
@@ -186,12 +180,8 @@ closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts(8,18): error TS2141
 	Types of static property 'wrapCaption' of class 'ColorMenuButtonRenderer' and class 'MenuButtonRenderer' are incompatible:
 		Call signatures of types '(content: ControlContent, dom: dom.DomHelper) => Element' and '(content: ControlContent, cssClass: string, dom: dom.DomHelper) => Element' are incompatible:
 			Type 'String' is missing property 'getDomHelper' from type 'dom.DomHelper'.
-closure-library/closure/goog/ui/dialog.d.ts(328,36): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/ui/emoji/emojipaletterenderer.d.ts(37,63): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/ui/iframemask.d.ts(16,74): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/ui/media/flashobject.d.ts(50,27): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/ui/media/flashobject.d.ts(74,32): error TS2173: Generic type references must include all type arguments.
-closure-library/closure/goog/ui/media/flashobject.d.ts(79,25): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/ui/menu.d.ts(11,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
 	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
 		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
@@ -226,5 +216,4 @@ closure-library/closure/goog/ui/tree/treenode.d.ts(13,18): error TS2141: Class '
 	Class 'goog.ui.tree.TreeNode' defines instance member function 'getTree', but extended class 'goog.ui.tree.BaseNode' defines it as instance member property.
 closure-library/closure/goog/ui/twothumbslider.d.ts(9,18): error TS2141: Class 'goog.ui.TwoThumbSlider' cannot extend class 'goog.ui.SliderBase':
 	Class 'goog.ui.TwoThumbSlider' defines instance member function 'createThumbs', but extended class 'goog.ui.SliderBase' defines it as instance member property.
-closure-library/closure/goog/uri/uri.d.ts(423,35): error TS2173: Generic type references must include all type arguments.
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).

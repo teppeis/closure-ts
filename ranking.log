@@ -1,10 +1,9 @@
   11 closure-library/closure/goog/promise/promise.d.ts
    7 closure-library/closure/goog/fx/dom.d.ts
    6 closure-library/closure/goog/testing/performancetimer.d.ts
-   6 closure-library/closure/goog/structs/map.d.ts
    5 closure-library/closure/goog/structs/set.d.ts
    5 closure-library/closure/goog/html/safehtml.d.ts
-   3 closure-library/closure/goog/ui/media/flashobject.d.ts
+   3 closure-library/closure/goog/structs/map.d.ts
    3 closure-library/closure/goog/structs/heap.d.ts
    3 closure-library/closure/goog/structs/collection.d.ts
    3 closure-library/closure/goog/promise/thenable.d.ts
@@ -13,13 +12,11 @@
    3 closure-library/closure/goog/dom/classlist.d.ts
    3 closure-library/closure/goog/datasource/fastdatanode.d.ts
    2 closure-library/closure/goog/structs/treenode.d.ts
-   2 closure-library/closure/goog/net/xhriopool.d.ts
    2 closure-library/closure/goog/net/browserchannel.d.ts
    2 closure-library/closure/goog/editor/plugins/undoredo.d.ts
    2 closure-library/closure/goog/dom/iter.d.ts
    2 closure-library/closure/goog/a11y/aria/aria.d.ts
    1 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts
-   1 closure-library/closure/goog/uri/uri.d.ts
    1 closure-library/closure/goog/ui/twothumbslider.d.ts
    1 closure-library/closure/goog/ui/tree/treenode.d.ts
    1 closure-library/closure/goog/ui/tree/treecontrol.d.ts
@@ -35,7 +32,6 @@
    1 closure-library/closure/goog/ui/menu.d.ts
    1 closure-library/closure/goog/ui/iframemask.d.ts
    1 closure-library/closure/goog/ui/emoji/emojipaletterenderer.d.ts
-   1 closure-library/closure/goog/ui/dialog.d.ts
    1 closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts
    1 closure-library/closure/goog/ui/abstractspellchecker.d.ts
    1 closure-library/closure/goog/testing/recordfunction.d.ts
@@ -54,7 +50,7 @@
    1 closure-library/closure/goog/net/xpc/iframerelaytransport.d.ts
    1 closure-library/closure/goog/net/xpc/iframepollingtransport.d.ts
    1 closure-library/closure/goog/net/xpc/frameelementmethodtransport.d.ts
-   1 closure-library/closure/goog/net/xhrmanager.d.ts
+   1 closure-library/closure/goog/net/xhriopool.d.ts
    1 closure-library/closure/goog/net/filedownloader.d.ts
    1 closure-library/closure/goog/net/cookies.d.ts
    1 closure-library/closure/goog/math/rangeset.d.ts
@@ -80,7 +76,6 @@
    1 closure-library/closure/goog/editor/plugins/blockquote.d.ts
    1 closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts
    1 closure-library/closure/goog/editor/contenteditablefield.d.ts
-   1 closure-library/closure/goog/dom/forms.d.ts
    1 closure-library/closure/goog/debug/tracer.d.ts
    1 closure-library/closure/goog/debug/logger.d.ts
    1 closure-library/closure/goog/debug/gcdiagnostics.d.ts
