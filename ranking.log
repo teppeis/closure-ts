@@ -1,5 +1,4 @@
    3 closure-library/closure/goog/structs/linkedmap.d.ts
-   2 closure-library/closure/goog/result/result_interface.d.ts
    2 closure-library/closure/goog/net/browserchannel.d.ts
    1 closure-library/closure/goog/ui/tree/basenode.d.ts
    1 closure-library/closure/goog/ui/paletterenderer.d.ts
@@ -10,6 +9,7 @@
    1 closure-library/closure/goog/testing/events/events.d.ts
    1 closure-library/closure/goog/testing/continuationtestcase.d.ts
    1 closure-library/closure/goog/testing/asserts.d.ts
+   1 closure-library/closure/goog/result/result_interface.d.ts
    1 closure-library/closure/goog/promise/thenable.d.ts
    1 closure-library/closure/goog/net/cookies.d.ts
    1 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts
