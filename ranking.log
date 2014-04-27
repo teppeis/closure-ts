@@ -8,7 +8,6 @@
    1 closure-library/closure/goog/testing/asserts.d.ts
    1 closure-library/closure/goog/result/result_interface.d.ts
    1 closure-library/closure/goog/promise/thenable.d.ts
-   1 closure-library/closure/goog/net/cookies.d.ts
    1 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts
    1 closure-library/closure/goog/graphics/ext/element.d.ts
    1 closure-library/closure/goog/functions/functions.d.ts
