@@ -1,5 +1,3 @@
-closure-library/closure/goog/a11y/aria/aria.d.ts(94,81): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/a11y/aria/aria.d.ts(132,105): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/cssom/iframe/style.d.ts(62,90): error TS2094: The property 'CssRuleSet_' does not exist on value of type 'style'.
 closure-library/closure/goog/datasource/fastdatanode.d.ts(43,18): error TS2141: Class 'goog.ds.FastDataNode' cannot extend class 'goog.ds.AbstractFastDataNode':
 	Types of property 'setChildNode' of types 'FastDataNode' and 'AbstractFastDataNode' are incompatible:
@@ -19,9 +17,6 @@ closure-library/closure/goog/debug/gcdiagnostics.d.ts(7,42): error TS2094: The p
 closure-library/closure/goog/debug/logger.d.ts(375,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
 	closure-library/closure/goog/debug/logger.d.ts(240,16)
 closure-library/closure/goog/debug/tracer.d.ts(28,34): error TS2094: The property 'Trace_' does not exist on value of type 'debug'.
-closure-library/closure/goog/dom/classlist.d.ts(43,60): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/dom/classlist.d.ts(63,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/dom/classlist.d.ts(86,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts(18,18): error TS2141: Class 'goog.editor.plugins.AbstractBubblePlugin' cannot extend class 'goog.editor.Plugin':
 	Types of property 'handleSelectionChange' of types 'AbstractBubblePlugin' and 'Plugin' are incompatible:
 		Call signatures of types '() => void' and '(opt_e?: events.BrowserEvent, opt_target?: Node) => boolean' are incompatible.
@@ -44,9 +39,6 @@ closure-library/closure/goog/graphics/svggraphics.d.ts(22,18): error TS2141: Cla
 		Call signatures of types '(text: string, font: Font) => void' and '(text: string, font: Font) => number' are incompatible.
 closure-library/closure/goog/i18n/compactnumberformatsymbols_ext.d.ts(2526,16): error TS2000: Duplicate identifier 'CompactNumberFormatSymbols'. Additional locations:
 	closure-library/closure/goog/i18n/compactnumberformatsymbols.d.ts(1066,16)
-closure-library/closure/goog/iter/iter.d.ts(320,49): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(364,42): error TS2125: Type 'goog.iter.Iterable' does not have type parameters.
-closure-library/closure/goog/iter/iter.d.ts(459,53): error TS2125: Type 'goog.iter.Iterable' does not have type parameters.
 closure-library/closure/goog/labs/mock/mock.d.ts(69,62): error TS2094: The property 'StubBinder_' does not exist on value of type 'mock'.
 closure-library/closure/goog/labs/net/image.d.ts(16,51): error TS2095: Could not find symbol 'Image'.
 closure-library/closure/goog/labs/net/image.d.ts(16,59): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).

@@ -3,12 +3,9 @@
    3 closure-library/closure/goog/structs/collection.d.ts
    3 closure-library/closure/goog/promise/thenable.d.ts
    3 closure-library/closure/goog/labs/net/image.d.ts
-   3 closure-library/closure/goog/iter/iter.d.ts
-   3 closure-library/closure/goog/dom/classlist.d.ts
    3 closure-library/closure/goog/datasource/fastdatanode.d.ts
    2 closure-library/closure/goog/net/browserchannel.d.ts
    2 closure-library/closure/goog/editor/plugins/undoredo.d.ts
-   2 closure-library/closure/goog/a11y/aria/aria.d.ts
    1 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts
    1 closure-library/closure/goog/ui/tree/basenode.d.ts
    1 closure-library/closure/goog/ui/textarearenderer.d.ts
