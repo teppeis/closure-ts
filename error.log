@@ -1,27 +1,9 @@
-closure-library/closure/goog/datasource/fastdatanode.d.ts(43,18): error TS2141: Class 'goog.ds.FastDataNode' cannot extend class 'goog.ds.AbstractFastDataNode':
-	Types of property 'setChildNode' of types 'FastDataNode' and 'AbstractFastDataNode' are incompatible:
-		Call signatures of types '() => void' and '(name: string, value: Object) => Object' are incompatible.
-closure-library/closure/goog/datasource/fastdatanode.d.ts(186,18): error TS2141: Class 'goog.ds.PrimitiveFastDataNode' cannot extend class 'goog.ds.AbstractFastDataNode':
+closure-library/closure/goog/datasource/fastdatanode.d.ts(169,18): error TS2141: Class 'goog.ds.PrimitiveFastDataNode' cannot extend class 'goog.ds.AbstractFastDataNode':
 	Types of property 'setChildNode' of types 'PrimitiveFastDataNode' and 'AbstractFastDataNode' are incompatible:
 		Call signatures of types '(name: string, value: Object) => void' and '(name: string, value: Object) => Object' are incompatible.
-closure-library/closure/goog/datasource/fastdatanode.d.ts(260,18): error TS2141: Class 'goog.ds.FastListNode' cannot extend class 'goog.ds.AbstractFastDataNode':
-	Types of property 'setChildNode' of types 'FastListNode' and 'AbstractFastDataNode' are incompatible:
-		Call signatures of types '() => void' and '(name: string, value: Object) => Object' are incompatible.
-closure-library/closure/goog/datasource/jsdatasource.d.ts(18,18): error TS2141: Class 'goog.ds.JsDataSource' cannot extend class 'goog.ds.DataNode':
-	Types of property 'getChildNodes' of types 'JsDataSource' and 'DataNode' are incompatible:
-		Call signatures of types '() => void' and '(opt_selector?: string) => DataNodeList' are incompatible.
 closure-library/closure/goog/debug/error.d.ts(9,18): error TS2100: Class 'goog.debug.Error' is recursively referenced as a base type of itself.
 closure-library/closure/goog/debug/logger.d.ts(375,27): error TS2000: Duplicate identifier 'LogManager'. Additional locations:
 	closure-library/closure/goog/debug/logger.d.ts(240,16)
-closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts(18,18): error TS2141: Class 'goog.editor.plugins.AbstractBubblePlugin' cannot extend class 'goog.editor.Plugin':
-	Types of property 'handleSelectionChange' of types 'AbstractBubblePlugin' and 'Plugin' are incompatible:
-		Call signatures of types '() => void' and '(opt_e?: events.BrowserEvent, opt_target?: Node) => boolean' are incompatible.
-closure-library/closure/goog/editor/plugins/blockquote.d.ts(15,18): error TS2141: Class 'goog.editor.plugins.Blockquote' cannot extend class 'goog.editor.Plugin':
-	Types of property 'isSilentCommand' of types 'Blockquote' and 'Plugin' are incompatible:
-		Call signatures of types '() => void' and '(command: string) => boolean' are incompatible.
-closure-library/closure/goog/editor/plugins/firststrong.d.ts(9,18): error TS2141: Class 'goog.editor.plugins.FirstStrong' cannot extend class 'goog.editor.Plugin':
-	Types of property 'handleKeyUp' of types 'FirstStrong' and 'Plugin' are incompatible:
-		Call signatures of types '() => void' and '(e: events.BrowserEvent) => boolean' are incompatible.
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
 closure-library/closure/goog/graphics/canvasgraphics.d.ts(21,18): error TS2141: Class 'goog.graphics.CanvasGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
@@ -42,8 +24,7 @@ closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate i
 closure-library/closure/goog/promise/thenable.d.ts(11,22): error TS2143: Interface 'goog.Thenable<TYPE>' cannot extend interface 'IThenable<TYPE>':
 	Types of property 'then' of types 'Thenable<TYPE>' and 'IThenable<TYPE>' are incompatible:
 		Call signatures of types '<RESULT, THIS>(opt_onFulfilled?: (arg0: TYPE) => RESULT, opt_onRejected?: (arg0: any) => any, opt_context?: THIS) => Promise<RESULT, any>' and '<RESULT>(opt_onFulfilled: (arg0: TYPE) => RESULT, opt_onRejected: (arg0: any) => any) => IThenable<RESULT>' are incompatible:
-			Types of property 'then' of types 'Promise<any, any>' and 'IThenable<any>' are incompatible:
-				Call signatures of types '() => void' and '<RESULT>(opt_onFulfilled: (arg0: any) => RESULT, opt_onRejected: (arg0: any) => any) => IThenable<RESULT>' are incompatible.
+			Type 'Promise<any, any>' is missing property 'then' from type 'IThenable<any>'.
 closure-library/closure/goog/result/result_interface.d.ts(12,37): error TS2173: Generic type references must include all type arguments.
 closure-library/closure/goog/result/result_interface.d.ts(79,38): error TS2073: A class may only extend another class.
 closure-library/closure/goog/structs/linkedmap.d.ts(106,26): error TS2173: Generic type references must include all type arguments.
@@ -66,26 +47,11 @@ closure-library/closure/goog/ui/colormenubuttonrenderer.d.ts(8,18): error TS2141
 closure-library/closure/goog/ui/menu.d.ts(11,18): error TS2141: Class 'goog.ui.Menu' cannot extend class 'goog.ui.Container':
 	Types of property 'setVisible' of types 'Menu' and 'Container' are incompatible:
 		Call signatures of types '(opt_e?: events.Event) => void' and '(visible: boolean, opt_force?: boolean) => boolean' are incompatible.
-closure-library/closure/goog/ui/menubase.d.ts(97,33): error TS2000: Duplicate identifier 'Events'. Additional locations:
+closure-library/closure/goog/ui/menubase.d.ts(87,33): error TS2000: Duplicate identifier 'Events'. Additional locations:
 	closure-library/closure/goog/ui/menubase.d.ts(18,9)
-closure-library/closure/goog/ui/menuitem.d.ts(16,18): error TS2141: Class 'goog.ui.MenuItem' cannot extend class 'goog.ui.Control':
-	Types of property 'getCaption' of types 'MenuItem' and 'Control' are incompatible:
-		Call signatures of types '() => void' and '() => string' are incompatible.
-closure-library/closure/goog/ui/nativebuttonrenderer.d.ts(11,18): error TS2141: Class 'goog.ui.NativeButtonRenderer' cannot extend class 'goog.ui.ButtonRenderer':
-	Types of property 'isFocusable' of types 'NativeButtonRenderer' and 'ButtonRenderer' are incompatible:
-		Call signatures of types '() => void' and '(control: Control) => boolean' are incompatible.
 closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class 'goog.ui.PaletteRenderer' cannot extend class 'goog.ui.ControlRenderer':
 	Types of property 'decorate' of types 'PaletteRenderer' and 'ControlRenderer' are incompatible:
 		Call signatures of types '(palette: Control, element: Element) => void' and '(control: Control, element: Element) => Element' are incompatible.
-closure-library/closure/goog/ui/select.d.ts(24,18): error TS2141: Class 'goog.ui.Select' cannot extend class 'goog.ui.MenuButton':
-	Types of property 'addItem' of types 'Select' and 'MenuButton' are incompatible:
-		Call signatures of types '(item: Control) => void' and '(item: MenuItem) => void' are incompatible:
-			Type 'Control' is missing property 'getValue' from type 'MenuItem'.
-			Types of property 'getCaption' of types 'MenuItem' and 'Control' are incompatible:
-				Call signatures of types '() => void' and '() => string' are incompatible.
-closure-library/closure/goog/ui/textarearenderer.d.ts(12,18): error TS2141: Class 'goog.ui.TextareaRenderer' cannot extend class 'goog.ui.ControlRenderer':
-	Types of property 'isFocusable' of types 'TextareaRenderer' and 'ControlRenderer' are incompatible:
-		Call signatures of types '() => void' and '(control: Control) => boolean' are incompatible.
 closure-library/closure/goog/ui/tree/basenode.d.ts(14,18): error TS2141: Class 'goog.ui.tree.BaseNode' cannot extend class 'goog.ui.Component':
 	Types of property 'removeChild' of types 'BaseNode' and 'Component' are incompatible:
 		Call signatures of types '(childNode: Component, opt_unrender?: boolean) => BaseNode' and '(child: string, opt_unrender?: boolean) => Component' are incompatible:

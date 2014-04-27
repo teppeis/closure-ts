@@ -39,11 +39,5 @@ declare module goog.dom {
          * @override
          */
         foo2: string;
-        
-        /**
-         * Description.
-         * @override
-         */
-        foo4: any;
     }
 }
