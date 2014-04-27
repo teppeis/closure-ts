@@ -1,10 +1,6 @@
 closure-library/closure/goog/a11y/aria/aria.d.ts(94,81): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/a11y/aria/aria.d.ts(132,105): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/crypt/sha2_64bit.d.ts(14,18): error TS2141: Class 'goog.crypt.Sha2_64bit' cannot extend class 'goog.crypt.Hash':
-	Class 'goog.crypt.Sha2_64bit' defines instance member function 'reset', but extended class 'goog.crypt.Hash' defines it as instance member property.
 closure-library/closure/goog/cssom/iframe/style.d.ts(62,90): error TS2094: The property 'CssRuleSet_' does not exist on value of type 'style'.
-closure-library/closure/goog/datasource/datamanager.d.ts(9,18): error TS2141: Class 'goog.ds.DataManager' cannot extend class 'goog.ds.DataNode':
-	Class 'goog.ds.DataManager' defines instance member function 'load', but extended class 'goog.ds.DataNode' defines it as instance member property.
 closure-library/closure/goog/datasource/fastdatanode.d.ts(43,18): error TS2141: Class 'goog.ds.FastDataNode' cannot extend class 'goog.ds.AbstractFastDataNode':
 	Types of property 'setChildNode' of types 'FastDataNode' and 'AbstractFastDataNode' are incompatible:
 		Call signatures of types '() => void' and '(name: string, value: Object) => Object' are incompatible.
@@ -17,10 +13,6 @@ closure-library/closure/goog/datasource/fastdatanode.d.ts(260,18): error TS2141:
 closure-library/closure/goog/datasource/jsdatasource.d.ts(18,18): error TS2141: Class 'goog.ds.JsDataSource' cannot extend class 'goog.ds.DataNode':
 	Types of property 'getChildNodes' of types 'JsDataSource' and 'DataNode' are incompatible:
 		Call signatures of types '() => void' and '(opt_selector?: string) => DataNodeList' are incompatible.
-closure-library/closure/goog/datasource/jsxmlhttpdatasource.d.ts(18,18): error TS2141: Class 'goog.ds.JsXmlHttpDataSource' cannot extend class 'goog.ds.FastDataNode':
-	Class 'goog.ds.JsXmlHttpDataSource' defines instance member function 'load', but extended class 'goog.ds.FastDataNode' defines it as instance member property.
-closure-library/closure/goog/datasource/xmldatasource.d.ts(13,18): error TS2141: Class 'goog.ds.XmlDataSource' cannot extend class 'goog.ds.DataNode':
-	Class 'goog.ds.XmlDataSource' defines instance member function 'load', but extended class 'goog.ds.DataNode' defines it as instance member property.
 closure-library/closure/goog/db/error.d.ts(70,34): error TS2095: Could not find symbol 'IDBDatabaseException'.
 closure-library/closure/goog/db/indexeddb.d.ts(59,71): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
 closure-library/closure/goog/db/transaction.d.ts(37,44): error TS2094: The property 'ObjectStore' does not exist on value of type 'db'.
@@ -32,8 +24,6 @@ closure-library/closure/goog/debug/tracer.d.ts(28,34): error TS2094: The propert
 closure-library/closure/goog/dom/classlist.d.ts(43,60): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(63,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
 closure-library/closure/goog/dom/classlist.d.ts(86,66): error TS2125: Type 'goog.array.ArrayLike' does not have type parameters.
-closure-library/closure/goog/editor/contenteditablefield.d.ts(16,18): error TS2141: Class 'goog.editor.ContentEditableField' cannot extend class 'goog.editor.Field':
-	Class 'goog.editor.ContentEditableField' defines instance member property 'restoreDom', but extended class 'goog.editor.Field' defines it as instance member function.
 closure-library/closure/goog/editor/plugins/abstractbubbleplugin.d.ts(18,18): error TS2141: Class 'goog.editor.plugins.AbstractBubblePlugin' cannot extend class 'goog.editor.Plugin':
 	Types of property 'handleSelectionChange' of types 'AbstractBubblePlugin' and 'Plugin' are incompatible:
 		Call signatures of types '() => void' and '(opt_e?: events.BrowserEvent, opt_target?: Node) => boolean' are incompatible.
@@ -42,51 +32,17 @@ closure-library/closure/goog/editor/plugins/blockquote.d.ts(15,18): error TS2141
 closure-library/closure/goog/editor/plugins/firststrong.d.ts(9,18): error TS2141: Class 'goog.editor.plugins.FirstStrong' cannot extend class 'goog.editor.Plugin':
 	Types of property 'handleKeyUp' of types 'FirstStrong' and 'Plugin' are incompatible:
 		Call signatures of types '() => void' and '(e: events.BrowserEvent) => boolean' are incompatible.
-closure-library/closure/goog/editor/plugins/linkbubble.d.ts(10,18): error TS2141: Class 'goog.editor.plugins.LinkBubble' cannot extend class 'goog.editor.plugins.AbstractBubblePlugin':
-	Class 'goog.editor.plugins.LinkBubble' defines instance member function 'onShow', but extended class 'goog.editor.plugins.AbstractBubblePlugin' defines it as instance member property.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,58): error TS2094: The property 'UndoState_' does not exist on value of type 'UndoRedo'.
 closure-library/closure/goog/editor/plugins/undoredo.d.ts(88,132): error TS2094: The property 'CursorPosition_' does not exist on value of type 'UndoRedo'.
 closure-library/closure/goog/events/actioneventwrapper.d.ts(7,48): error TS2094: The property 'ActionEventWrapper_' does not exist on value of type 'events'.
 closure-library/closure/goog/events/eventtargettester.d.ts(74,403): error TS2094: The property 'UnlistenReturnType' does not exist on value of type 'eventTargetTester'.
 closure-library/closure/goog/functions/functions.d.ts(78,60): error TS2095: Could not find symbol 'T'.
-closure-library/closure/goog/fx/animation.d.ts(14,18): error TS2141: Class 'goog.fx.Animation' cannot extend class 'goog.fx.TransitionBase':
-	Class 'goog.fx.Animation' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
-closure-library/closure/goog/fx/css3/transition.d.ts(41,18): error TS2141: Class 'goog.fx.css3.Transition' cannot extend class 'goog.fx.TransitionBase':
-	Class 'goog.fx.css3.Transition' defines instance member function 'pause', but extended class 'goog.fx.TransitionBase' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(76,18): error TS2141: Class 'goog.fx.dom.Swipe' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.Swipe' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(101,18): error TS2141: Class 'goog.fx.dom.Scroll' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.Scroll' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(126,18): error TS2141: Class 'goog.fx.dom.Resize' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.Resize' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(151,18): error TS2141: Class 'goog.fx.dom.ResizeWidth' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.ResizeWidth' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(175,18): error TS2141: Class 'goog.fx.dom.ResizeHeight' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.ResizeHeight' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(200,18): error TS2141: Class 'goog.fx.dom.Fade' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.Fade' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/fx/dom.d.ts(308,18): error TS2141: Class 'goog.fx.dom.ColorTransform' cannot extend class 'goog.fx.dom.PredefinedEffect':
-	Class 'goog.fx.dom.ColorTransform' defines instance member function 'updateStyle', but extended class 'goog.fx.dom.PredefinedEffect' defines it as instance member property.
-closure-library/closure/goog/graphics/canvaselement.d.ts(17,18): error TS2141: Class 'goog.graphics.CanvasGroupElement' cannot extend class 'goog.graphics.GroupElement':
-	Class 'goog.graphics.CanvasGroupElement' defines instance member function 'clear', but extended class 'goog.graphics.GroupElement' defines it as instance member property.
 closure-library/closure/goog/graphics/canvasgraphics.d.ts(21,18): error TS2141: Class 'goog.graphics.CanvasGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
-	Class 'goog.graphics.CanvasGraphics' defines instance member function 'clear', but extended class 'goog.graphics.AbstractGraphics' defines it as instance member property.
-closure-library/closure/goog/graphics/ext/graphics.d.ts(23,18): error TS2141: Class 'goog.graphics.ext.Graphics' cannot extend class 'goog.graphics.ext.Group':
-	Class 'goog.graphics.ext.Graphics' defines instance member property 'transform', but extended class 'goog.graphics.ext.Group' defines it as instance member function.
-closure-library/closure/goog/graphics/ext/group.d.ts(13,18): error TS2141: Class 'goog.graphics.ext.Group' cannot extend class 'goog.graphics.ext.Element':
-	Class 'goog.graphics.ext.Group' defines instance member function 'redraw', but extended class 'goog.graphics.ext.Element' defines it as instance member property.
-closure-library/closure/goog/graphics/ext/image.d.ts(11,18): error TS2141: Class 'goog.graphics.ext.Image' cannot extend class 'goog.graphics.ext.Element':
-	Class 'goog.graphics.ext.Image' defines instance member function 'redraw', but extended class 'goog.graphics.ext.Element' defines it as instance member property.
-closure-library/closure/goog/graphics/ext/strokeandfillelement.d.ts(13,18): error TS2141: Class 'goog.graphics.ext.StrokeAndFillElement' cannot extend class 'goog.graphics.ext.Element':
-	Class 'goog.graphics.ext.StrokeAndFillElement' defines instance member function 'redraw', but extended class 'goog.graphics.ext.Element' defines it as instance member property.
-closure-library/closure/goog/graphics/svgelement.d.ts(17,18): error TS2141: Class 'goog.graphics.SvgGroupElement' cannot extend class 'goog.graphics.GroupElement':
-	Class 'goog.graphics.SvgGroupElement' defines instance member function 'clear', but extended class 'goog.graphics.GroupElement' defines it as instance member property.
+	Types of property 'getTextWidth' of types 'CanvasGraphics' and 'AbstractGraphics' are incompatible:
+		Call signatures of types '(text: string, font: Font) => void' and '(text: string, font: Font) => number' are incompatible.
 closure-library/closure/goog/graphics/svggraphics.d.ts(22,18): error TS2141: Class 'goog.graphics.SvgGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
-	Class 'goog.graphics.SvgGraphics' defines instance member function 'clear', but extended class 'goog.graphics.AbstractGraphics' defines it as instance member property.
-closure-library/closure/goog/graphics/vmlelement.d.ts(18,18): error TS2141: Class 'goog.graphics.VmlGroupElement' cannot extend class 'goog.graphics.GroupElement':
-	Class 'goog.graphics.VmlGroupElement' defines instance member function 'clear', but extended class 'goog.graphics.GroupElement' defines it as instance member property.
-closure-library/closure/goog/graphics/vmlgraphics.d.ts(22,18): error TS2141: Class 'goog.graphics.VmlGraphics' cannot extend class 'goog.graphics.AbstractGraphics':
-	Class 'goog.graphics.VmlGraphics' defines instance member function 'clear', but extended class 'goog.graphics.AbstractGraphics' defines it as instance member property.
+	Types of property 'getTextWidth' of types 'SvgGraphics' and 'AbstractGraphics' are incompatible:
+		Call signatures of types '(text: string, font: Font) => void' and '(text: string, font: Font) => number' are incompatible.
 closure-library/closure/goog/html/safehtml.d.ts(83,43): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/html/safehtml.d.ts(90,61): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
 closure-library/closure/goog/html/safehtml.d.ts(105,43): error TS2094: The property 'SafeHtml' does not exist on value of type 'html'.
@@ -108,16 +64,6 @@ closure-library/closure/goog/net/browserchannel.d.ts(773,40): error TS2000: Dupl
 closure-library/closure/goog/net/cookies.d.ts(164,25): error TS2000: Duplicate identifier 'cookies'. Additional locations:
 	closure-library/closure/goog/net/cookies.d.ts(161,16)
 closure-library/closure/goog/net/filedownloader.d.ts(157,55): error TS2094: The property 'Download_' does not exist on value of type 'FileDownloader'.
-closure-library/closure/goog/net/xpc/frameelementmethodtransport.d.ts(18,18): error TS2141: Class 'goog.net.xpc.FrameElementMethodTransport' cannot extend class 'goog.net.xpc.Transport':
-	Class 'goog.net.xpc.FrameElementMethodTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
-closure-library/closure/goog/net/xpc/iframepollingtransport.d.ts(19,18): error TS2141: Class 'goog.net.xpc.IframePollingTransport' cannot extend class 'goog.net.xpc.Transport':
-	Class 'goog.net.xpc.IframePollingTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
-closure-library/closure/goog/net/xpc/iframerelaytransport.d.ts(26,18): error TS2141: Class 'goog.net.xpc.IframeRelayTransport' cannot extend class 'goog.net.xpc.Transport':
-	Class 'goog.net.xpc.IframeRelayTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
-closure-library/closure/goog/net/xpc/nativemessagingtransport.d.ts(24,18): error TS2141: Class 'goog.net.xpc.NativeMessagingTransport' cannot extend class 'goog.net.xpc.Transport':
-	Class 'goog.net.xpc.NativeMessagingTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
-closure-library/closure/goog/net/xpc/nixtransport.d.ts(16,18): error TS2141: Class 'goog.net.xpc.NixTransport' cannot extend class 'goog.net.xpc.Transport':
-	Class 'goog.net.xpc.NixTransport' defines instance member function 'connect', but extended class 'goog.net.xpc.Transport' defines it as instance member property.
 closure-library/closure/goog/promise/promise.d.ts(60,49): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
 closure-library/closure/goog/promise/promise.d.ts(75,43): error TS2125: Type 'goog.Thenable' does not have type parameters.
 closure-library/closure/goog/promise/promise.d.ts(75,66): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
@@ -171,12 +117,11 @@ closure-library/closure/goog/ui/menuitem.d.ts(16,18): error TS2141: Class 'goog.
 	Types of property 'getCaption' of types 'MenuItem' and 'Control' are incompatible:
 		Call signatures of types '() => void' and '() => string' are incompatible.
 closure-library/closure/goog/ui/nativebuttonrenderer.d.ts(11,18): error TS2141: Class 'goog.ui.NativeButtonRenderer' cannot extend class 'goog.ui.ButtonRenderer':
-	Class 'goog.ui.NativeButtonRenderer' defines instance member property 'setAllowTextSelection', but extended class 'goog.ui.ButtonRenderer' defines it as instance member function.
+	Types of property 'isFocusable' of types 'NativeButtonRenderer' and 'ButtonRenderer' are incompatible:
+		Call signatures of types '() => void' and '(control: Control) => boolean' are incompatible.
 closure-library/closure/goog/ui/paletterenderer.d.ts(25,18): error TS2141: Class 'goog.ui.PaletteRenderer' cannot extend class 'goog.ui.ControlRenderer':
 	Types of property 'decorate' of types 'PaletteRenderer' and 'ControlRenderer' are incompatible:
 		Call signatures of types '(palette: Control, element: Element) => void' and '(control: Control, element: Element) => Element' are incompatible.
-closure-library/closure/goog/ui/popup.d.ts(19,18): error TS2141: Class 'goog.ui.Popup' cannot extend class 'goog.ui.PopupBase':
-	Class 'goog.ui.Popup' defines instance member function 'reposition', but extended class 'goog.ui.PopupBase' defines it as instance member property.
 closure-library/closure/goog/ui/select.d.ts(24,18): error TS2141: Class 'goog.ui.Select' cannot extend class 'goog.ui.MenuButton':
 	Types of property 'addItem' of types 'Select' and 'MenuButton' are incompatible:
 		Call signatures of types '(item: Control) => void' and '(item: MenuItem) => void' are incompatible:
@@ -184,15 +129,10 @@ closure-library/closure/goog/ui/select.d.ts(24,18): error TS2141: Class 'goog.ui
 			Types of property 'getCaption' of types 'MenuItem' and 'Control' are incompatible:
 				Call signatures of types '() => void' and '() => string' are incompatible.
 closure-library/closure/goog/ui/textarearenderer.d.ts(12,18): error TS2141: Class 'goog.ui.TextareaRenderer' cannot extend class 'goog.ui.ControlRenderer':
-	Class 'goog.ui.TextareaRenderer' defines instance member property 'setRightToLeft', but extended class 'goog.ui.ControlRenderer' defines it as instance member function.
+	Types of property 'isFocusable' of types 'TextareaRenderer' and 'ControlRenderer' are incompatible:
+		Call signatures of types '() => void' and '(control: Control) => boolean' are incompatible.
 closure-library/closure/goog/ui/tree/basenode.d.ts(14,18): error TS2141: Class 'goog.ui.tree.BaseNode' cannot extend class 'goog.ui.Component':
 	Types of property 'removeChild' of types 'BaseNode' and 'Component' are incompatible:
 		Call signatures of types '(childNode: Component, opt_unrender?: boolean) => BaseNode' and '(child: string, opt_unrender?: boolean) => Component' are incompatible:
 			Type 'String' is missing property 'dom_' from type 'Component'.
-closure-library/closure/goog/ui/tree/treecontrol.d.ts(14,18): error TS2141: Class 'goog.ui.tree.TreeControl' cannot extend class 'goog.ui.tree.BaseNode':
-	Class 'goog.ui.tree.TreeControl' defines instance member function 'getCalculatedIconClass', but extended class 'goog.ui.tree.BaseNode' defines it as instance member property.
-closure-library/closure/goog/ui/tree/treenode.d.ts(13,18): error TS2141: Class 'goog.ui.tree.TreeNode' cannot extend class 'goog.ui.tree.BaseNode':
-	Class 'goog.ui.tree.TreeNode' defines instance member function 'getTree', but extended class 'goog.ui.tree.BaseNode' defines it as instance member property.
-closure-library/closure/goog/ui/twothumbslider.d.ts(9,18): error TS2141: Class 'goog.ui.TwoThumbSlider' cannot extend class 'goog.ui.SliderBase':
-	Class 'goog.ui.TwoThumbSlider' defines instance member function 'createThumbs', but extended class 'goog.ui.SliderBase' defines it as instance member property.
 closure-library/third_party/closure/goog/mochikit/async/deferred.d.ts(234,40): error TS2090: Generic type 'goog.Promise<TYPE, RESOLVER_CONTEXT>' requires 2 type argument(s).
