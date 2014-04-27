@@ -19,6 +19,13 @@ declare module goog.dom.Foo {
     }
 
     /**
+     * Inner typedef
+     * @typedef {string|number}
+     */
+    export interface Typedef {
+    }
+
+    /**
      * Inner class
      * @constructor
      */

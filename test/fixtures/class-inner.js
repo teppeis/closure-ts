@@ -6,6 +6,12 @@ goog.provide('goog.dom');
 goog.dom.Foo = function() {};
 
 /**
+ * Inner typedef
+ * @typedef {string|number}
+ */
+goog.dom.Foo.Typedef;
+
+/**
  * Inner enum
  * @enum {string}
  */
