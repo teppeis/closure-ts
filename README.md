@@ -64,14 +64,13 @@ Just PoC
 * Exclude `@private` definitions
 * `@typedef` (partialy)
 * Ignore features TypeScript doesn't have
-    * `@this`
+    * `@this`, `new` of function type
     * Nullable, Non-Nullable
     * `Object.<string, Some>`
 
 ### TODO
 
 * Interfaces
-* Function `new` Type
 * `@lends`
 * Expand union type
 * Dependencies of Closure Library files
