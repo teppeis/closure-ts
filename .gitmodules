@@ -1,4 +1,7 @@
 [submodule "closure-library"]
 	path = closure-library
 	url = git://github.com/teppeis/closure-library.git
-	branch = d.ts
+	branch = fix
+[submodule "closure-library.d.ts"]
+	path = closure-library.d.ts
+	url = git://github.com/teppeis/closure-library.d.ts.git

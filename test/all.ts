@@ -1,1 +1,1 @@
-/// <reference path="../closure-library/all.d.ts" />
+/// <reference path="../closure-library.d.ts/all.d.ts" />
