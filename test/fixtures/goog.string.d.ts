@@ -3,7 +3,7 @@ declare module goog.string$ {
     /**
      * @constructor
      */
-    export class Bar {
+    class Bar {
         constructor();
     }
 
@@ -11,7 +11,7 @@ declare module goog.string$ {
      * @constructor
      * @extends {goog.string.Bar}
      */
-    export class Baz extends goog.string$.Bar {
+    class Baz extends goog.string$.Bar {
         constructor();
     }
 
@@ -20,5 +20,5 @@ declare module goog.string$ {
      * @param {function(goog.string.Bar): goog.string.Bar} f
      * @return {goog.string.Bar}
      */
-    export function foo(bar: goog.string$.Bar, f: (arg0: goog.string$.Bar) => goog.string$.Bar): goog.string$.Bar;
+    function foo(bar: goog.string$.Bar, f: (arg0: goog.string$.Bar) => goog.string$.Bar): goog.string$.Bar;
 }

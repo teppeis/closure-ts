@@ -3,7 +3,7 @@ declare module goog {
     /**
      * @enum {string}
      */
-    export interface Foo {
+    interface Foo {
         1: string;
         2: string;
         3: string;
@@ -12,7 +12,7 @@ declare module goog {
     /**
      * @enum {string}
      */
-    export interface Bar {
+    interface Bar {
         '*': string;
         '=': string;
         '|': string;

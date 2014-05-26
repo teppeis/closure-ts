@@ -4,7 +4,7 @@ declare module goog.dom {
      * @param {Document} document
      * @constructor
      */
-    export class DomHelper {
+    class DomHelper {
         constructor(document: Document);
     }
 }

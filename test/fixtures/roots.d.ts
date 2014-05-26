@@ -3,7 +3,7 @@ declare module goog {
     /**
      * @param {number} num
      */
-    export function foo(num: number): void;
+    function foo(num: number): void;
 }
 
 declare module proto2 {
@@ -11,7 +11,7 @@ declare module proto2 {
     /**
      * @param {number} num
      */
-    export function foo(num: number): void;
+    function foo(num: number): void;
 }
 
 declare module osapi {
@@ -19,7 +19,7 @@ declare module osapi {
     /**
      * @param {number} num
      */
-    export function foo(num: number): void;
+    function foo(num: number): void;
 }
 
 declare module svgpan {
@@ -27,5 +27,5 @@ declare module svgpan {
     /**
      * @param {number} num
      */
-    export function foo(num: number): void;
+    function foo(num: number): void;
 }

@@ -3,7 +3,7 @@ declare module goog.dom {
     /**
      * @constructor
      */
-    export class Foo {
+    class Foo {
         constructor();
         
         /**

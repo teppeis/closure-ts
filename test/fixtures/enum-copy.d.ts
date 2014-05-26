@@ -3,7 +3,7 @@ declare module goog {
     /**
      * @enum {string}
      */
-    export interface Foo {
+    interface Foo {
         FOO: string;
         BAR: string;
         BAZ: string;
@@ -13,5 +13,5 @@ declare module goog {
      * @enum {string}
      * @deprecated
      */
-    export interface Bar extends goog.Foo {}
+    interface Bar extends goog.Foo {}
 }
