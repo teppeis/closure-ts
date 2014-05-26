@@ -3,7 +3,7 @@ declare module goog.dom {
     /**
      * @constructor
      */
-    export class Foo {
+    class Foo {
         constructor();
     }
 }
@@ -14,7 +14,7 @@ declare module goog.dom.Foo {
      * Inner enum
      * @enum {string}
      */
-    export interface Bar {
+    interface Bar {
         A: string;
     }
 
@@ -22,14 +22,14 @@ declare module goog.dom.Foo {
      * Inner typedef
      * @typedef {string|number}
      */
-    export interface Typedef {
+    interface Typedef {
     }
 
     /**
      * Inner class
      * @constructor
      */
-    export class Baz {
+    class Baz {
         constructor();
     }
 
@@ -37,6 +37,6 @@ declare module goog.dom.Foo {
      * Inner interface
      * @interface
      */
-    export interface Bao {
+    interface Bao {
     }
 }

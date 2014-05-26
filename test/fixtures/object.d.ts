@@ -5,5 +5,5 @@ declare module goog.functions {
      * @return {Object.<T>}
      * @template T
      */
-    export function toObject<T>(item: T): Object;
+    function toObject<T>(item: T): Object;
 }

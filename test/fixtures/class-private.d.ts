@@ -5,7 +5,7 @@ declare module goog.dom {
      * @constructor
      * @private
      */
-    export interface DomHelper {
+    interface DomHelper {
         
         /**
          * @type {string}

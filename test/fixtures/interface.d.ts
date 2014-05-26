@@ -3,7 +3,7 @@ declare module goog.functions {
     /**
      * @interface
      */
-    export interface Foo {
+    interface Foo {
         
         /**
          * @type {number}

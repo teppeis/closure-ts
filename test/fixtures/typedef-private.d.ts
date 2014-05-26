@@ -5,6 +5,6 @@ declare module goog.array {
      * @private
      * @typedef {Array|NodeList|Arguments|{length: number}}
      */
-    export interface ArrayLike {
+    interface ArrayLike {
     }
 }

@@ -3,13 +3,13 @@ declare module goog.functions {
     /**
      * @interface
      */
-    export interface Foo {
+    interface Foo {
     }
 
     /**
      * @interface
      */
-    export interface Bar {
+    interface Bar {
     }
 
     /**
@@ -17,6 +17,6 @@ declare module goog.functions {
      * @extends {Foo}
      * @extends {Bar}
      */
-    export interface Baz extends Foo, Bar {
+    interface Baz extends Foo, Bar {
     }
 }

@@ -5,5 +5,5 @@ declare module goog.functions {
      * @return {T}
      * @template T
      */
-    export function foo<T>(a: T): T;
+    function foo<T>(a: T): T;
 }
