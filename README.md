@@ -57,7 +57,7 @@ Just PoC
 * Convert `*` to `any`
 * Generic type like `Array<number>`
 * Generic classes and function with `@template`
-* Union type (partialy)
+* Union type
 * Record type
 * Rest parameters in `@param` and FunctionType
 * Optional parameters
@@ -72,6 +72,5 @@ Just PoC
 
 * Interfaces
 * `@lends`
-* Expand union type
 * Dependencies of Closure Library files
 * One stop build system with Grunt or Gulp
