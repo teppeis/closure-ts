@@ -3,6 +3,6 @@ goog.provide('goog.array');
 /**
  * Export private @typedef as interface.
  * @private
- * @typedef {Array|NodeList|Arguments|{length: number}}
+ * @typedef {Array|NodeList|{length: number}}
  */
 goog.array.ArrayLike;

@@ -22,8 +22,7 @@ declare module goog.dom.Foo {
      * Inner typedef
      * @typedef {string|number}
      */
-    interface Typedef {
-    }
+    type Typedef = string|number;
 
     /**
      * Inner class

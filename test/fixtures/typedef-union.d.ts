@@ -1,8 +1,7 @@
 declare module goog.array {
 
     /**
-     * @typedef {Array|NodeList|Arguments|{length: number}}
+     * @typedef {Array|NodeList|{length: number}}
      */
-    interface ArrayLike {
-    }
+    type ArrayLike = Array<any>|NodeList|{length: number};
 }

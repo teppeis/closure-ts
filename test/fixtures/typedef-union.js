@@ -1,6 +1,6 @@
 goog.provide('goog.array');
 
 /**
- * @typedef {Array|NodeList|Arguments|{length: number}}
+ * @typedef {Array|NodeList|{length: number}}
  */
 goog.array.ArrayLike;
