@@ -10,5 +10,6 @@ find $BASEDIR/closure-library -type f -name '*.js'|grep -v _test|sort|
     grep -v /goog/net/mockiframeio.js|
     grep -v tester.js|
     xargs $BASEDIR/bin/closurets.js
+cp $BASEDIR/builtin.d.ts $BASEDIR/closure-library.d.ts/externs/
 $BASEDIR/bin/generate-alldts.sh
 $BASEDIR/bin/check-error.sh
