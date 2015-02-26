@@ -14,9 +14,10 @@ declare module goog.dom.Foo {
      * Inner enum
      * @enum {string}
      */
-    interface Bar {
-        A: string;
-    }
+    type Bar = string;
+    var Bar: {
+        A: Bar;
+    };
 
     /**
      * Inner typedef

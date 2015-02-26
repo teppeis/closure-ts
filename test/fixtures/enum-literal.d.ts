@@ -3,18 +3,20 @@ declare module goog {
     /**
      * @enum {string}
      */
-    interface Foo {
-        1: string;
-        2: string;
-        3: string;
-    }
+    type Foo = string;
+    var Foo: {
+        1: Foo;
+        2: Foo;
+        3: Foo;
+    };
 
     /**
      * @enum {string}
      */
-    interface Bar {
-        '*': string;
-        '=': string;
-        '|': string;
-    }
+    type Bar = string;
+    var Bar: {
+        '*': Bar;
+        '=': Bar;
+        '|': Bar;
+    };
 }
