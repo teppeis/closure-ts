@@ -1,4 +1,4 @@
 /**
- * @fileoverview Ignore.
+ * @fileoverview
  */
 goog.provide('goog.functions');

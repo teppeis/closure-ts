@@ -1,5 +1,3 @@
-goog.provide('goog.functions');
-
 /**
  * @param {*} bar
  * @return {*}

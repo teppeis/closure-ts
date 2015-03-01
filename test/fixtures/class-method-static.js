@@ -1,5 +1,3 @@
-goog.provide('goog.dom');
-
 /**
  * @param {Document} document
  * @constructor

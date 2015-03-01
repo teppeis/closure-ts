@@ -1,5 +1,3 @@
-goog.provide('goog.functions');
-
 /**
  * @type {{bar: number, baz: string}}
  */

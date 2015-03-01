@@ -1,5 +1,3 @@
-goog.provide('goog.array');
-
 /**
  * @typedef {Array|NodeList|{length: number}}
  */
