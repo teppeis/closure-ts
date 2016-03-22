@@ -4,7 +4,7 @@
   "description": "Generate TypeScript declarations(d.ts) of Closure Library",
   "main": "lib/generator.js",
   "bin": {
-    "clsourets": "./bin/closurets.js"
+    "closurets": "./bin/closurets.js"
   },
   "scripts": {
     "test": "grunt test"
