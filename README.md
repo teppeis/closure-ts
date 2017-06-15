@@ -1,6 +1,8 @@
 closure-ts [![Build Status](https://travis-ci.org/teppeis/closure-ts.svg?branch=master)](https://travis-ci.org/teppeis/closure-ts)
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/closure-ts.svg)](https://greenkeeper.io/)
+
 > Generates TypeScript declaration files (.d.ts) from [Closure Library JSDoc annotations](https://developers.google.com/closure/compiler/docs/js-for-compiler).
 
 The result is [closure-library.d.ts](https://github.com/teppeis/closure-library.d.ts "teppeis/closure-library.d.ts").
