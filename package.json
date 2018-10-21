@@ -1,11 +1,12 @@
 {
   "name": "closure-ts",
-  "version": "0.3.0",
   "description": "Generate TypeScript declarations(d.ts) of Closure Library",
-  "main": "lib/generator.js",
+  "version": "0.3.0",
+  "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
     "node": ">=6"
   },
+  "main": "lib/generator.js",
   "bin": {
     "closurets": "./bin/closurets.js"
   },
@@ -19,22 +20,6 @@
     "mocha": "mocha test",
     "test": "run-s lint mocha"
   },
-  "repository": "teppeis/closure-ts",
-  "keywords": [
-    "typescript",
-    "closure",
-    "jsdoc"
-  ],
-  "author": "Teppei Sato <teppeis@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "diff": "^1.2.2",
-    "eslint": "^5.7.0",
-    "eslint-config-teppeis": "^8.3.1",
-    "mocha": "^2.1.0",
-    "npm-run-all": "^4.1.3",
-    "prettier": "~1.14.3"
-  },
   "dependencies": {
     "cli-color": "^0.3.2",
     "commander": "^2.6.0",
@@ -45,5 +30,20 @@
     "estraverse": "^1.9.1",
     "lodash": "^3.3.1",
     "mkdirp": "^0.5.0"
-  }
+  },
+  "devDependencies": {
+    "diff": "^1.2.2",
+    "eslint": "^5.7.0",
+    "eslint-config-teppeis": "^8.3.1",
+    "mocha": "^2.1.0",
+    "npm-run-all": "^4.1.3",
+    "prettier": "~1.14.3"
+  },
+  "repository": "teppeis/closure-ts",
+  "keywords": [
+    "closure",
+    "jsdoc",
+    "typescript"
+  ],
+  "license": "MIT"
 }
