@@ -15,7 +15,7 @@
     "lib"
   ],
   "scripts": {
-    "lint": "eslint lib test",
+    "lint": "eslint bin lib test",
     "mocha": "mocha test",
     "test": "run-s lint mocha"
   },
