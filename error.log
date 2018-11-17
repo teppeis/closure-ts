@@ -1,135 +1,297 @@
-npx: 1個のパッケージを1.376秒でインストールしました。
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,108): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,165): error TS1144: '{' or ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,168): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,190): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,201): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(32,202): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,44): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,107): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,125): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,131): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,138): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,147): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,155): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,156): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,164): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,189): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,200): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(48,201): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,41): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,60): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,123): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,141): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,147): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,154): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,163): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,171): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,172): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,180): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,205): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,216): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,217): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(61,223): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,35): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,98): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,116): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,122): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,129): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,138): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,146): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,147): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,155): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,180): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,191): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(76,192): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,39): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,128): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,146): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,152): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,159): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,168): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,176): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,177): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,185): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,236): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,247): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(90,248): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,41): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,128): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,146): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,152): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,159): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,168): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,176): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,177): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,185): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,234): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,245): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(102,246): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(114,44): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(114,239): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(114,251): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,60): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,131): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,149): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,155): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,162): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,171): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,179): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,180): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,188): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,221): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,243): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,279): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(131,280): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,43): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,130): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,148): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,154): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,161): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,170): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,178): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,179): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,187): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,236): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,247): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(147,248): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,49): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,135): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,153): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,159): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,166): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,175): error TS1005: ']' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,183): error TS1005: ',' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,184): error TS1136: Property assignment expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,192): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,240): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,251): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(163,252): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(169,17): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(178,31): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(178,38): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(178,44): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/renderer.d.ts(196,1): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,128): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,185): error TS1144: '{' or ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,210): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,240): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,248): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,249): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(50,255): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,140): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,197): error TS1144: '{' or ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,249): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,279): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,303): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,323): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(71,324): error TS1128: Declaration or statement expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,112): error TS1005: ')' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,169): error TS1144: '{' or ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,194): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,224): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,248): error TS1109: Expression expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,268): error TS1005: ';' expected.
-closure-library.d.ts/closure/goog/soy/soy.d.ts(89,269): error TS1128: Declaration or statement expected.
+npx: 1個のパッケージを2.402秒でインストールしました。
+closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
+  Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
+    Type 'void' is not assignable to type 'Object'.
+closure-library.d.ts/closure/goog/db/error.d.ts(24,52): error TS2694: Namespace 'goog.db' has no exported member 'DOMErrorLike'.
+closure-library.d.ts/closure/goog/debug/error.d.ts(13,11): error TS2506: 'Error' is referenced directly or indirectly in its own base expression.
+closure-library.d.ts/closure/goog/debug/tracer.d.ts(32,56): error TS2694: Namespace 'goog.debug.Trace_' has no exported member 'TracerCallbacks'.
+closure-library.d.ts/closure/goog/disposable/disposable.d.ts(58,56): error TS2694: Namespace 'goog.disposable' has no exported member 'IDisposable'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(81,95): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(81,104): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(103,138): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(117,126): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(165,103): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(219,149): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(238,144): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(249,61): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(400,55): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(666,144): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(761,100): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(761,109): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(793,143): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(807,131): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(854,108): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(1022,173): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(1041,168): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(1052,66): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(1204,60): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(1493,149): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/tagname.d.ts(245,43): error TS2304: Cannot find name 'HTMLMenuItemElement'.
+closure-library.d.ts/closure/goog/dom/xml.d.ts(75,53): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(28,14): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(148,33): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/editor/plugins/tagonenterhandler.d.ts(15,26): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/editor/range.d.ts(195,68): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/events/eventhandler.d.ts(151,98): error TS2304: Cannot find name 'EVENTOBJ'.
+closure-library.d.ts/closure/goog/events/eventhandler.d.ts(151,134): error TS2304: Cannot find name 'EVENTOBJ'.
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(15,10): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(16,9): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(140,28): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/fs/error.d.ts(20,45): error TS2694: Namespace 'goog.fs' has no exported member 'DOMErrorLike'.
+closure-library.d.ts/closure/goog/graphics/canvasgraphics.d.ts(265,9): error TS2416: Property 'getTextWidth' in type 'CanvasGraphics' is not assignable to the same property in base type 'AbstractGraphics'.
+  Type '(text: string, font: Font) => void' is not assignable to type '(text: string, font: Font) => number'.
+    Type 'void' is not assignable to type 'number'.
+closure-library.d.ts/closure/goog/html/safehtml.d.ts(183,32): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/html/sanitizer/htmlsanitizer.d.ts(63,76): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(24,106): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(24,171): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(53,112): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(53,227): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(83,71): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(90,75): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(97,73): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(104,83): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(111,69): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/html/testing.d.ts(118,91): error TS2694: Namespace 'goog' has no exported member 'testing'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(7,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(13,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(19,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(25,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(31,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(37,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(43,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(49,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(55,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(61,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(67,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(73,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(79,41): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(85,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(91,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(97,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(103,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(109,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(115,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(121,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(127,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(133,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(139,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(145,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(151,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(157,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(163,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(169,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(175,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(181,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(187,44): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(193,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(199,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(205,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(211,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(217,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(223,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(229,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(235,41): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(241,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(247,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(253,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(259,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(265,41): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(271,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(277,41): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(283,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(289,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(295,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(301,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(307,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(313,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(319,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(325,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(331,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(337,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(343,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(349,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(355,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(361,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(367,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(373,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(379,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(385,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(391,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(397,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(403,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(409,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(415,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(421,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(427,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(433,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(439,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(445,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(451,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(457,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(463,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(469,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(475,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(481,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(487,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(493,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(499,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(505,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(511,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(517,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(523,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(529,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(535,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(541,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(547,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(553,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(559,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(565,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(571,45): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(577,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(583,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(589,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(595,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(601,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(607,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(613,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(619,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(625,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(631,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(637,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(643,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(649,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(655,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(661,43): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(667,40): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimepatterns.d.ts(673,37): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimePatternsType'.
+closure-library.d.ts/closure/goog/i18n/datetimesymbols.d.ts(676,36): error TS2694: Namespace 'goog.i18n' has no exported member 'DateTimeSymbolsType'.
+closure-library.d.ts/closure/goog/i18n/ordinalrules.d.ts(24,9): error TS2300: Duplicate identifier 'select'.
+closure-library.d.ts/closure/goog/i18n/ordinalrules.d.ts(35,14): error TS2300: Duplicate identifier 'select'.
+closure-library.d.ts/closure/goog/i18n/pluralrules.d.ts(24,9): error TS2300: Duplicate identifier 'select'.
+closure-library.d.ts/closure/goog/i18n/pluralrules.d.ts(35,14): error TS2300: Duplicate identifier 'select'.
+closure-library.d.ts/closure/goog/labs/net/webchannel.d.ts(19,15): error TS2320: Interface 'WebChannel' cannot simultaneously extend types 'EventTarget' and 'Listenable'.
+  Named property 'dispatchEvent' of types 'EventTarget' and 'Listenable' are not identical.
+closure-library.d.ts/closure/goog/loader/abstractmodulemanager.d.ts(129,58): error TS2314: Generic type 'IThenable<TYPE>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/loader/abstractmodulemanager.d.ts(189,62): error TS2314: Generic type 'IThenable<TYPE>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/loader/abstractmodulemanager.d.ts(202,96): error TS2314: Generic type 'IThenable<TYPE>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/math/rect.d.ts(57,36): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(57,56): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(65,38): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(76,42): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(76,62): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(86,40): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(86,60): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(93,36): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(104,59): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(114,36): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(120,38): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(129,42): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(129,62): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/math/rect.d.ts(140,37): error TS2694: Namespace 'goog.math' has no exported member 'IRect'.
+closure-library.d.ts/closure/goog/messaging/portchannel.d.ts(26,49): error TS2304: Cannot find name 'WebWorker'.
+closure-library.d.ts/closure/goog/net/browserchannel.d.ts(76,16): error TS2300: Duplicate identifier 'Event'.
+closure-library.d.ts/closure/goog/net/browserchannel.d.ts(424,51): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/browserchannel.d.ts(768,40): error TS2300: Duplicate identifier 'Event'.
+closure-library.d.ts/closure/goog/net/browsertestchannel.d.ts(46,51): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(11,10): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(12,9): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(26,25): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(14,10): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(15,9): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(69,25): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/net/streams/streamfactory.d.ts(33,56): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/streams/xhrnodereadablestream.d.ts(19,49): error TS2694: Namespace 'goog.net.streams' has no exported member 'XhrStreamReader'.
+closure-library.d.ts/closure/goog/net/websocket.d.ts(23,61): error TS2694: Namespace 'goog.net.WebSocket' has no exported member 'Options'.
+closure-library.d.ts/closure/goog/net/xhriopool.d.ts(26,34): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/xhrmanager.d.ts(76,283): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/xhrmanager.d.ts(103,104): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/xhrmanager.d.ts(131,283): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/net/xhrmanager.d.ts(231,37): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(71,10): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(72,9): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(217,33): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/promise/promise.d.ts(86,51): error TS2304: Cannot find name 'RESULT'.
+closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,117): error TS2304: Cannot find name 'THIS'.
+closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,124): error TS2304: Cannot find name 'RESULT'.
+closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,51): error TS2304: Cannot find name 'V'.
+closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,89): error TS2304: Cannot find name 'V'.
+closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,123): error TS2304: Cannot find name 'V'.
+closure-library.d.ts/closure/goog/ui/animatedzippy.d.ts(23,146): error TS2315: Type 'Role' is not generic.
+closure-library.d.ts/closure/goog/ui/checkbox.d.ts(21,11): error TS2417: Class static side 'typeof Checkbox' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'State' are incompatible.
+    Type '{ CHECKED: boolean; UNCHECKED: boolean; UNDETERMINED: boolean; }' is not assignable to type '{ ALL: number; DISABLED: number; HOVER: number; ACTIVE: number; SELECTED: number; CHECKED: number; FOCUSED: number; OPENED: number; }'.
+      Property 'ALL' is missing in type '{ CHECKED: boolean; UNCHECKED: boolean; UNDETERMINED: boolean; }'.
+closure-library.d.ts/closure/goog/ui/colormenubuttonrenderer.d.ts(12,11): error TS2417: Class static side 'typeof ColorMenuButtonRenderer' incorrectly extends base class static side 'typeof MenuButtonRenderer'.
+  Types of property 'wrapCaption' are incompatible.
+    Type '(content: any, dom: DomHelper) => Element' is not assignable to type '(content: any, cssClass: string, dom: DomHelper) => Element'.
+      Types of parameters 'dom' and 'cssClass' are incompatible.
+        Type 'string' is not assignable to type 'DomHelper'.
+closure-library.d.ts/closure/goog/ui/colorpicker.d.ts(18,11): error TS2417: Class static side 'typeof ColorPicker' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ CHANGE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ CHANGE: string; }'.
+closure-library.d.ts/closure/goog/ui/container.d.ts(28,11): error TS2417: Class static side 'typeof Container' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ AFTER_SHOW: string; AFTER_HIDE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ AFTER_SHOW: string; AFTER_HIDE: string; }'.
+closure-library.d.ts/closure/goog/ui/controlcontent.d.ts(8,51): error TS2315: Type 'NodeList' is not generic.
+closure-library.d.ts/closure/goog/ui/dialog.d.ts(44,11): error TS2417: Class static side 'typeof Dialog' incorrectly extends base class static side 'typeof ModalPopup'.
+  Types of property 'EventType' are incompatible.
+    Type '{ SELECT: string; AFTER_HIDE: string; AFTER_SHOW: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ SELECT: string; AFTER_HIDE: string; AFTER_SHOW: string; }'.
+closure-library.d.ts/closure/goog/ui/editor/linkdialog.d.ts(19,11): error TS2417: Class static side 'typeof LinkDialog' incorrectly extends base class static side 'typeof AbstractDialog'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_TEST_LINK: string; }' is not assignable to type '{ AFTER_HIDE: string; CANCEL: string; OK: string; }'.
+      Property 'AFTER_HIDE' is missing in type '{ BEFORE_TEST_LINK: string; }'.
+closure-library.d.ts/closure/goog/ui/editor/toolbarfactory.d.ts(96,97): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/ui/editor/toolbarfactory.d.ts(104,76): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
+closure-library.d.ts/closure/goog/ui/filteredmenu.d.ts(15,11): error TS2417: Class static side 'typeof FilteredMenu' incorrectly extends base class static side 'typeof Menu'.
+  Types of property 'EventType' are incompatible.
+    Type '{ FILTER_CHANGED: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ FILTER_CHANGED: string; }'.
+closure-library.d.ts/closure/goog/ui/menu.d.ts(16,11): error TS2417: Class static side 'typeof Menu' incorrectly extends base class static side 'typeof Container'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }' is not assignable to type '{ AFTER_SHOW: string; AFTER_HIDE: string; }'.
+      Property 'AFTER_SHOW' is missing in type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }'.
+closure-library.d.ts/closure/goog/ui/menu.d.ts(161,9): error TS2416: Property 'setVisible' in type 'Menu' is not assignable to the same property in base type 'Container'.
+  Type '(show: boolean, opt_force?: boolean, opt_e?: Event) => void' is not assignable to type '(visible: boolean, opt_force?: boolean) => boolean'.
+    Type 'void' is not assignable to type 'boolean'.
+closure-library.d.ts/closure/goog/ui/menubase.d.ts(23,16): error TS2300: Duplicate identifier 'Events'.
+closure-library.d.ts/closure/goog/ui/menubase.d.ts(91,33): error TS2300: Duplicate identifier 'Events'.
+closure-library.d.ts/closure/goog/ui/palette.d.ts(26,11): error TS2417: Class static side 'typeof Palette' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'EventType' are incompatible.
+    Type '{ AFTER_HIGHLIGHT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ AFTER_HIGHLIGHT: string; }'.
+closure-library.d.ts/closure/goog/ui/paletterenderer.d.ts(110,9): error TS2416: Property 'decorate' in type 'PaletteRenderer' is not assignable to the same property in base type 'ControlRenderer'.
+  Type '(palette: Control, element: Element) => void' is not assignable to type '(control: Control, element: Element) => Element'.
+    Type 'void' is not assignable to type 'Element'.
+closure-library.d.ts/closure/goog/ui/ratings.d.ts(15,11): error TS2417: Class static side 'typeof Ratings' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ CHANGE: string; HIGHLIGHT_CHANGE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ CHANGE: string; HIGHLIGHT_CHANGE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; }'.
+closure-library.d.ts/closure/goog/ui/scrollfloater.d.ts(20,11): error TS2417: Class static side 'typeof ScrollFloater' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ FLOAT: string; DOCK: string; PIN: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ FLOAT: string; DOCK: string; PIN: string; }'.
+closure-library.d.ts/closure/goog/ui/sliderbase.d.ts(16,11): error TS2417: Class static side 'typeof SliderBase' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ DRAG_VALUE_START: string; DRAG_VALUE_END: string; DRAG_EXTENT_START: string; DRAG_EXTENT_END: string; DRAG_START: string; DRAG_END: string; ANIMATION_END: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ DRAG_VALUE_START: string; DRAG_VALUE_END: string; DRAG_EXTENT_START: string; DRAG_EXTENT_END: string; DRAG_START: string; DRAG_END: string; ANIMATION_END: string; }'.
+closure-library.d.ts/closure/goog/ui/splitpane.d.ts(23,11): error TS2417: Class static side 'typeof SplitPane' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ HANDLE_DRAG: string; HANDLE_DRAG_END: string; HANDLE_SNAP: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ HANDLE_DRAG: string; HANDLE_DRAG_END: string; HANDLE_SNAP: string; }'.
+closure-library.d.ts/closure/goog/ui/tablesorter.d.ts(21,11): error TS2417: Class static side 'typeof TableSorter' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORESORT: string; SORT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ BEFORESORT: string; SORT: string; }'.
+closure-library.d.ts/closure/goog/ui/textarea.d.ts(19,11): error TS2417: Class static side 'typeof Textarea' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'EventType' are incompatible.
+    Type '{ RESIZE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ RESIZE: string; }'.
+closure-library.d.ts/closure/goog/ui/tree/basenode.d.ts(20,11): error TS2417: Class static side 'typeof BaseNode' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_EXPAND: string; EXPAND: string; BEFORE_COLLAPSE: string; COLLAPSE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ BEFORE_EXPAND: string; EXPAND: string; BEFORE_COLLAPSE: string; COLLAPSE: string; }'.
+closure-library.d.ts/closure/goog/ui/zippy.d.ts(30,204): error TS2315: Type 'Role' is not generic.
