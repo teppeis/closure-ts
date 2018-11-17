@@ -1,13 +1,8 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "4"
-  - "5"
+  - "8"
+  - "10"
+  - "11"
 git:
   submodules: false
 sudo: false
-before_install:
-  - npm install -g grunt-cli
-cache:
-  directories:
-  - node_modules
