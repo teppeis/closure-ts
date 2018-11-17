@@ -1,0 +1,75 @@
+npx: 1個のパッケージを1.857秒でインストールしました。
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(15,10): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(16,9): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/events/keycodes.d.ts(138,28): error TS2300: Duplicate identifier 'KeyCodes'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(11,10): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(12,9): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/errorcode.d.ts(26,25): error TS2300: Duplicate identifier 'ErrorCode'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(13,10): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(14,9): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/net/httpstatus.d.ts(63,25): error TS2300: Duplicate identifier 'HttpStatus'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(68,10): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(69,9): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/positioning/positioning.d.ts(214,33): error TS2300: Duplicate identifier 'OverflowStatus'.
+closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,117): error TS2304: Cannot find name 'THIS'.
+closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,124): error TS2304: Cannot find name 'RESULT'.
+closure-library.d.ts/closure/goog/ui/checkbox.d.ts(21,11): error TS2417: Class static side 'typeof Checkbox' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'State' are incompatible.
+    Type '{ CHECKED: boolean; UNCHECKED: boolean; UNDETERMINED: boolean; }' is not assignable to type '{ ALL: number; DISABLED: number; HOVER: number; ACTIVE: number; SELECTED: number; CHECKED: number; FOCUSED: number; OPENED: number; }'.
+      Property 'ALL' is missing in type '{ CHECKED: boolean; UNCHECKED: boolean; UNDETERMINED: boolean; }'.
+closure-library.d.ts/closure/goog/ui/colorpicker.d.ts(18,11): error TS2417: Class static side 'typeof ColorPicker' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ CHANGE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ CHANGE: string; }'.
+closure-library.d.ts/closure/goog/ui/container.d.ts(28,11): error TS2417: Class static side 'typeof Container' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ AFTER_SHOW: string; AFTER_HIDE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ AFTER_SHOW: string; AFTER_HIDE: string; }'.
+closure-library.d.ts/closure/goog/ui/dialog.d.ts(44,11): error TS2417: Class static side 'typeof Dialog' incorrectly extends base class static side 'typeof ModalPopup'.
+  Types of property 'EventType' are incompatible.
+    Type '{ SELECT: string; AFTER_HIDE: string; AFTER_SHOW: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ SELECT: string; AFTER_HIDE: string; AFTER_SHOW: string; }'.
+closure-library.d.ts/closure/goog/ui/editor/linkdialog.d.ts(19,11): error TS2417: Class static side 'typeof LinkDialog' incorrectly extends base class static side 'typeof AbstractDialog'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_TEST_LINK: string; }' is not assignable to type '{ AFTER_HIDE: string; CANCEL: string; OK: string; }'.
+      Property 'AFTER_HIDE' is missing in type '{ BEFORE_TEST_LINK: string; }'.
+closure-library.d.ts/closure/goog/ui/filteredmenu.d.ts(15,11): error TS2417: Class static side 'typeof FilteredMenu' incorrectly extends base class static side 'typeof Menu'.
+  Types of property 'EventType' are incompatible.
+    Type '{ FILTER_CHANGED: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ FILTER_CHANGED: string; }'.
+closure-library.d.ts/closure/goog/ui/menu.d.ts(16,11): error TS2417: Class static side 'typeof Menu' incorrectly extends base class static side 'typeof Container'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }' is not assignable to type '{ AFTER_SHOW: string; AFTER_HIDE: string; }'.
+      Property 'AFTER_SHOW' is missing in type '{ BEFORE_SHOW: string; SHOW: string; BEFORE_HIDE: string; HIDE: string; }'.
+closure-library.d.ts/closure/goog/ui/palette.d.ts(26,11): error TS2417: Class static side 'typeof Palette' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'EventType' are incompatible.
+    Type '{ AFTER_HIGHLIGHT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ AFTER_HIGHLIGHT: string; }'.
+closure-library.d.ts/closure/goog/ui/ratings.d.ts(15,11): error TS2417: Class static side 'typeof Ratings' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ CHANGE: string; HIGHLIGHT_CHANGE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ CHANGE: string; HIGHLIGHT_CHANGE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; }'.
+closure-library.d.ts/closure/goog/ui/scrollfloater.d.ts(20,11): error TS2417: Class static side 'typeof ScrollFloater' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ FLOAT: string; DOCK: string; PIN: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ FLOAT: string; DOCK: string; PIN: string; }'.
+closure-library.d.ts/closure/goog/ui/sliderbase.d.ts(16,11): error TS2417: Class static side 'typeof SliderBase' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ DRAG_VALUE_START: string; DRAG_VALUE_END: string; DRAG_EXTENT_START: string; DRAG_EXTENT_END: string; DRAG_START: string; DRAG_END: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ DRAG_VALUE_START: string; DRAG_VALUE_END: string; DRAG_EXTENT_START: string; DRAG_EXTENT_END: string; DRAG_START: string; DRAG_END: string; }'.
+closure-library.d.ts/closure/goog/ui/splitpane.d.ts(23,11): error TS2417: Class static side 'typeof SplitPane' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ HANDLE_DRAG: string; HANDLE_DRAG_END: string; HANDLE_SNAP: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ HANDLE_DRAG: string; HANDLE_DRAG_END: string; HANDLE_SNAP: string; }'.
+closure-library.d.ts/closure/goog/ui/tablesorter.d.ts(21,11): error TS2417: Class static side 'typeof TableSorter' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORESORT: string; SORT: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ BEFORESORT: string; SORT: string; }'.
+closure-library.d.ts/closure/goog/ui/textarea.d.ts(19,11): error TS2417: Class static side 'typeof Textarea' incorrectly extends base class static side 'typeof Control'.
+  Types of property 'EventType' are incompatible.
+    Type '{ RESIZE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ RESIZE: string; }'.
+closure-library.d.ts/closure/goog/ui/tree/basenode.d.ts(19,11): error TS2417: Class static side 'typeof BaseNode' incorrectly extends base class static side 'typeof Component'.
+  Types of property 'EventType' are incompatible.
+    Type '{ BEFORE_EXPAND: string; EXPAND: string; BEFORE_COLLAPSE: string; COLLAPSE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
+      Property 'BEFORE_SHOW' is missing in type '{ BEFORE_EXPAND: string; EXPAND: string; BEFORE_COLLAPSE: string; COLLAPSE: string; }'.

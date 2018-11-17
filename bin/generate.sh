@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-cd $(dirname $0)/..
+cd "$(dirname "$0")/.." || exit 1
 BASEDIR=.
 
 find $BASEDIR/closure-library.d.ts -type f -name '*.d.ts'|grep -v '/externs/'|xargs rm
@@ -19,4 +19,3 @@ find $BASEDIR/closure-library -type f -name '*.js'|sort|
 cp $BASEDIR/builtin.d.ts $BASEDIR/closure-library.d.ts/externs/
 $BASEDIR/bin/generate-alldts.sh
 $BASEDIR/bin/check-error.sh
-rm $BASEDIR/test/all.js
