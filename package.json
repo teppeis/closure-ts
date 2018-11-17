@@ -25,9 +25,9 @@
     "cli-color": "^1.4.0",
     "commander": "^2.6.0",
     "deep-equal": "^1.0.0",
-    "esprima": "^1.2.4",
+    "esprima": "^4.0.1",
     "espurify": "^1.0.0",
-    "estraverse": "^1.9.1",
+    "estraverse": "^4.2.0",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.0"
   },
