@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-cd $(dirname $0)/..
+cd "$(dirname "$0")/.." || exit 1
 BASEDIR=.
 
 find $BASEDIR/closure-library.d.ts -type f -name '*.d.ts'|grep -v '/externs/'|xargs rm
-find $BASEDIR/closure-library -type f -name '*.js'|sort|
+find $BASEDIR/closure-library/closure/goog $BASEDIR/closure-library/third_party/closure/goog -type f -name '*.js'|sort|
     grep -v /demos/|
     grep -v /testdata|
     grep -v /testing/|

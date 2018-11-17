@@ -16,3 +16,9 @@ goog.functions.bar = function(arg) {
  */
 goog.functions.baz = function(arg) {
 };
+
+/**
+ * @param {number|?function(string, number): boolean} arg
+ */
+goog.functions.nullable = function(arg) {
+};

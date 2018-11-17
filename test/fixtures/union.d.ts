@@ -15,4 +15,9 @@ declare module goog.functions {
      * @param {number|function(string, number): boolean} arg
      */
     function baz(arg: number|((arg0: string, arg1: number) => boolean)): void;
+
+    /**
+     * @param {number|?function(string, number): boolean} arg
+     */
+    function nullable(arg: number|((arg0: string, arg1: number) => boolean)): void;
 }
