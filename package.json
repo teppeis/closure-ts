@@ -21,10 +21,10 @@
     "test": "run-s lint mocha"
   },
   "dependencies": {
+    "@teppeis/doctrine": "^3.0.1",
     "cli-color": "^1.4.0",
     "commander": "^2.6.0",
     "deep-equal": "^1.0.0",
-    "doctrine": "teppeis/doctrine#fork",
     "esprima": "^1.2.4",
     "espurify": "^1.0.0",
     "estraverse": "^1.9.1",

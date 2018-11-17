@@ -1,4 +1,4 @@
 /**
- * @type {function(...[number]): boolean}
+ * @type {function(...number): boolean}
  */
 goog.functions.foo;
