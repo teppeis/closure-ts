@@ -19,3 +19,4 @@ find $BASEDIR/closure-library -type f -name '*.js'|sort|
 cp $BASEDIR/builtin.d.ts $BASEDIR/closure-library.d.ts/externs/
 $BASEDIR/bin/generate-alldts.sh
 $BASEDIR/bin/check-error.sh
+rm $BASEDIR/test/all.js
