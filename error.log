@@ -1,4 +1,4 @@
-npx: 1個のパッケージを2.111秒でインストールしました。
+npx: 1個のパッケージを1.383秒でインストールしました。
 closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
   Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
     Type 'void' is not assignable to type 'Object'.
@@ -22,7 +22,6 @@ closure-library.d.ts/closure/goog/dom/dom.d.ts(1022,173): error TS2304: Cannot f
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1041,168): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1052,66): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1493,149): error TS2304: Cannot find name 'R'.
-closure-library.d.ts/closure/goog/dom/tagname.d.ts(245,43): error TS2304: Cannot find name 'HTMLMenuItemElement'.
 closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(28,14): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
 closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(148,33): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
 closure-library.d.ts/closure/goog/editor/plugins/tagonenterhandler.d.ts(15,26): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
