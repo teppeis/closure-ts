@@ -1,13 +1,19 @@
-closure-ts [![Build Status](https://travis-ci.org/teppeis/closure-ts.svg?branch=master)](https://travis-ci.org/teppeis/closure-ts)
-====
+# closure-ts
+
+[![npm Version][npm-image]][npm-url]
+![Node.js Version Support][node-version]
+[![Build Status](https://travis-ci.org/teppeis/closure-ts.svg?branch=master)](https://travis-ci.org/teppeis/closure-ts)
+[![Dependency Status][deps-image]][deps-url]
+![License][license]
 
 > Generates TypeScript declaration files (.d.ts) from [Closure Library JSDoc annotations](https://developers.google.com/closure/compiler/docs/js-for-compiler).
 
-The result is [closure-library.d.ts](https://github.com/teppeis/closure-library.d.ts "teppeis/closure-library.d.ts").
+The result is [closure-library.d.ts](https://github.com/teppeis/closure-library.d.ts 'teppeis/closure-library.d.ts').
 
 ## Example
 
 From this JavaScript code with annotations,
+
 ```javascript
 /**
  * Truncates a string to a certain length.
@@ -17,10 +23,12 @@ From this JavaScript code with annotations,
  * @return {string}
  */
 goog.string.truncate = function(str, chars, opt_protectEscapedCharacters) {
-    // ...
+  // ...
 };
 ```
+
 closure-ts generates this declaration file (.d.ts).
+
 ```javascript
 declare module goog.string {
     /**
@@ -49,27 +57,36 @@ Just PoC
 
 ### Implemented
 
-* Variable with `@type`
-* Function with `@param` and `@return`
-* Namespace to TypeScript `module`
-* Classes (`@constructor` and `@extends`)
-* Enum with `@enum` to TypeScrip type alias and variables
-* Convert `*` to `any`
-* Generic type like `Array<number>`
-* Generic classes and function with `@template`
-* Union type
-* Record type
-* Rest parameters in `@param` and FunctionType
-* Optional parameters
-* Exclude `@private` definitions
-* `@typedef`
-* Convert `Object.<string, Foo>` to `{[index: string]: Foo}`
-* Ignore features TypeScript doesn't have
-    * `@this`, `new` of function type
-    * Nullable, Non-Nullable
+- Variable with `@type`
+- Function with `@param` and `@return`
+- Namespace to TypeScript `module`
+- Classes (`@constructor` and `@extends`)
+- Enum with `@enum` to TypeScrip type alias and variables
+- Convert `*` and `?` to `any`
+- Generic type like `Array<number>`
+- Generic classes and function with `@template`
+- Union type
+- Record type
+- Rest parameters in `@param` and FunctionType
+- Optional parameters
+- Exclude `@private` definitions
+- Convert `@typedef` to `type`
+- Convert `@record` to `interface`
+- Convert `Object<string, Foo>` to `{[index: string]: Foo}`
+- Ignore features TypeScript doesn't have
+  - `@this`, `this:` and `new:` of function type
+  - Nullable, Non-Nullable
 
 ### TODO
 
-* `@lends`
-* Dependencies of Closure Library files
-* One stop build system with Grunt or Gulp
+- `@lends`
+- Dependencies of Closure Library files
+- One stop build system with Grunt or Gulp
+
+[npm-image]: https://img.shields.io/npm/v/closure-ts.svg
+[npm-url]: https://npmjs.org/package/closure-ts
+[npm-downloads-image]: https://img.shields.io/npm/dm/closure-ts.svg
+[deps-image]: https://img.shields.io/david/teppeis/closure-ts.svg
+[deps-url]: https://david-dm.org/teppeis/closure-ts
+[node-version]: https://img.shields.io/badge/Node.js%20support-v8,v10,v11-brightgreen.svg
+[license]: https://img.shields.io/npm/l/closure-ts.svg
