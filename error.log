@@ -1,4 +1,4 @@
-npx: 1個のパッケージを2.402秒でインストールしました。
+npx: 1個のパッケージを2.111秒でインストールしました。
 closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
   Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
     Type 'void' is not assignable to type 'Object'.
@@ -6,28 +6,23 @@ closure-library.d.ts/closure/goog/db/error.d.ts(24,52): error TS2694: Namespace 
 closure-library.d.ts/closure/goog/debug/error.d.ts(13,11): error TS2506: 'Error' is referenced directly or indirectly in its own base expression.
 closure-library.d.ts/closure/goog/debug/tracer.d.ts(32,56): error TS2694: Namespace 'goog.debug.Trace_' has no exported member 'TracerCallbacks'.
 closure-library.d.ts/closure/goog/disposable/disposable.d.ts(58,56): error TS2694: Namespace 'goog.disposable' has no exported member 'IDisposable'.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(81,95): error TS2315: Type 'NodeList' is not generic.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(81,104): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(81,106): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(103,138): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(117,126): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(165,103): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(219,149): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(238,144): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(249,61): error TS2304: Cannot find name 'R'.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(400,55): error TS2315: Type 'NodeList' is not generic.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(666,144): error TS2304: Cannot find name 'R'.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(761,100): error TS2315: Type 'NodeList' is not generic.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(761,109): error TS2304: Cannot find name 'R'.
+closure-library.d.ts/closure/goog/dom/dom.d.ts(761,111): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(793,143): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(807,131): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(854,108): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1022,173): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1041,168): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1052,66): error TS2304: Cannot find name 'R'.
-closure-library.d.ts/closure/goog/dom/dom.d.ts(1204,60): error TS2315: Type 'NodeList' is not generic.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1493,149): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/tagname.d.ts(245,43): error TS2304: Cannot find name 'HTMLMenuItemElement'.
-closure-library.d.ts/closure/goog/dom/xml.d.ts(75,53): error TS2315: Type 'NodeList' is not generic.
 closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(28,14): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
 closure-library.d.ts/closure/goog/editor/plugins/enterhandler.d.ts(148,33): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
 closure-library.d.ts/closure/goog/editor/plugins/tagonenterhandler.d.ts(15,26): error TS2314: Generic type 'TagName<T>' requires 1 type argument(s).
@@ -224,7 +219,7 @@ closure-library.d.ts/closure/goog/ui/checkbox.d.ts(21,11): error TS2417: Class s
       Property 'ALL' is missing in type '{ CHECKED: boolean; UNCHECKED: boolean; UNDETERMINED: boolean; }'.
 closure-library.d.ts/closure/goog/ui/colormenubuttonrenderer.d.ts(12,11): error TS2417: Class static side 'typeof ColorMenuButtonRenderer' incorrectly extends base class static side 'typeof MenuButtonRenderer'.
   Types of property 'wrapCaption' are incompatible.
-    Type '(content: any, dom: DomHelper) => Element' is not assignable to type '(content: any, cssClass: string, dom: DomHelper) => Element'.
+    Type '(content: ControlContent, dom: DomHelper) => Element' is not assignable to type '(content: ControlContent, cssClass: string, dom: DomHelper) => Element'.
       Types of parameters 'dom' and 'cssClass' are incompatible.
         Type 'string' is not assignable to type 'DomHelper'.
 closure-library.d.ts/closure/goog/ui/colorpicker.d.ts(18,11): error TS2417: Class static side 'typeof ColorPicker' incorrectly extends base class static side 'typeof Component'.
@@ -235,7 +230,6 @@ closure-library.d.ts/closure/goog/ui/container.d.ts(28,11): error TS2417: Class 
   Types of property 'EventType' are incompatible.
     Type '{ AFTER_SHOW: string; AFTER_HIDE: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
       Property 'BEFORE_SHOW' is missing in type '{ AFTER_SHOW: string; AFTER_HIDE: string; }'.
-closure-library.d.ts/closure/goog/ui/controlcontent.d.ts(8,51): error TS2315: Type 'NodeList' is not generic.
 closure-library.d.ts/closure/goog/ui/dialog.d.ts(44,11): error TS2417: Class static side 'typeof Dialog' incorrectly extends base class static side 'typeof ModalPopup'.
   Types of property 'EventType' are incompatible.
     Type '{ SELECT: string; AFTER_HIDE: string; AFTER_SHOW: string; }' is not assignable to type '{ BEFORE_SHOW: string; SHOW: string; HIDE: string; DISABLE: string; ENABLE: string; HIGHLIGHT: string; UNHIGHLIGHT: string; ACTIVATE: string; DEACTIVATE: string; SELECT: string; UNSELECT: string; ... 9 more ...; CHANGE: string; }'.
