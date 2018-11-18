@@ -16,9 +16,12 @@
     "lib"
   ],
   "scripts": {
-    "lint": "eslint bin lib test",
+    "tsc": "tsc",
+    "clean": "rimraf lib",
+    "build": "run-s clean tsc",
+    "lint": "eslint bin src test",
     "mocha": "mocha test",
-    "test": "run-s lint mocha"
+    "test": "run-s build lint mocha"
   },
   "dependencies": {
     "@teppeis/doctrine": "^3.1.0",
@@ -32,12 +35,15 @@
     "mkdirp": "^0.5.0"
   },
   "devDependencies": {
+    "@types/node": "^10.12.9",
     "diff": "^3.5.0",
     "eslint": "^5.9.0",
     "eslint-config-teppeis": "^8.3.1",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3",
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.1.6"
   },
   "repository": "teppeis/closure-ts",
   "keywords": [
