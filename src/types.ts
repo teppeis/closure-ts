@@ -10,42 +10,33 @@ export interface ModuleInfo {
   classIndex: Record<string, ClassInfo>;
 }
 
-export interface VarInfo {
+interface InfoBase {
   name: string;
-  type: any;
-  isStatic: boolean;
+  type: string;
   comment: estree.Comment;
 }
 
-export interface ClassInfo {
-  name: string;
+export interface VarInfo extends InfoBase {
+  isStatic: boolean;
+}
+
+export interface ClassInfo extends InfoBase {
   type: 'ClassType' | 'InterfaceType' | null;
   cstr: any;
   parents: string[];
   templates: string[];
   methods: FunctionInfo[];
   props: VarInfo[];
-  comment: estree.Comment;
 }
 
-export interface FunctionInfo {
-  name: string;
-  type: any;
+export interface FunctionInfo extends InfoBase {
   templates: string[];
   isStatic: boolean;
-  comment: estree.Comment;
 }
 
-export interface EnumInfo {
-  name: string;
-  type: any;
-  keys: any[];
-  original: any;
-  comment: estree.Comment;
+export interface EnumInfo extends InfoBase {
+  keys: string[];
+  original: string | null;
 }
 
-export interface TypeDefInfo {
-  name: string;
-  type: string;
-  comment: estree.Comment;
-}
+export interface TypeDefInfo extends InfoBase {}
