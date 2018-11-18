@@ -10,7 +10,10 @@ find $BASEDIR/closure-library/closure/goog $BASEDIR/closure-library/third_party/
     grep -v '_test.js$'|
     grep -v 'tester.js$'|
     grep -v '_perf.js$'|
-    diff --unchanged-line-format='' --new-line-format='' - ./bin/ignore.txt|
+    diff --unchanged-line-format='' --new-line-format='' - ./misc/ignore.txt|
+    diff --unchanged-line-format='' --new-line-format='' - ./misc/goog.module.txt|
+    diff --unchanged-line-format='' --new-line-format='' - ./misc/goog.module.get.txt|
+    diff --unchanged-line-format='' --new-line-format='' - ./misc/goog.scope.txt|
     xargs $BASEDIR/bin/closurets.js
 cp $BASEDIR/builtin.d.ts $BASEDIR/closure-library.d.ts/externs/
 $BASEDIR/bin/generate-alldts.sh
