@@ -1,4 +1,3 @@
-npx: 1個のパッケージを1.393秒でインストールしました。
 closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
   Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
     Type 'void' is not assignable to type 'Object'.
