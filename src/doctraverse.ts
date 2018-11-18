@@ -24,8 +24,6 @@
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-'use strict';
-
 const VisitorKeys = {
   NullableLiteral: ['expression'],
   AllLiteral: [],
@@ -46,12 +44,12 @@ const VisitorKeys = {
   TypeApplication: ['expression', 'applications'],
 };
 
-const VisitorOption = {
+export const VisitorOption = {
   Break: 1,
   Skip: 2,
 };
 
-function traverse(top, visitor) {
+export function traverse(top, visitor) {
   let node, ret, current, current2, candidates, candidate;
   const marker = {};
   const worklist = [top];
@@ -108,8 +106,3 @@ function traverse(top, visitor) {
     }
   }
 }
-
-module.exports = {
-  traverse: traverse,
-  VisitorOption: VisitorOption,
-};
