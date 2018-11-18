@@ -21,7 +21,7 @@ export interface VarInfo extends InfoBase {
 }
 
 export interface ClassInfo extends InfoBase {
-  type: 'ClassType' | 'InterfaceType' | null;
+  type: 'ClassType' | 'InterfaceType';
   cstr: any;
   parents: string[];
   templates: string[];

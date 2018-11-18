@@ -145,7 +145,7 @@ function parseStatement(
   if (isClass || isInterface) {
     classInfo = {
       name,
-      type: isClass ? 'ClassType' : isInterface ? 'InterfaceType' : null,
+      type: isClass ? 'ClassType' : 'InterfaceType',
       cstr: getClassConstructorAnnotation(doc.tags),
       parents: getParentClasses(doc.tags),
       templates: getTemplates(doc.tags),
