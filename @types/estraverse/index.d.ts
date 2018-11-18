@@ -6,18 +6,29 @@
 import * as ESTree from 'estree';
 
 export interface Visitor {
-    enter?: (node: ESTree.Node, parentNode: ESTree.Node | null) => VisitorOption | ESTree.Node | void;
-    leave?: (node: ESTree.Node, parentNode: ESTree.Node | null) => VisitorOption | ESTree.Node | void;
-
-    fallback?: 'iteration'|((node: ESTree.Node) => string[]);
-
+    enter?: (this: Controller, node: ESTree.Node, parentNode: ESTree.Node | null) => VisitorOption | ESTree.Node | void;
+    leave?: (this: Controller, node: ESTree.Node, parentNode: ESTree.Node | null) => VisitorOption | ESTree.Node | void;
+    fallback?: 'iteration'|((this: Controller, node: ESTree.Node) => string[]);
     keys?: {[nodeType: string]: string[];};
 }
 
 export enum VisitorOption {Skip, Break, Remove}
 
-export function traverse(ast: ESTree.Node, visitor: Visitor): void;
-export function replace(ast: ESTree.Node, visitor: Visitor): ESTree.Node;
+export function traverse(root: ESTree.Node, visitor: Visitor): void;
+export function replace(root: ESTree.Node, visitor: Visitor): ESTree.Node;
+
+export class Controller {
+    path(): string[]|null;
+    type(): string;
+    parents(): ESTree.Node[];
+    current(): ESTree.Node;
+    notify(flag: VisitorOption): void;
+    skip(): void;
+    break(): void;
+    remove(): void;
+    traverse(root: ESTree.Node, visitor: Visitor): void;
+    replace(root: ESTree.Node, visitor: Visitor): ESTree.Node;
+}
 
 export const Syntax: {
     AssignmentExpression: 'AssignmentExpression',

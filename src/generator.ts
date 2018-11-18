@@ -1,23 +1,23 @@
-'use strict';
-
 import doctrine from '@teppeis/doctrine';
 import {parseScript} from 'esprima';
 import estraverse from 'estraverse';
+import * as estree from 'estree';
 import deepEqual from 'deep-equal';
 import espurify from 'espurify';
 import printer from './printer';
 import * as util from './util';
+import {ClassInfo, EnumInfo, FunctionInfo, ModuleInfo, TypeDefInfo, VarInfo} from './types';
 
 const Syntax = estraverse.Syntax;
 
-function generate(code) {
+export function generate(code: string): string {
   const ast = parseScript(code, {
     comment: true,
     attachComment: true,
     loc: true,
   });
-  const declarations = {};
-  const provides = [];
+  const declarations: Record<string, ModuleInfo> = {};
+  const provides: string[] = [];
   ast.body.forEach(statement => {
     try {
       parseStatement(statement, declarations, provides);
@@ -29,7 +29,7 @@ function generate(code) {
   return printer(declarations, provides);
 }
 
-function parseStatement(statement, declarations, provides) {
+function parseStatement(statement: estree.Statement | estree.ModuleDeclaration, declarations: Record<string, ModuleInfo>, provides: string[]): void {
   if (statement.type === Syntax.IfStatement || statement.type === Syntax.TryStatement) {
     // TODO: ignore top level IfStatement or TryStatement now.
     return;
@@ -116,7 +116,7 @@ function parseStatement(statement, declarations, provides) {
     return;
   }
 
-  let moduleInfo = declarations[moduleName];
+  let moduleInfo: ModuleInfo = declarations[moduleName];
   if (!moduleInfo) {
     moduleInfo = declarations[moduleName] = {
       vars: [],
@@ -129,7 +129,7 @@ function parseStatement(statement, declarations, provides) {
     };
   }
 
-  let classInfo;
+  let classInfo: ClassInfo | null = null;
   if (moduleInfo && className) {
     classInfo = moduleInfo.classIndex[className];
   }
@@ -155,8 +155,8 @@ function parseStatement(statement, declarations, provides) {
   }
 
   if (isFunctionDeclaration(statement, doc.tags)) {
-    const functionInfo = {
-      name: name,
+    const functionInfo: FunctionInfo = {
+      name,
       type: getFunctionAnnotation(doc.tags),
       templates: getTemplates(doc.tags),
       isStatic: isStatic,
@@ -172,6 +172,9 @@ function parseStatement(statement, declarations, provides) {
   }
 
   if (enumTag) {
+    if (statement.type !== Syntax.ExpressionStatement) {
+      throw new Error('ExpressionStatement are expected: ' + statement.type);
+    }  
     moduleInfo.enums.push({
       name: name,
       type: getTsType(enumTag.type),
@@ -212,15 +215,16 @@ function popOrThrow<T>(array: T[]): T {
   return lastItem;
 }
 
-function extractProvide(statement, provides) {
+function extractProvide(statement: estree.Statement | estree.ModuleDeclaration, provides: string[]): boolean {
   if (
     statement.type === Syntax.ExpressionStatement &&
     statement.expression.type === Syntax.CallExpression
   ) {
     const callExp = statement.expression;
+    const firstArg = callExp.arguments[0];
     if (
-      callExp.arguments.length === 1 &&
-      callExp.arguments[0].type === Syntax.Literal &&
+      firstArg &&
+      firstArg.type === Syntax.Literal &&
       deepEqual(espurify(callExp.callee), {
         type: 'MemberExpression',
         computed: false,
@@ -234,14 +238,17 @@ function extractProvide(statement, provides) {
         },
       })
     ) {
-      provides.push(callExp.arguments[0].value);
+      if (typeof firstArg.value !== 'string') {
+        throw new Error('Unexpected value: ' + firstArg.value);
+      }
+      provides.push(firstArg.value!);
       return true;
     }
   }
   return false;
 }
 
-function isToIgnore(name) {
+function isToIgnore(name: string): boolean {
   const ignoreList = {
     'goog.debug.LogManager': true,
     'goog.net.BrowserChannel.LogSaver': true,
@@ -251,7 +258,7 @@ function isToIgnore(name) {
   return name in ignoreList;
 }
 
-function isStaticMember(fullname, declarations) {
+function isStaticMember(fullname: string[], declarations: Record<string, ModuleInfo>): boolean {
   const className = fullname[fullname.length - 1];
   const moduleName = fullname.slice(0, -1).join('.');
   const moduleInfo = declarations[moduleName];
@@ -262,11 +269,11 @@ function isStaticMember(fullname, declarations) {
   return false;
 }
 
-function isPrivate(tags) {
+function isPrivate(tags: doctrine.Tag[]): boolean {
   return tags.some(tag => tag.title === 'private');
 }
 
-function isEmptyOverride(doc, statement) {
+function isEmptyOverride(doc: doctrine.Annotation, statement: estree.Statement | estree.ModuleDeclaration): boolean {
   const tags = doc.tags;
   let hasOverride = false;
   let hasDescription = !!doc.description;
@@ -292,7 +299,7 @@ function isEmptyOverride(doc, statement) {
   return false;
 }
 
-function getEnumTag(tags) {
+function getEnumTag(tags: doctrine.Tag[]): doctrine.Tag|null {
   for (let i = 0; i < tags.length; i++) {
     if (tags[i].title === 'enum') {
       return tags[i];
@@ -301,7 +308,7 @@ function getEnumTag(tags) {
   return null;
 }
 
-function getTypedefTag(tags) {
+function getTypedefTag(tags: doctrine.Tag[]): doctrine.Tag|null  {
   for (let i = 0; i < tags.length; i++) {
     if (tags[i].title === 'typedef') {
       return tags[i];
@@ -310,7 +317,13 @@ function getTypedefTag(tags) {
   return null;
 }
 
-function getEnumKeys(statement) {
+/**
+ * `foo.Bar = {A: 'a', B: 'b'}` => ['A', 'B']
+ */
+function getEnumKeys(statement: estree.ExpressionStatement): string[] {
+  if (statement.expression.type !== Syntax.AssignmentExpression) {
+    throw new Error('AssignmentExpression are expected: ' + statement.expression.type);
+  }
   if (statement.expression.right.type !== 'ObjectExpression') {
     return [];
   }
@@ -322,12 +335,18 @@ function getEnumKeys(statement) {
       case 'Literal':
         return key.raw;
       default:
-        throw new Error(`getEnumKeys(): Unexpected key:${key.type}`);
+        throw new Error(`getEnumKeys(): Unexpected key: ${key.type}`);
     }
   });
 }
 
-function getOriginalEnum(statement) {
+/**
+ * `goog.Foo = goog.Bar` => `goog.Bar`
+ */
+function getOriginalEnum(statement: estree.ExpressionStatement): string|null {
+  if (statement.expression.type !== Syntax.AssignmentExpression) {
+    throw new Error('AssignmentExpression are expected: ' + statement.expression.type);
+  }
   const right = statement.expression.right;
   if (right.type === 'Identifier' || right.type === 'MemberExpression') {
     return getMemberExpressionNameListNoLiteral(right).join('.');
@@ -335,7 +354,13 @@ function getOriginalEnum(statement) {
   return null;
 }
 
-function getTsType(type, opts?) {
+interface GetTsTypeOptions {
+  isChildOfTypeApplication?: boolean
+  isUnionTypeMember?: boolean
+  isRestType?: boolean
+}
+
+function getTsType(type: doctrine.Type, opts?: GetTsTypeOptions): string {
   opts = opts || {};
   if (!type) {
     // no type property if doctrine fails to parse type.
@@ -395,7 +420,7 @@ function getTsType(type, opts?) {
   /* eslint-enable no-case-declarations */
 }
 
-function getTypeApplicationString(type) {
+function getTypeApplicationString(type: doctrine.type.TypeApplication): string {
   const baseType = getTsType(type.expression, {isChildOfTypeApplication: true});
   if (baseType === 'Object') {
     return getObjectTypeApplicationString(type.applications);
@@ -413,7 +438,7 @@ function getTypeApplicationString(type) {
   return `${baseType}<${paramStrList.join(', ')}>`;
 }
 
-function getObjectTypeApplicationString(applications) {
+function getObjectTypeApplicationString(applications: doctrine.Type[]): string {
   let indexType = 'string';
   let valueType;
   if (applications.length === 1) {
@@ -431,7 +456,7 @@ function getObjectTypeApplicationString(applications) {
   return `{[index: ${indexType}]: ${valueType}}`;
 }
 
-function isNotTsGenericType(name) {
+function isNotTsGenericType(name: string): boolean {
   const nonGenericTypes = {
     Object: true,
     // TODO: Iterator and ArrayLike has a type parameter implicitly.
@@ -441,8 +466,8 @@ function isNotTsGenericType(name) {
   return name in nonGenericTypes;
 }
 
-function getTsGenericTypeParamNum(name) {
-  const genericTypes = {
+function getTsGenericTypeParamNum(name: string): number {
+  const genericTypes: Record<string, number> = {
     Array: 1,
     IThenable: 1,
     Map: 2,
@@ -463,10 +488,10 @@ function getTsGenericTypeParamNum(name) {
     'goog.structs.Set': 1,
     'goog.structs.TreeNode': 2,
   };
-  return genericTypes[name];
+  return genericTypes[name] || 0;
 }
 
-function getArgName(name, type) {
+function getArgName(name: string, type: doctrine.Type): string {
   if (isReservedWord(name)) {
     name += '_';
   }
@@ -485,11 +510,11 @@ function getArgName(name, type) {
   }
 }
 
-function isReservedWord(name) {
+function isReservedWord(name: string): boolean {
   return name === 'class';
 }
 
-function getFunctionAnnotation(tags, opt_ignoreReturn?, opt_ignoreTemplate?) {
+function getFunctionAnnotation(tags: doctrine.Tag[], opt_ignoreReturn?: boolean, opt_ignoreTemplate?: boolean): string {
   const params: {type: any, name: string}[] = [];
   let returns = '';
 
@@ -516,8 +541,8 @@ function getFunctionAnnotation(tags, opt_ignoreReturn?, opt_ignoreTemplate?) {
   return `${args}: ${returns}`;
 }
 
-function getTemplates(tags) {
-  let templates = [];
+function getTemplates(tags: doctrine.Tag[]): string[] {
+  let templates: string[] = [];
   tags.some(tag => {
     if (tag.title === 'template') {
       templates = tag.description.split(',').map(t => t.trim());
@@ -528,16 +553,16 @@ function getTemplates(tags) {
   return templates;
 }
 
-function getClassConstructorAnnotation(tags) {
+function getClassConstructorAnnotation(tags: doctrine.Tag[]): string {
   return getFunctionAnnotation(tags, true, true);
 }
 
-function getParentClasses(tags) {
+function getParentClasses(tags: doctrine.Tag[]): string[] {
   return tags.filter(tag => tag.title === 'extends').map(tag => getTsType(tag.type));
 }
 
-function getTypeAnnotation(tags, statement) {
-  const type: {enum: any, type: any} = {
+function getTypeAnnotation(tags: doctrine.Tag[], statement: estree.Statement | estree.ModuleDeclaration): string {
+  const type: {enum: {type: string}, type: {type: string}} = {
     enum: null,
     type: null,
   };
@@ -565,11 +590,11 @@ function getTypeAnnotation(tags, statement) {
   }
 }
 
-function toRecordTypeString(tag) {
+function toRecordTypeString(tag: doctrine.type.RecordType): string {
   return `{${tag.fields.map(field => `${field.key}: ${getTsType(field.value)}`).join('; ')}}`;
 }
 
-function toFunctionTypeString(params, ret, opts) {
+function toFunctionTypeString(params: {type: string, name: string}[], ret: string, opts?: GetTsTypeOptions): string {
   opts = opts || {};
   const args = toFunctionArgsString(params);
   const returns = ret ? ret : 'void';
@@ -580,18 +605,25 @@ function toFunctionTypeString(params, ret, opts) {
   return str;
 }
 
-function toFunctionArgsString(params) {
+function toFunctionArgsString(params: {type: string, name: string}[]): string {
   return `(${params.map(param => `${param.name}: ${param.type}`).join(', ')})`;
 }
 
-function isAssignement(statement) {
+/**
+ * `foo = bar;`
+ */
+interface AssignmentStatement extends estree.ExpressionStatement {
+  expression: estree.AssignmentExpression
+}
+
+function isAssignement(statement: estree.Statement | estree.ModuleDeclaration): statement is AssignmentStatement {
   return (
     statement.type === Syntax.ExpressionStatement &&
     statement.expression.type === Syntax.AssignmentExpression
   );
 }
 
-function isFunctionDeclaration(statement, tags) {
+function isFunctionDeclaration(statement: estree.Statement | estree.ModuleDeclaration, tags: doctrine.Tag[]): boolean {
   const isFunction = tags.some(tag => tag.title === 'param' || tag.title === 'return');
 
   if (isFunction) {
@@ -639,15 +671,15 @@ function isFunctionDeclaration(statement, tags) {
   return !isNotFunction;
 }
 
-function isClassDeclaration(statement, tags) {
+function isClassDeclaration(statement: estree.Statement | estree.ModuleDeclaration, tags: doctrine.Tag[]): boolean {
   return tags.some(tag => tag.title === 'constructor');
 }
 
-function isInterfaceDeclaration(statement, tags) {
+function isInterfaceDeclaration(statement: estree.Statement | estree.ModuleDeclaration, tags: doctrine.Tag[]): boolean{
   return tags.some(tag => tag.title === 'interface' || tag.title === 'record');
 }
 
-function getFullName(statement): string[]|null {
+function getFullName(statement: estree.Statement | estree.ModuleDeclaration): string[]|null {
   switch (statement.type) {
     case Syntax.ExpressionStatement:
       return getFullNameFromExpressionStatement(statement);
@@ -661,7 +693,7 @@ function getFullName(statement): string[]|null {
   }
 }
 
-function getFullNameFromVariableDeclaration(statement) {
+function getFullNameFromVariableDeclaration(statement: estree.VariableDeclaration) {
   // No variable declarations in Closure Library
   return null;
 }
@@ -670,18 +702,21 @@ function getFullNameFromVariableDeclaration(statement) {
  * @param {Object} statement
  * @return {Array<string>|null}
  */
-function getFullNameFromExpressionStatement(statement): string[]|null {
+function getFullNameFromExpressionStatement(statement: estree.ExpressionStatement): string[]|null {
   const expression = statement.expression;
-  let targetExpression;
+  let targetExpression: estree.MemberExpression | estree.Identifier;
   switch (expression.type) {
     case Syntax.AssignmentExpression:
+      if (expression.left.type !== Syntax.MemberExpression && expression.left.type !== Syntax.Identifier) {
+        throw new Error(`Unexpected expression: ${expression.left.type}`);
+      }
       targetExpression = expression.left;
       break;
     case Syntax.MemberExpression:
       targetExpression = expression;
       break;
     case Syntax.CallExpression:
-      // Like: @fileoverview => goog.provide('foo')
+      // ex: @fileoverview befores goog.provide('foo')
       return null;
     default:
       console.error(statement);
@@ -691,7 +726,7 @@ function getFullNameFromExpressionStatement(statement): string[]|null {
   return getMemberExpressionNameList(targetExpression);
 }
 
-function getMemberExpressionNameListNoLiteral(expression): string[] {
+function getMemberExpressionNameListNoLiteral(expression: estree.MemberExpression | estree.Identifier): string[] {
   const nameList = getMemberExpressionNameList(expression);
   if (!nameList) {
     console.error(expression);
@@ -704,12 +739,12 @@ function getMemberExpressionNameListNoLiteral(expression): string[] {
  * @param {Object} expression
  * @return {Array.<string>|null} null if the expression includes a literal.
  */
-function getMemberExpressionNameList(expression): string[]|null {
+function getMemberExpressionNameList(expression: estree.MemberExpression | estree.Identifier): string[]|null {
   const fullname: string[] = [];
   let includeLiteral = false;
   estraverse.traverse(expression, {
     enter(node, parent) {
-      if (node.computed || node.type === Syntax.Literal) {
+      if ((node.type === 'MemberExpression' && node.computed) || node.type === Syntax.Literal) {
         includeLiteral = true;
         this.break();
       }
@@ -726,7 +761,7 @@ function getMemberExpressionNameList(expression): string[]|null {
   return fullname;
 }
 
-function replaceTypeName(name, opts) {
+function replaceTypeName(name: string, opts: GetTsTypeOptions): string {
   const map = {
     EventTarget: 'goog.globalEventTarget',
     WebWorker: 'Worker',
@@ -748,7 +783,3 @@ function replaceTypeName(name, opts) {
     return name;
   }
 }
-
-module.exports = {
-  generate: generate,
-};

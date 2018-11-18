@@ -1,7 +1,8 @@
-import * as util from './util';
 import intersection from 'lodash/intersection';
+import * as util from './util';
+import { ModuleInfo } from './types';
 
-export default function outputDeclarations(declarations, provides): string {
+export default function outputDeclarations(declarations: Record<string, ModuleInfo>, provides: string[]): string {
   const output: string[] = [];
   output.push(outputProvides(declarations, provides));
   for (const name in declarations) {
