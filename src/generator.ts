@@ -167,7 +167,7 @@ function parseStatement(
       comment: comment,
     };
 
-    if (className) {
+    if (className && classInfo) {
       classInfo.methods.push(functionInfo);
     } else {
       moduleInfo.functions.push(functionInfo);
@@ -291,7 +291,7 @@ function isEmptyOverride(
   tags.forEach(tag => {
     const title = tag.title;
     hasOverride = hasOverride || title === 'override';
-    hasDescription = hasDescription || (tag.description && tag.description !== '*');
+    hasDescription = hasDescription || (!!tag.description && tag.description !== '*');
     hasType =
       hasType ||
       title === 'param' ||
@@ -343,6 +343,9 @@ function getEnumKeys(statement: estree.ExpressionStatement): string[] {
       case 'Identifier':
         return key.name;
       case 'Literal':
+        if (!key.raw) {
+          throw new Error('Unexpected literal raw: ' + key.raw);
+        }
         return key.raw;
       default:
         throw new Error(`getEnumKeys(): Unexpected key: ${key.type}`);
@@ -370,7 +373,7 @@ interface GetTsTypeOptions {
   isRestType?: boolean;
 }
 
-function getTsType(type: doctrine.Type, opts?: GetTsTypeOptions): string {
+function getTsType(type: doctrine.Type | null | undefined, opts?: GetTsTypeOptions): string {
   opts = opts || {};
   if (!type) {
     // no type property if doctrine fails to parse type.
@@ -501,7 +504,7 @@ function getTsGenericTypeParamNum(name: string): number {
   return genericTypes[name] || 0;
 }
 
-function getArgName(name: string, type: doctrine.Type): string {
+function getArgName(name: string, type: doctrine.Type | null | undefined): string {
   if (isReservedWord(name)) {
     name += '_';
   }
@@ -535,6 +538,9 @@ function getFunctionAnnotation(
   tags.forEach(tag => {
     switch (tag.title) {
       case 'param':
+        if (!tag.name) {
+          throw new Error('tag.name of param is undefined: ' + tag.name);
+        }
         params.push({type: getTsType(tag.type), name: getArgName(tag.name, tag.type)});
         break;
       case 'return':
@@ -559,7 +565,7 @@ function getTemplates(tags: doctrine.Tag[]): string[] {
   let templates: string[] = [];
   tags.some(tag => {
     if (tag.title === 'template') {
-      templates = tag.description.split(',').map(t => t.trim());
+      templates = tag.description!.split(',').map(t => t.trim());
       return true;
     }
     return false;
@@ -579,26 +585,9 @@ function getTypeAnnotation(
   tags: doctrine.Tag[],
   statement: estree.Statement | estree.ModuleDeclaration
 ): string {
-  const type: {enum: {type: string}; type: {type: string}} = {
-    enum: null,
-    type: null,
-  };
-
-  tags.forEach(tag => {
-    switch (tag.title) {
-      case 'enum':
-        type.enum = {type: getTsType(tag.type)};
-        break;
-      case 'type':
-        type.type = {type: getTsType(tag.type)};
-        break;
-      default:
-      // ignore
-    }
-  });
-
-  if (type.type) {
-    return type.type.type;
+  const typeTag = tags.find(tag => tag.title === 'type');
+  if (typeTag) {
+    return getTsType(typeTag.type);
   } else if (isAssignement(statement)) {
     return 'any';
   } else {
