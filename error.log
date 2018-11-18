@@ -1,4 +1,4 @@
-npx: 1個のパッケージを2.078秒でインストールしました。
+npx: 1個のパッケージを1.679秒でインストールしました。
 closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
   Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
     Type 'void' is not assignable to type 'Object'.
@@ -19,19 +19,13 @@ closure-library.d.ts/closure/goog/dom/dom.d.ts(1022,173): error TS2304: Cannot f
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1041,168): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1052,66): error TS2304: Cannot find name 'R'.
 closure-library.d.ts/closure/goog/dom/dom.d.ts(1493,149): error TS2304: Cannot find name 'R'.
-closure-library.d.ts/closure/goog/events/eventhandler.d.ts(151,98): error TS2304: Cannot find name 'EVENTOBJ'.
-closure-library.d.ts/closure/goog/events/eventhandler.d.ts(151,134): error TS2304: Cannot find name 'EVENTOBJ'.
 closure-library.d.ts/closure/goog/events/keycodes.d.ts(15,10): error TS2300: Duplicate identifier 'KeyCodes'.
 closure-library.d.ts/closure/goog/events/keycodes.d.ts(16,9): error TS2300: Duplicate identifier 'KeyCodes'.
 closure-library.d.ts/closure/goog/events/keycodes.d.ts(140,28): error TS2300: Duplicate identifier 'KeyCodes'.
 closure-library.d.ts/closure/goog/graphics/canvasgraphics.d.ts(265,9): error TS2416: Property 'getTextWidth' in type 'CanvasGraphics' is not assignable to the same property in base type 'AbstractGraphics'.
   Type '(text: string, font: Font) => void' is not assignable to type '(text: string, font: Font) => number'.
     Type 'void' is not assignable to type 'number'.
-closure-library.d.ts/closure/goog/html/sanitizer/htmlsanitizer.d.ts(63,76): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
-closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(24,106): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
-closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(24,171): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
-closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(53,112): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
-closure-library.d.ts/closure/goog/html/sanitizer/unsafe.d.ts(53,227): error TS2694: Namespace 'goog.html.sanitizer.HtmlSanitizer' has no exported member 'Builder'.
+closure-library.d.ts/closure/goog/html/sanitizer/htmlsanitizer.d.ts(58,53): error TS2339: Property 'SafeDomTreeProcessor' does not exist on type 'typeof sanitizer'.
 closure-library.d.ts/closure/goog/html/testing.d.ts(83,71): error TS2694: Namespace 'goog' has no exported member 'testing'.
 closure-library.d.ts/closure/goog/html/testing.d.ts(90,75): error TS2694: Namespace 'goog' has no exported member 'testing'.
 closure-library.d.ts/closure/goog/html/testing.d.ts(97,73): error TS2694: Namespace 'goog' has no exported member 'testing'.
@@ -66,7 +60,7 @@ closure-library.d.ts/closure/goog/net/xhrmanager.d.ts(231,37): error TS2694: Nam
 closure-library.d.ts/closure/goog/positioning/positioning.d.ts(71,10): error TS2300: Duplicate identifier 'OverflowStatus'.
 closure-library.d.ts/closure/goog/positioning/positioning.d.ts(72,9): error TS2300: Duplicate identifier 'OverflowStatus'.
 closure-library.d.ts/closure/goog/positioning/positioning.d.ts(217,33): error TS2300: Duplicate identifier 'OverflowStatus'.
-closure-library.d.ts/closure/goog/promise/promise.d.ts(86,51): error TS2304: Cannot find name 'RESULT'.
+closure-library.d.ts/closure/goog/promise/promise.d.ts(83,51): error TS2304: Cannot find name 'RESULT'.
 closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,117): error TS2304: Cannot find name 'THIS'.
 closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,124): error TS2304: Cannot find name 'RESULT'.
 closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,51): error TS2304: Cannot find name 'V'.
