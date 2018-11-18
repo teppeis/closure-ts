@@ -1,7 +1,7 @@
 'use strict';
 
 import doctrine from '@teppeis/doctrine';
-import {parse} from 'esprima';
+import {parseScript} from 'esprima';
 import estraverse from 'estraverse';
 import deepEqual from 'deep-equal';
 import espurify from 'espurify';
@@ -11,7 +11,7 @@ import * as util from './util';
 const Syntax = estraverse.Syntax;
 
 function generate(code) {
-  const ast = parse(code, {
+  const ast = parseScript(code, {
     comment: true,
     attachComment: true,
     loc: true,
