@@ -34,7 +34,6 @@ closure-library.d.ts/closure/goog/labs/net/webchannel.d.ts(19,15): error TS2320:
   Named property 'dispatchEvent' of types 'EventTarget' and 'Listenable' are not identical.
 closure-library.d.ts/closure/goog/labs/testing/environment.d.ts(42,9): error TS2300: Duplicate identifier 'Environment'.
 closure-library.d.ts/closure/goog/labs/testing/environment.d.ts(45,34): error TS2300: Duplicate identifier 'Environment'.
-closure-library.d.ts/closure/goog/messaging/portchannel.d.ts(26,49): error TS2304: Cannot find name 'WebWorker'.
 closure-library.d.ts/closure/goog/net/browserchannel.d.ts(76,16): error TS2300: Duplicate identifier 'Event'.
 closure-library.d.ts/closure/goog/net/browserchannel.d.ts(424,51): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
 closure-library.d.ts/closure/goog/net/browserchannel.d.ts(768,40): error TS2300: Duplicate identifier 'Event'.
