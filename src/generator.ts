@@ -126,7 +126,6 @@ function parseStatement(
       vars: [],
       typedefs: [],
       functions: [],
-      interfaces: [],
       enums: [],
       classes: [],
       classIndex: {},
@@ -719,10 +718,6 @@ function getFullNameFromVariableDeclaration(statement: estree.VariableDeclaratio
   return null;
 }
 
-/**
- * @param {Object} statement
- * @return {Array<string>|null}
- */
 function getFullNameFromExpressionStatement(
   statement: estree.ExpressionStatement
 ): string[] | null {
@@ -764,8 +759,7 @@ function getMemberExpressionNameListNoLiteral(
 }
 
 /**
- * @param {Object} expression
- * @return {Array.<string>|null} null if the expression includes a literal.
+ * @return {string[]|null} null if the expression includes a literal.
  */
 function getMemberExpressionNameList(
   expression: estree.MemberExpression | estree.Identifier
@@ -792,7 +786,7 @@ function getMemberExpressionNameList(
 }
 
 function replaceTypeName(name: string, opts: GetTsTypeOptions): string {
-  const map = {
+  const map: Record<string, string> = {
     EventTarget: 'goog.globalEventTarget',
     WebWorker: 'Worker',
     // TODO: goog.Thenable and Thenable is confusing, Thenable is renamed to _Thenable temporarily.
@@ -802,7 +796,7 @@ function replaceTypeName(name: string, opts: GetTsTypeOptions): string {
     // deprecated: https://developer.mozilla.org/en-US/docs/Web/API/HTMLIsIndexElement
     HTMLIsIndexElement: 'HTMLElement',
   };
-  const genericsMap = {
+  const genericsMap: Record<string, string> = {
     NodeList: 'NodeListOf',
   };
   if (opts.isChildOfTypeApplication && name in genericsMap) {

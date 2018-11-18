@@ -10,6 +10,7 @@ class Logger {
   private messages_: string[];
   private stdout: NodeJS.WritableStream;
   private stderr: NodeJS.WritableStream;
+
   constructor(enableColor: boolean, stdout: NodeJS.WritableStream, stderr: NodeJS.WritableStream) {
     this.color_ = !!enableColor;
     this.messages_ = [];
@@ -62,20 +63,19 @@ class Logger {
   }
 }
 
-function setCommandOptions(command) {
+function setCommandOptions(command: commander.Command) {
   return command
     .version(require('../package.json').version, '-v, --version')
     .usage('[options] files...')
     .option('--no-color', 'Disable color highlight.');
 }
 
-/**
- * @param {Array} argv
- * @param {Stream} stdout
- * @param {Stream} stderr
- * @param {function(number?)} exit
- */
-export default function main(argv: string[], stdout, stderr, exit) {
+export default function main(
+  argv: string[],
+  stdout: NodeJS.WritableStream,
+  stderr: NodeJS.WritableStream,
+  exit: (code?: number) => never
+) {
   const program = new commander.Command();
   setCommandOptions(program).parse(argv);
 

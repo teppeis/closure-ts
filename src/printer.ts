@@ -1,6 +1,14 @@
 import intersection from 'lodash/intersection';
 import * as util from './util';
-import {ModuleInfo, TypeDefInfo, EnumInfo, VarInfo, FunctionInfo, ClassInfo} from './types';
+import {
+  ModuleInfo,
+  TypeDefInfo,
+  EnumInfo,
+  VarInfo,
+  FunctionInfo,
+  ClassInfo,
+  InfoBase,
+} from './types';
 
 export default function outputDeclarations(
   declarations: Record<string, ModuleInfo>,
@@ -25,7 +33,7 @@ function outputProvides(declarations: Record<string, ModuleInfo>, provided: stri
   let provides: string[] = [];
   for (const moduleName in declarations) {
     const module = declarations[moduleName];
-    const appendModule = item => `${moduleName}.${item.name}`;
+    const appendModule = (item: InfoBase) => `${moduleName}.${item.name}`;
     if (module.vars.length > 0 || module.functions.length > 0) {
       provides.push(moduleName);
     }
@@ -59,9 +67,6 @@ function outputModule(moduleDeclaration: ModuleInfo, name: string): string {
   output.push(moduleDeclaration.enums.map(outputEnumDeclaration.bind(null, indent)).join('\n'));
   output.push(
     moduleDeclaration.typedefs.map(outputTypedefDeclaration.bind(null, indent)).join('\n')
-  );
-  output.push(
-    moduleDeclaration.interfaces.map(outputInterfaceDeclaration.bind(null, indent)).join('\n')
   );
   output.push(moduleDeclaration.classes.map(outputClassDeclaration.bind(null, indent)).join('\n'));
   output.push(moduleDeclaration.vars.map(outputVarDeclaration.bind(null, indent)).join('\n'));
@@ -103,16 +108,6 @@ function outputVarDeclaration(indent: string, declare: VarInfo): string {
 function outputFunctionDeclaration(indent: string, declare: FunctionInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`function ${declare.name}${getTemplateString(declare.templates)}${declare.type};`);
-  return `\n${output.map(line => indent + line).join('\n')}`;
-}
-
-function outputInterfaceDeclaration(indent: string, declare: any): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  output.push(`interface ${declare.name} {`);
-  declare.members.forEach(member => {
-    output.push(`    ${member};`);
-  });
-  output.push('}');
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 

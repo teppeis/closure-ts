@@ -4,13 +4,12 @@ export interface ModuleInfo {
   vars: VarInfo[];
   typedefs: TypeDefInfo[];
   functions: FunctionInfo[];
-  interfaces: [];
   enums: EnumInfo[];
   classes: ClassInfo[];
   classIndex: Record<string, ClassInfo>;
 }
 
-interface InfoBase {
+export interface InfoBase {
   name: string;
   type: string;
   comment: estree.Comment;
