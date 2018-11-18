@@ -19,7 +19,7 @@
     "tsc": "tsc",
     "clean": "rimraf lib",
     "build": "run-s clean tsc",
-    "lint": "eslint bin src test",
+    "lint": "eslint bin test",
     "mocha": "mocha test",
     "test": "run-s build lint mocha"
   },
@@ -37,6 +37,7 @@
   "devDependencies": {
     "@types/estree": "0.0.39",
     "@types/lodash": "^4.14.118",
+    "@types/mkdirp": "^0.5.2",
     "@types/node": "^10.12.9",
     "diff": "^3.5.0",
     "eslint": "^5.9.0",

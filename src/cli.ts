@@ -1,52 +1,55 @@
-'use strict';
+import clc from 'cli-color';
+import commander from 'commander';
+import fs from 'fs';
+import mkdirp from 'mkdirp';
+import path from 'path';
+import { generate } from './generator';
 
-const fs = require('fs');
-const path = require('path');
-const clc = require('cli-color');
-const commander = require('commander');
-const mkdirp = require('mkdirp');
-const generator = require('./generator');
-
-const Logger = function(enableColor, stdout, stderr) {
+class Logger {
+  private color_: boolean;
+  private messages_: string[];
+  private stdout: NodeJS.WritableStream;
+  private stderr: NodeJS.WritableStream;
+  constructor(enableColor: boolean, stdout: NodeJS.WritableStream, stderr: NodeJS.WritableStream) {
   this.color_ = !!enableColor;
   this.messages_ = [];
   this.stdout = stdout;
   this.stderr = stderr;
-};
+}
 
-Logger.prototype.raw = function(msg) {
+raw(msg: string) {
+  this.messages_.push(msg);
+}
+
+info(msg: string) {
   this.messages_.push(msg);
 };
 
-Logger.prototype.info = function(msg) {
-  this.messages_.push(msg);
-};
-
-Logger.prototype.warn = function(msg) {
+warn(msg: string) {
   this.messages_.push(this.color_ ? clc.yellow(msg) : msg);
 };
 
-Logger.prototype.error = function(msg) {
+error(msg: string) {
   this.messages_.push(this.color_ ? clc.red(msg) : msg);
 };
 
-Logger.prototype.success = function(msg) {
+success(msg: string) {
   this.messages_.push(this.color_ ? clc.green(msg) : msg);
 };
 
-Logger.prototype.items = function(items) {
+items(items: string[]) {
   if (items.length === 0) {
     items = ['(none)'];
   }
   this.messages_ = this.messages_.concat(
-    items.map(function(item) {
+    items.map((item) => {
       item = `- ${item}`;
       return this.color_ ? clc.blackBright(item) : item;
     }, this)
   );
 };
 
-Logger.prototype.flush = function(success) {
+flush(success: boolean) {
   const out = success ? this.stdout : this.stderr;
   this.messages_.forEach(msg => {
     out.write(`${msg}\n`);
@@ -54,9 +57,10 @@ Logger.prototype.flush = function(success) {
   this.empty();
 };
 
-Logger.prototype.empty = function() {
+empty() {
   this.messages_ = [];
 };
+}
 
 function setCommandOptions(command) {
   return command
@@ -71,7 +75,7 @@ function setCommandOptions(command) {
  * @param {Stream} stderr
  * @param {function(number?)} exit
  */
-function main(argv, stdout, stderr, exit) {
+export default function main(argv: string[], stdout, stderr, exit) {
   const program = new commander.Command();
   setCommandOptions(program).parse(argv);
 
@@ -86,7 +90,7 @@ function main(argv, stdout, stderr, exit) {
     log.warn(`File: ${file}\n`);
     const code = fs.readFileSync(file, 'utf8');
     try {
-      const generated = generator.generate(code);
+      const generated = generate(code);
       if (generated) {
         const relativePath = path.relative(`${__dirname}/../closure-library`, file);
         const filepath = path
@@ -100,5 +104,3 @@ function main(argv, stdout, stderr, exit) {
     }
   });
 }
-
-module.exports = main;
