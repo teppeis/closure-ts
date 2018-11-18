@@ -6,7 +6,7 @@ const estraverse = require('estraverse');
 const Syntax = estraverse.Syntax;
 const deepEqual = require('deep-equal');
 const espurify = require('espurify');
-const printer = require('./printer');
+const printer = require('./printer').default;
 const util = require('./util');
 
 function generate(code) {

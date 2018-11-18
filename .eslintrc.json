@@ -1,3 +1,8 @@
 {
-  "extends": ["teppeis/node-v8", "teppeis/+prettier", "teppeis/+mocha"]
+  "extends": ["teppeis/node-v8", "teppeis/+prettier", "teppeis/+mocha"],
+  "rules": {
+    "node/no-missing-require": ["error", {
+      "tryExtensions": [".ts", ".js", ".json", ".node"]
+    }]
+  }
 }

@@ -1,10 +1,8 @@
-'use strict';
+import * as util from './util';
+import intersection from 'lodash/intersection';
 
-const util = require('./util');
-const intersection = require('lodash/intersection');
-
-function outputDeclarations(declarations, provides) {
-  const output = [];
+export default function outputDeclarations(declarations, provides): string {
+  const output: string[] = [];
   output.push(outputProvides(declarations, provides));
   for (const name in declarations) {
     output.push(outputModule(declarations[name], name));
@@ -16,11 +14,11 @@ function outputDeclarations(declarations, provides) {
   return outputString;
 }
 
-function outputProvides(declarations, provided) {
+function outputProvides(declarations, provided): string {
   if (!provided.length) {
     return '';
   }
-  let provides = [];
+  let provides: string[] = [];
   for (const moduleName in declarations) {
     const module = declarations[moduleName];
     const appendModule = item => `${moduleName}.${item.name}`;
@@ -151,5 +149,3 @@ function getTemplateString(templates) {
     return '';
   }
 }
-
-module.exports = outputDeclarations;
