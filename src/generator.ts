@@ -1,16 +1,17 @@
 'use strict';
 
-const doctrine = require('@teppeis/doctrine');
-const esprima = require('esprima');
-const estraverse = require('estraverse');
+import doctrine from '@teppeis/doctrine';
+import {parse} from 'esprima';
+import estraverse from 'estraverse';
+import deepEqual from 'deep-equal';
+import espurify from 'espurify';
+import printer from './printer';
+import * as util from './util';
+
 const Syntax = estraverse.Syntax;
-const deepEqual = require('deep-equal');
-const espurify = require('espurify');
-const printer = require('./printer').default;
-const util = require('./util');
 
 function generate(code) {
-  const ast = esprima.parse(code, {
+  const ast = parse(code, {
     comment: true,
     attachComment: true,
     loc: true,
@@ -93,8 +94,8 @@ function parseStatement(statement, declarations, provides) {
   if (isToIgnore(fullname.join('.'))) {
     return;
   }
-  const name = fullname.pop();
-  let className = null;
+  const name = popOrThrow(fullname);
+  let className: string | null = null;
   let isStatic = false;
   if (fullname[fullname.length - 1] === 'prototype') {
     if (isEmptyOverride(doc, statement)) {
@@ -102,10 +103,10 @@ function parseStatement(statement, declarations, provides) {
     }
     // consume 'prototype'
     fullname.pop();
-    className = fullname.pop();
+    className = popOrThrow(fullname);
   } else if (isStaticMember(fullname, declarations)) {
     if (!isClass && !isInterface && !enumTag && !typedefTag) {
-      className = fullname.pop();
+      className = popOrThrow(fullname);
       isStatic = true;
     }
   }
@@ -129,7 +130,7 @@ function parseStatement(statement, declarations, provides) {
   }
 
   let classInfo;
-  if (moduleInfo) {
+  if (moduleInfo && className) {
     classInfo = moduleInfo.classIndex[className];
   }
   if (className && !classInfo) {
@@ -139,7 +140,7 @@ function parseStatement(statement, declarations, provides) {
 
   if (isClass || isInterface) {
     classInfo = {
-      name: name,
+      name,
       type: isClass ? 'ClassType' : isInterface ? 'InterfaceType' : null,
       cstr: getClassConstructorAnnotation(doc.tags),
       parents: getParentClasses(doc.tags),
@@ -201,6 +202,14 @@ function parseStatement(statement, declarations, provides) {
   } else {
     moduleInfo.vars.push(varInfo);
   }
+}
+
+function popOrThrow<T>(array: T[]): T {
+  const lastItem = array.pop();
+  if (lastItem === undefined) {
+    throw new Error('pop failed: array is empty unexpectedly');
+  }
+  return lastItem;
 }
 
 function extractProvide(statement, provides) {
@@ -321,12 +330,12 @@ function getEnumKeys(statement) {
 function getOriginalEnum(statement) {
   const right = statement.expression.right;
   if (right.type === 'Identifier' || right.type === 'MemberExpression') {
-    return getMemberExpressionNameList(right).join('.');
+    return getMemberExpressionNameListNoLiteral(right).join('.');
   }
   return null;
 }
 
-function getTsType(type, opts) {
+function getTsType(type, opts?) {
   opts = opts || {};
   if (!type) {
     // no type property if doctrine fails to parse type.
@@ -341,7 +350,7 @@ function getTsType(type, opts) {
       typeName = replaceTypeName(typeName, opts);
       const paramNum = getTsGenericTypeParamNum(type.name);
       if (paramNum && !opts.isChildOfTypeApplication) {
-        const typeParams = [];
+        const typeParams: string[] = [];
         for (let i = 0; i < paramNum; i++) {
           typeParams.push('any');
         }
@@ -480,9 +489,9 @@ function isReservedWord(name) {
   return name === 'class';
 }
 
-function getFunctionAnnotation(tags, opt_ignoreReturn, opt_ignoreTemplate) {
-  const params = [];
-  let returns = null;
+function getFunctionAnnotation(tags, opt_ignoreReturn?, opt_ignoreTemplate?) {
+  const params: {type: any, name: string}[] = [];
+  let returns = '';
 
   tags.forEach(tag => {
     switch (tag.title) {
@@ -528,7 +537,7 @@ function getParentClasses(tags) {
 }
 
 function getTypeAnnotation(tags, statement) {
-  const type = {
+  const type: {enum: any, type: any} = {
     enum: null,
     type: null,
   };
@@ -593,7 +602,7 @@ function isFunctionDeclaration(statement, tags) {
     if (statement.expression.right.type === Syntax.FunctionExpression) {
       return true;
     } else if (statement.expression.right.type === Syntax.MemberExpression) {
-      const right = getMemberExpressionNameList(statement.expression.right).join('.');
+      const right = getMemberExpressionNameListNoLiteral(statement.expression.right).join('.');
       switch (right) {
         case 'goog.abstractMethod':
         case 'goog.nullFunction':
@@ -638,7 +647,7 @@ function isInterfaceDeclaration(statement, tags) {
   return tags.some(tag => tag.title === 'interface' || tag.title === 'record');
 }
 
-function getFullName(statement) {
+function getFullName(statement): string[]|null {
   switch (statement.type) {
     case Syntax.ExpressionStatement:
       return getFullNameFromExpressionStatement(statement);
@@ -659,9 +668,9 @@ function getFullNameFromVariableDeclaration(statement) {
 
 /**
  * @param {Object} statement
- * @return {Array.<string>|null}
+ * @return {Array<string>|null}
  */
-function getFullNameFromExpressionStatement(statement) {
+function getFullNameFromExpressionStatement(statement): string[]|null {
   const expression = statement.expression;
   let targetExpression;
   switch (expression.type) {
@@ -682,16 +691,26 @@ function getFullNameFromExpressionStatement(statement) {
   return getMemberExpressionNameList(targetExpression);
 }
 
+function getMemberExpressionNameListNoLiteral(expression): string[] {
+  const nameList = getMemberExpressionNameList(expression);
+  if (!nameList) {
+    console.error(expression);
+    throw new Error('The expressoin includes a literal unexpectedly');
+  }
+  return nameList;
+}
+
 /**
  * @param {Object} expression
  * @return {Array.<string>|null} null if the expression includes a literal.
  */
-function getMemberExpressionNameList(expression) {
-  let fullname = [];
+function getMemberExpressionNameList(expression): string[]|null {
+  const fullname: string[] = [];
+  let includeLiteral = false;
   estraverse.traverse(expression, {
     enter(node, parent) {
       if (node.computed || node.type === Syntax.Literal) {
-        fullname = null;
+        includeLiteral = true;
         this.break();
       }
     },
@@ -701,6 +720,9 @@ function getMemberExpressionNameList(expression) {
       }
     },
   });
+  if (includeLiteral) {
+    return null;
+  }
   return fullname;
 }
 
