@@ -1,29 +1,75 @@
 import intersection from 'lodash/intersection';
-import * as util from './util';
+import {renameToId, renameReservedModuleName} from './util';
 import {
   ModuleInfo,
-  TypeDefInfo,
+  TypedefInfo,
   EnumInfo,
   VarInfo,
   FunctionInfo,
   ClassInfo,
   InfoBase,
+  PakcageInfo,
+  Info,
 } from './types';
+import difference from 'lodash/difference';
+
+const INDENT = '  ';
+
+function trimEmptyLines(code: string): string {
+  return code.replace(/^\s*$/gm, '');
+}
+
+export function outputPackage(pkg: PakcageInfo): {name: string; code: string}[] {
+  const nonProvidedItemNames = difference(Object.keys(pkg.items), pkg.provides);
+  return pkg.provides.map(name => {
+    const code: string[] = [];
+    code.push(outputModuleStart(pkg, name));
+    const info = pkg.items[name];
+    if (info) {
+      switch (info.kind) {
+        case 'ClassInfo':
+          code.push(outputClassDeclaration(INDENT, info));
+          break;
+        case 'FunctionInfo':
+          code.push(outputFunctionDeclaration(INDENT, info, true));
+          break;
+        default:
+          throw new Error();
+      }
+    }
+    const memberPattern = new RegExp(`^${name.replace(/\./g, '\\.')}\\.[^.]+$`);
+    const members = nonProvidedItemNames
+      .filter(name => memberPattern.test(name))
+      .map(name => pkg.items[name]);
+    if (members.length > 0) {
+      outputModuleMembers(name, members, code, INDENT);
+    }
+    code.push(outputModuleEnd(pkg, name));
+    return {name, code: trimEmptyLines(code.join('\n'))};
+  });
+}
+
+function outputModuleMembers(
+  name: string,
+  members: Info[],
+  code: string[],
+  indent: string = INDENT
+) {
+  code.push(`${indent}namespace ${renameToId(name)} {`);
+  members.forEach(member => {
+    if (member.kind === 'FunctionInfo') {
+      code.push(outputFunctionDeclaration(`${indent}${INDENT}`, member));
+    }
+  });
+  code.push(`${indent}}`);
+  code.push('');
+}
 
 export default function outputDeclarations(
   declarations: Record<string, ModuleInfo>,
   provides: string[]
 ): string {
-  const output: string[] = [];
-  output.push(outputProvides(declarations, provides));
-  for (const name in declarations) {
-    output.push(outputModule(declarations[name], name));
-  }
-  let outputString = output.filter(str => !!str).join('\n\n');
-  if (outputString) {
-    outputString += '\n';
-  }
-  return outputString;
+  return '';
 }
 
 function outputProvides(declarations: Record<string, ModuleInfo>, provided: string[]): string {
@@ -55,29 +101,34 @@ function outputProvides(declarations: Record<string, ModuleInfo>, provided: stri
 }
 
 function outputProvide(indent: string, name: string): string {
-  const resolvedName = util.renameReservedModuleName(name);
+  const resolvedName = renameReservedModuleName(name);
   return `${indent}function require(name: '${name}'): typeof ${resolvedName};`;
 }
 
-function outputModule(moduleDeclaration: ModuleInfo, name: string): string {
-  name = util.renameReservedModuleName(name);
-  const output = [`declare module ${name} {`];
-  const indent = '    ';
-  // TODO: keep original order
-  output.push(moduleDeclaration.enums.map(outputEnumDeclaration.bind(null, indent)).join('\n'));
-  output.push(
-    moduleDeclaration.typedefs.map(outputTypedefDeclaration.bind(null, indent)).join('\n')
-  );
-  output.push(moduleDeclaration.classes.map(outputClassDeclaration.bind(null, indent)).join('\n'));
-  output.push(moduleDeclaration.vars.map(outputVarDeclaration.bind(null, indent)).join('\n'));
-  output.push(
-    moduleDeclaration.functions.map(outputFunctionDeclaration.bind(null, indent)).join('\n')
-  );
-  output.push('}');
-  return output.filter(section => !!section).join('\n');
+/**
+ * start `declare module` and `import` dependencies
+ */
+function outputModuleStart(pkg: PakcageInfo, name: string): string {
+  const code = [`declare module 'goog:${name}' {`];
+  pkg.provides
+    .concat(pkg.requires)
+    .filter(provide => provide !== name)
+    .forEach(provide => {
+      code.push(`${INDENT}import ${renameToId(provide)} from 'goog:${provide}';`);
+    });
+  return code.join('\n');
 }
 
-function outputTypedefDeclaration(indent: string, declare: TypeDefInfo): string {
+/**
+ * export and end `declare module`
+ */
+function outputModuleEnd(pkg: PakcageInfo, name: string): string {
+  const code = [`${INDENT}export default ${renameToId(name)};`];
+  code.push('}');
+  return code.join('\n');
+}
+
+function outputTypedefDeclaration(indent: string, declare: TypedefInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`type ${declare.name} = ${declare.type};`);
   return `\n${output.map(line => indent + line).join('\n')}`;
@@ -105,9 +156,14 @@ function outputVarDeclaration(indent: string, declare: VarInfo): string {
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function outputFunctionDeclaration(indent: string, declare: FunctionInfo): string {
+function outputFunctionDeclaration(
+  indent: string,
+  declare: FunctionInfo,
+  isProvided = false
+): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
-  output.push(`function ${declare.name}${getTemplateString(declare.templates)}${declare.type};`);
+  const name = isProvided ? renameToId(declare.name) : declare.name.split('.').pop();
+  output.push(`function ${name}${getTemplateString(declare.templates)}${declare.type};`);
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
@@ -115,29 +171,32 @@ function outputClassDeclaration(indent: string, declare: ClassInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   let extend = '';
   if (declare.parents.length > 0) {
-    extend = ` extends ${declare.parents.join(', ')}`;
+    extend = ` extends ${declare.parents.map(renameToId).join(', ')}`;
   }
   if (declare.type === 'ClassType') {
-    output.push(`class ${declare.name}${getTemplateString(declare.templates)}${extend} {`);
-    output.push(`    constructor${declare.cstr};`);
+    output.push(
+      `class ${renameToId(declare.name)}${getTemplateString(declare.templates)}${extend} {`
+    );
+    output.push(`${INDENT}constructor${declare.cstr};`);
   } else if (declare.type === 'InterfaceType') {
     output.push(`interface ${declare.name}${getTemplateString(declare.templates)}${extend} {`);
   }
   declare.props.forEach(prop => {
-    output.push('    ');
-    output.push(`    /*${prop.comment.value}*/`.split('\n').join(`\n    ${indent}`));
-    output.push(`    ${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
+    output.push(`${INDENT}`);
+    output.push(`${INDENT}/*${prop.comment.value}*/`.split('\n').join(`\n${indent}${INDENT}`));
+    output.push(`${INDENT}${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
   });
   declare.methods.forEach(method => {
-    output.push('    ');
-    output.push(`    /*${method.comment.value}*/`.split('\n').join(`\n    ${indent}`));
+    output.push(`${INDENT}`);
+    output.push(`${INDENT}/*${method.comment.value}*/`.split('\n').join(`\n${indent}${INDENT}`));
     output.push(
-      `    ${method.isStatic ? 'static ' : ''}${method.name}${getTemplateString(method.templates)}${
-        method.type
-      };`
+      `${INDENT}${method.isStatic ? 'static ' : ''}${method.name}${getTemplateString(
+        method.templates
+      )}${method.type};`
     );
   });
   output.push('}');
+  output.push('');
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 

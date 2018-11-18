@@ -6,7 +6,7 @@ import deepEqual from 'deep-equal';
 import espurify from 'espurify';
 import printer from './printer';
 import * as util from './util';
-import {ClassInfo, EnumInfo, FunctionInfo, ModuleInfo, TypeDefInfo, VarInfo} from './types';
+import {ClassInfo, EnumInfo, FunctionInfo, ModuleInfo, TypedefInfo, VarInfo} from './types';
 
 const Syntax = estraverse.Syntax;
 
@@ -144,6 +144,7 @@ function parseStatement(
   if (isClass || isInterface) {
     classInfo = {
       name,
+      kind: 'ClassInfo',
       type: isClass ? 'ClassType' : 'InterfaceType',
       cstr: getClassConstructorAnnotation(doc.tags),
       parents: getParentClasses(doc.tags),
@@ -160,6 +161,7 @@ function parseStatement(
   if (isFunctionDeclaration(statement, doc.tags)) {
     const functionInfo: FunctionInfo = {
       name,
+      kind: 'FunctionInfo',
       type: getFunctionAnnotation(doc.tags),
       templates: getTemplates(doc.tags),
       isStatic: isStatic,
@@ -180,6 +182,7 @@ function parseStatement(
     }
     moduleInfo.enums.push({
       name: name,
+      kind: 'EnumInfo',
       type: getTsType(enumTag.type),
       keys: getEnumKeys(statement),
       original: getOriginalEnum(statement),
@@ -191,14 +194,16 @@ function parseStatement(
   if (typedefTag) {
     moduleInfo.typedefs.push({
       name: name,
+      kind: 'TypedefInfo',
       type: getTsType(typedefTag.type),
       comment: comment,
     });
     return;
   }
 
-  const varInfo = {
+  const varInfo: VarInfo = {
     name: name,
+    kind: 'VarInfo',
     type: getTypeAnnotation(doc.tags, statement),
     isStatic: isStatic,
     comment: comment,
