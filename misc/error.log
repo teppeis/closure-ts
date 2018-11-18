@@ -1,4 +1,4 @@
-npx: 1個のパッケージを1.679秒でインストールしました。
+npx: 1個のパッケージを1.584秒でインストールしました。
 closure-library.d.ts/closure/goog/datasource/fastdatanode.d.ts(223,9): error TS2416: Property 'setChildNode' in type 'PrimitiveFastDataNode' is not assignable to the same property in base type 'AbstractFastDataNode'.
   Type '(name: string, value: Object) => void' is not assignable to type '(name: string, value: Object) => Object'.
     Type 'void' is not assignable to type 'Object'.
@@ -26,12 +26,6 @@ closure-library.d.ts/closure/goog/graphics/canvasgraphics.d.ts(265,9): error TS2
   Type '(text: string, font: Font) => void' is not assignable to type '(text: string, font: Font) => number'.
     Type 'void' is not assignable to type 'number'.
 closure-library.d.ts/closure/goog/html/sanitizer/htmlsanitizer.d.ts(58,53): error TS2339: Property 'SafeDomTreeProcessor' does not exist on type 'typeof sanitizer'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(83,71): error TS2694: Namespace 'goog' has no exported member 'testing'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(90,75): error TS2694: Namespace 'goog' has no exported member 'testing'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(97,73): error TS2694: Namespace 'goog' has no exported member 'testing'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(104,83): error TS2694: Namespace 'goog' has no exported member 'testing'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(111,69): error TS2694: Namespace 'goog' has no exported member 'testing'.
-closure-library.d.ts/closure/goog/html/testing.d.ts(118,91): error TS2694: Namespace 'goog' has no exported member 'testing'.
 closure-library.d.ts/closure/goog/i18n/datetimesymbols.d.ts(760,9): error TS2403: Subsequent variable declarations must have the same type.  Variable 'DateTimeSymbols' must be of type 'DateTimeSymbolsType', but here has type 'any'.
 closure-library.d.ts/closure/goog/i18n/ordinalrules.d.ts(24,9): error TS2300: Duplicate identifier 'select'.
 closure-library.d.ts/closure/goog/i18n/ordinalrules.d.ts(35,14): error TS2300: Duplicate identifier 'select'.
@@ -39,6 +33,8 @@ closure-library.d.ts/closure/goog/i18n/pluralrules.d.ts(24,9): error TS2300: Dup
 closure-library.d.ts/closure/goog/i18n/pluralrules.d.ts(35,14): error TS2300: Duplicate identifier 'select'.
 closure-library.d.ts/closure/goog/labs/net/webchannel.d.ts(19,15): error TS2320: Interface 'WebChannel' cannot simultaneously extend types 'EventTarget' and 'Listenable'.
   Named property 'dispatchEvent' of types 'EventTarget' and 'Listenable' are not identical.
+closure-library.d.ts/closure/goog/labs/testing/environment.d.ts(42,9): error TS2300: Duplicate identifier 'Environment'.
+closure-library.d.ts/closure/goog/labs/testing/environment.d.ts(45,34): error TS2300: Duplicate identifier 'Environment'.
 closure-library.d.ts/closure/goog/messaging/portchannel.d.ts(26,49): error TS2304: Cannot find name 'WebWorker'.
 closure-library.d.ts/closure/goog/net/browserchannel.d.ts(76,16): error TS2300: Duplicate identifier 'Event'.
 closure-library.d.ts/closure/goog/net/browserchannel.d.ts(424,51): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
@@ -66,6 +62,14 @@ closure-library.d.ts/closure/goog/promise/thenable.d.ts(59,124): error TS2304: C
 closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,51): error TS2304: Cannot find name 'V'.
 closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,89): error TS2304: Cannot find name 'V'.
 closure-library.d.ts/closure/goog/reflect/reflect.d.ts(89,123): error TS2304: Cannot find name 'V'.
+closure-library.d.ts/closure/goog/testing/events/events.d.ts(20,11): error TS2506: 'Event' is referenced directly or indirectly in its own base expression.
+closure-library.d.ts/closure/goog/testing/net/xhrio.d.ts(15,34): error TS2339: Property 'XhrIo' does not exist on type 'typeof net'.
+closure-library.d.ts/closure/goog/testing/net/xhrio.d.ts(97,40): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/testing/net/xhrio.d.ts(104,37): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/testing/net/xhrio.d.ts(398,43): error TS2339: Property 'XhrIo' does not exist on type 'typeof net'.
+closure-library.d.ts/closure/goog/testing/net/xhrio.d.ts(398,43): error TS2694: Namespace 'goog.net' has no exported member 'XhrIo'.
+closure-library.d.ts/closure/goog/testing/recordfunction.d.ts(113,76): error TS2694: Namespace 'goog.testing.recordFunction' has no exported member 'Type'.
+closure-library.d.ts/closure/goog/testing/testsuite.d.ts(18,82): error TS2304: Cannot find name 'TestSuiteOptions'.
 closure-library.d.ts/closure/goog/ui/animatedzippy.d.ts(23,146): error TS2315: Type 'Role' is not generic.
 closure-library.d.ts/closure/goog/ui/checkbox.d.ts(21,11): error TS2417: Class static side 'typeof Checkbox' incorrectly extends base class static side 'typeof Control'.
   Types of property 'State' are incompatible.

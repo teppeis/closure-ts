@@ -24,8 +24,10 @@
 ./closure-library/closure/goog/net/xpc/relay.js
 ./closure-library/closure/goog/promise/nativeresolver.js
 ./closure-library/closure/goog/proto2/package_test.pb.js
+./closure-library/closure/goog/proto2/test.pb.js
 ./closure-library/closure/goog/soy/soy_testhelper.js
 ./closure-library/closure/goog/storage/mechanism/mechanismtestdefinition.js
+./closure-library/closure/goog/transpile.js
 ./closure-library/closure/goog/tweak/testhelpers.js
 ./closure-library/closure/goog/ui/bubble.js
 ./closure-library/closure/goog/ui/menubardecorator.js
