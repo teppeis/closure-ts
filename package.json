@@ -11,7 +11,7 @@
     "closurets": "./bin/closurets.js"
   },
   "files": [
-    "*.js",
+    "index.js",
     "bin",
     "lib"
   ],
@@ -19,9 +19,10 @@
     "tsc": "tsc",
     "clean": "rimraf lib",
     "build": "run-s clean tsc",
-    "lint": "eslint bin test",
+    "lint:js": "eslint bin test",
+    "lint:ts": "tslint -c tslint.js src/*.ts",
     "mocha": "mocha test",
-    "test": "run-s build lint mocha"
+    "test": "run-s build lint:* mocha"
   },
   "dependencies": {
     "@teppeis/doctrine": "^3.1.0",
@@ -46,6 +47,10 @@
     "npm-run-all": "^4.1.3",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-import-eslint-config": "^1.0.2",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.1.6"
   },
   "repository": "teppeis/closure-ts",
