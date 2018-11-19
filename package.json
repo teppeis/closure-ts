@@ -21,8 +21,8 @@
     "build": "run-s clean tsc",
     "lint:js": "eslint bin test",
     "lint:ts": "tslint -c tslint.js src/*.ts",
-    "mocha": "mocha test",
-    "test": "run-s build lint:* mocha"
+    "mocha": "mocha test --color",
+    "test": "npm-run-all --aggregate-output -p lint:ts build -p lint:js mocha"
   },
   "dependencies": {
     "@teppeis/doctrine": "^3.1.0",
