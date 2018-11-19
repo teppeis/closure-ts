@@ -12,12 +12,7 @@ import {
   Info,
 } from './types';
 import difference from 'lodash/difference';
-
-const INDENT = '  ';
-
-function trimEmptyLines(code: string): string {
-  return code.replace(/^\s*$/gm, '');
-}
+import prettier from 'prettier';
 
 export function outputPackage(pkg: PakcageInfo): {name: string; code: string}[] {
   const nonProvidedItemNames = difference(Object.keys(pkg.items), pkg.provides);
@@ -28,10 +23,10 @@ export function outputPackage(pkg: PakcageInfo): {name: string; code: string}[] 
     if (info) {
       switch (info.kind) {
         case 'ClassInfo':
-          code.push(outputClassDeclaration(INDENT, info));
+          code.push(outputClassDeclaration(info));
           break;
         case 'FunctionInfo':
-          code.push(outputFunctionDeclaration(INDENT, info, true));
+          code.push(outputFunctionDeclaration(info, true));
           break;
         default:
           throw new Error();
@@ -42,27 +37,21 @@ export function outputPackage(pkg: PakcageInfo): {name: string; code: string}[] 
       .filter(name => memberPattern.test(name))
       .map(name => pkg.items[name]);
     if (members.length > 0) {
-      outputModuleMembers(name, members, code, INDENT);
+      outputModuleMembers(name, members, code);
     }
     code.push(outputModuleEnd(pkg, name));
-    return {name, code: trimEmptyLines(code.join('\n'))};
+    return {name, code: prettier.format(code.join('\n'), {parser: 'typescript'})};
   });
 }
 
-function outputModuleMembers(
-  name: string,
-  members: Info[],
-  code: string[],
-  indent: string = INDENT
-) {
-  code.push(`${indent}namespace ${renameToId(name)} {`);
+function outputModuleMembers(name: string, members: Info[], code: string[]) {
+  code.push(`namespace ${renameToId(name)} {`);
   members.forEach(member => {
     if (member.kind === 'FunctionInfo') {
-      code.push(outputFunctionDeclaration(`${indent}${INDENT}`, member));
+      code.push(outputFunctionDeclaration(member));
     }
   });
-  code.push(`${indent}}`);
-  code.push('');
+  code.push(`}`);
 }
 
 export default function outputDeclarations(
@@ -94,15 +83,14 @@ function outputProvides(declarations: Record<string, ModuleInfo>, provided: stri
     return '';
   }
   const output = ['declare module goog {'];
-  const indent = '    ';
-  output.push(provides.map(outputProvide.bind(null, indent)).join('\n'));
+  output.push(provides.map(outputProvide.bind(null)).join('\n'));
   output.push('}');
   return output.join('\n');
 }
 
-function outputProvide(indent: string, name: string): string {
+function outputProvide(name: string): string {
   const resolvedName = renameReservedModuleName(name);
-  return `${indent}function require(name: '${name}'): typeof ${resolvedName};`;
+  return `function require(name: '${name}'): typeof ${resolvedName};`;
 }
 
 /**
@@ -114,7 +102,7 @@ function outputModuleStart(pkg: PakcageInfo, name: string): string {
     .concat(pkg.requires)
     .filter(provide => provide !== name)
     .forEach(provide => {
-      code.push(`${INDENT}import ${renameToId(provide)} from 'goog:${provide}';`);
+      code.push(`import ${renameToId(provide)} from 'goog:${provide}';`);
     });
   return code.join('\n');
 }
@@ -123,18 +111,18 @@ function outputModuleStart(pkg: PakcageInfo, name: string): string {
  * export and end `declare module`
  */
 function outputModuleEnd(pkg: PakcageInfo, name: string): string {
-  const code = [`${INDENT}export default ${renameToId(name)};`];
+  const code = [`export default ${renameToId(name)};`];
   code.push('}');
   return code.join('\n');
 }
 
-function outputTypedefDeclaration(indent: string, declare: TypedefInfo): string {
+function outputTypedefDeclaration(declare: TypedefInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`type ${declare.name} = ${declare.type};`);
-  return `\n${output.map(line => indent + line).join('\n')}`;
+  return `${output.join('\n')}`;
 }
 
-function outputEnumDeclaration(indent: string, declare: EnumInfo): string {
+function outputEnumDeclaration(declare: EnumInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   if (declare.original) {
     // just copy
@@ -147,27 +135,23 @@ function outputEnumDeclaration(indent: string, declare: EnumInfo): string {
     });
     output.push('};');
   }
-  return `\n${output.map(line => indent + line).join('\n')}`;
+  return `${output.join('\n')}`;
 }
 
-function outputVarDeclaration(indent: string, declare: VarInfo): string {
+function outputVarDeclaration(declare: VarInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`var ${declare.name}: ${declare.type};`);
-  return `\n${output.map(line => indent + line).join('\n')}`;
+  return `${output.join('\n')}`;
 }
 
-function outputFunctionDeclaration(
-  indent: string,
-  declare: FunctionInfo,
-  isProvided = false
-): string {
+function outputFunctionDeclaration(declare: FunctionInfo, isProvided = false): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   const name = isProvided ? renameToId(declare.name) : declare.name.split('.').pop();
   output.push(`function ${name}${getTemplateString(declare.templates)}${declare.type};`);
-  return `\n${output.map(line => indent + line).join('\n')}`;
+  return `${output.join('\n')}`;
 }
 
-function outputClassDeclaration(indent: string, declare: ClassInfo): string {
+function outputClassDeclaration(declare: ClassInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   let extend = '';
   if (declare.parents.length > 0) {
@@ -177,27 +161,24 @@ function outputClassDeclaration(indent: string, declare: ClassInfo): string {
     output.push(
       `class ${renameToId(declare.name)}${getTemplateString(declare.templates)}${extend} {`
     );
-    output.push(`${INDENT}constructor${declare.cstr};`);
+    output.push(`constructor${declare.cstr};`);
   } else if (declare.type === 'InterfaceType') {
     output.push(`interface ${declare.name}${getTemplateString(declare.templates)}${extend} {`);
   }
   declare.props.forEach(prop => {
-    output.push(`${INDENT}`);
-    output.push(`${INDENT}/*${prop.comment.value}*/`.split('\n').join(`\n${indent}${INDENT}`));
-    output.push(`${INDENT}${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
+    output.push(`/*${prop.comment.value}*/`.split('\n').join(`\n`));
+    output.push(`${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
   });
   declare.methods.forEach(method => {
-    output.push(`${INDENT}`);
-    output.push(`${INDENT}/*${method.comment.value}*/`.split('\n').join(`\n${indent}${INDENT}`));
+    output.push(`/*${method.comment.value}*/`.split('\n').join(`\n`));
     output.push(
-      `${INDENT}${method.isStatic ? 'static ' : ''}${method.name}${getTemplateString(
-        method.templates
-      )}${method.type};`
+      `${method.isStatic ? 'static ' : ''}${method.name}${getTemplateString(method.templates)}${
+        method.type
+      };`
     );
   });
   output.push('}');
-  output.push('');
-  return `\n${output.map(line => indent + line).join('\n')}`;
+  return `${output.join('\n')}`;
 }
 
 function getTemplateString(templates: string[]): string {

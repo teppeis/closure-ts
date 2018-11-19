@@ -27,8 +27,8 @@ describe.only('printer', () => {
       name: 'goog.ui.Control',
       kind: 'ClassInfo',
       type: 'ClassType',
-      cstr: '()',
-      parents: ['goog.ui.Component', 'goog.Disposable'],
+      cstr: '(disposable: goog_disposable_IDisposable)',
+      parents: ['goog.ui.Component'],
       templates: ['T'],
       methods: [methodInfo],
       props: [propInfo],
@@ -47,7 +47,7 @@ describe.only('printer', () => {
     };
     const pkg = {
       provides: ['goog.ui.Control', 'goog.ui.Component'],
-      requires: ['goog.Disposable'],
+      requires: ['goog.disposable.IDisposable'],
       items: {
         'goog.ui.Control': classInfo,
         'goog.ui.Component': otherInfo,
