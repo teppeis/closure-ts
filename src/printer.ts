@@ -75,8 +75,20 @@ class ModulePrinter {
     this.code.push(`namespace ${renameToId(this.name)} {`);
     members.forEach(member => {
       switch (member.kind) {
+        case 'ClassInfo':
+          this.outputClassDeclaration(member);
+          break;
+        case 'EnumInfo':
+          // this.outputEnumDeclaration(member);
+          break;
         case 'FunctionInfo':
           this.outputFunctionDeclaration(member);
+          break;
+        case 'TypedefInfo':
+          this.outputTypedefDeclaration(member);
+          break;
+        case 'VarInfo':
+          this.outputVarDeclaration(member);
           break;
         default:
         // ignore
@@ -102,7 +114,7 @@ class ModulePrinter {
     if (info) {
       switch (info.kind) {
         case 'ClassInfo':
-          this.outputClassDeclaration(info);
+          this.outputClassDeclaration(info, true);
           break;
         case 'FunctionInfo':
           this.outputFunctionDeclaration(info, true);
@@ -115,11 +127,15 @@ class ModulePrinter {
 
   private outputFunctionDeclaration(declare: FunctionInfo, isProvided = false): void {
     this.code.push(`/*${declare.comment.value}*/`);
-    const name = isProvided ? renameToId(declare.name) : declare.name.split('.').pop();
+    const name = this.fixName(declare.name, isProvided);
     this.code.push(`function ${name}${this.getTemplateString(declare.templates)}${declare.type};`);
   }
 
-  private outputClassDeclaration(declare: ClassInfo): void {
+  private fixName(name: string, isProvided: boolean) {
+    return isProvided ? renameToId(name) : name.split('.').pop();
+  }
+
+  private outputClassDeclaration(declare: ClassInfo, isProvided = false): void {
     this.code.push(`/*${declare.comment.value}*/`);
     let extend = '';
     if (declare.parents.length > 0) {
@@ -130,7 +146,9 @@ class ModulePrinter {
     }
     if (declare.type === 'ClassType') {
       this.code.push(
-        `class ${renameToId(declare.name)}${this.getTemplateString(declare.templates)}${extend} {`
+        `class ${this.fixName(declare.name, isProvided)}${this.getTemplateString(
+          declare.templates
+        )}${extend} {`
       );
       this.code.push(`constructor${declare.cstr};`);
     } else if (declare.type === 'InterfaceType') {
@@ -151,6 +169,18 @@ class ModulePrinter {
       );
     });
     this.code.push('}');
+  }
+
+  private outputTypedefDeclaration(declare: TypedefInfo, isProvided = false): void {
+    this.code.push(`/*${declare.comment.value}*/`);
+    const name = this.fixName(declare.name, isProvided);
+    this.code.push(`type ${name} = ${declare.type};`);
+  }
+
+  private outputVarDeclaration(declare: VarInfo, isProvided = false): void {
+    this.code.push(`/*${declare.comment.value}*/`);
+    const name = this.fixName(declare.name, isProvided);
+    this.code.push(`var ${name}: ${declare.type};`);
   }
 
   private getTemplateString(templates: string[]): string {

@@ -8,7 +8,7 @@ const {PackagePrinter} = printer;
 const fixturePath = `${__dirname}/fixtures/printer`;
 
 describe.only('printer', () => {
-  it('default class', () => {
+  it('provided class', () => {
     const propInfo = {
       name: 'prop1',
       kind: 'VarInfo',
@@ -61,7 +61,7 @@ describe.only('printer', () => {
     ]);
   });
 
-  it('member function', () => {
+  it('module members', () => {
     const functionInfo = {
       name: 'goog.functions',
       kind: 'FunctionInfo',
@@ -70,12 +70,36 @@ describe.only('printer', () => {
       isStatic: false,
       comment: {value: '*\n '},
     };
-    const functionInfoHello = {
-      name: 'goog.functions.hello',
+    const functionInfoFn = {
+      name: 'goog.functions.fn',
       kind: 'FunctionInfo',
       type: '(message: string): void',
       templates: [],
       isStatic: false,
+      comment: {value: '*\n '},
+    };
+    const varInfo = {
+      name: 'goog.functions.v',
+      kind: 'VarInfo',
+      type: 'Date',
+      isStatic: false,
+      comment: {value: '*\n '},
+    };
+    const typedefInfo = {
+      name: 'goog.functions.Typedef',
+      kind: 'TypedefInfo',
+      type: 'RegExp',
+      comment: {value: '*\n '},
+    };
+    const classInfo = {
+      name: 'goog.functions.MyClass',
+      kind: 'ClassInfo',
+      type: 'ClassType',
+      cstr: '()',
+      parents: [],
+      templates: [],
+      methods: [],
+      props: [],
       comment: {value: '*\n '},
     };
     const pkg = {
@@ -83,7 +107,10 @@ describe.only('printer', () => {
       requires: [],
       items: {
         'goog.functions': functionInfo,
-        'goog.functions.hello': functionInfoHello,
+        'goog.functions.fn': functionInfoFn,
+        'goog.functions.v': varInfo,
+        'goog.functions.MyClass': classInfo,
+        'goog.functions.Typedef': typedefInfo,
       },
     };
     const actual = new PackagePrinter(pkg).output();
