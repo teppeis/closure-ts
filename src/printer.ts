@@ -13,45 +13,153 @@ import {
 } from './types';
 import difference from 'lodash/difference';
 import prettier from 'prettier';
+import {stringify} from 'querystring';
 
-export function outputPackage(pkg: PakcageInfo): {name: string; code: string}[] {
-  const nonProvidedItemNames = difference(Object.keys(pkg.items), pkg.provides);
-  return pkg.provides.map(name => {
-    const code: string[] = [];
-    code.push(outputModuleStart(pkg, name));
-    const info = pkg.items[name];
+export class PackagePrinter {
+  constructor(private pkg: PakcageInfo) {}
+
+  /**
+   * Output d.ts source for each provide
+   */
+  output(): Map<string, string> {
+    const provides = this.pkg.provides.map(
+      name => [name, new ModulePrinter(this.pkg, name).output()] as [string, string]
+    );
+    return new Map<string, string>(provides);
+  }
+}
+
+class ModulePrinter {
+  private code: string[] = [];
+  private members: Info[] | null = null;
+  constructor(private pkg: PakcageInfo, private name: string) {}
+
+  /**
+   * Output d.ts source for the provide
+   */
+  output(): string {
+    this.code = [];
+    this.outputModuleStart();
+    this.outputProvided();
+    this.outputModuleMembers();
+    this.outputModuleEnd();
+    return prettier.format(this.code.join('\n'), {parser: 'typescript'});
+  }
+
+  /**
+   * Start `declare module` and `import` dependencies
+   */
+  private outputModuleStart(): void {
+    this.code.push(`declare module 'goog:${this.name}' {`);
+    this.pkg.provides
+      .concat(this.pkg.requires)
+      .filter(provide => provide !== this.name)
+      .forEach(provide => {
+        this.code.push(`import ${renameToId(provide)} from 'goog:${provide}';`);
+      });
+  }
+
+  /**
+   * `export` the provide and end `declare module`
+   */
+  private outputModuleEnd(): void {
+    this.code.push(`export default ${renameToId(this.name)};`);
+    this.code.push('}');
+  }
+
+  private outputModuleMembers(): void {
+    const members = this.getModuleMembers();
+    if (!members.length) {
+      return;
+    }
+    this.code.push(`namespace ${renameToId(this.name)} {`);
+    members.forEach(member => {
+      switch (member.kind) {
+        case 'FunctionInfo':
+          this.outputFunctionDeclaration(member);
+          break;
+        default:
+        // ignore
+      }
+    });
+    this.code.push(`}`);
+  }
+
+  private getModuleMembers(): Info[] {
+    if (this.members) {
+      return this.members;
+    }
+    const nonProvidedItemNames = difference(Object.keys(this.pkg.items), this.pkg.provides);
+    const memberPattern = new RegExp(`^${this.name.replace(/\./g, '\\.')}\\.[^.]+$`);
+    this.members = nonProvidedItemNames
+      .filter(name => memberPattern.test(name))
+      .map(name => this.pkg.items[name]);
+    return this.members;
+  }
+
+  private outputProvided(): void {
+    const info = this.pkg.items[this.name];
     if (info) {
       switch (info.kind) {
         case 'ClassInfo':
-          code.push(outputClassDeclaration(info));
+          this.outputClassDeclaration(info);
           break;
         case 'FunctionInfo':
-          code.push(outputFunctionDeclaration(info, true));
+          this.outputFunctionDeclaration(info, true);
           break;
         default:
           throw new Error();
       }
     }
-    const memberPattern = new RegExp(`^${name.replace(/\./g, '\\.')}\\.[^.]+$`);
-    const members = nonProvidedItemNames
-      .filter(name => memberPattern.test(name))
-      .map(name => pkg.items[name]);
-    if (members.length > 0) {
-      outputModuleMembers(name, members, code);
-    }
-    code.push(outputModuleEnd(pkg, name));
-    return {name, code: prettier.format(code.join('\n'), {parser: 'typescript'})};
-  });
-}
+  }
 
-function outputModuleMembers(name: string, members: Info[], code: string[]) {
-  code.push(`namespace ${renameToId(name)} {`);
-  members.forEach(member => {
-    if (member.kind === 'FunctionInfo') {
-      code.push(outputFunctionDeclaration(member));
+  private outputFunctionDeclaration(declare: FunctionInfo, isProvided = false): void {
+    this.code.push(`/*${declare.comment.value}*/`);
+    const name = isProvided ? renameToId(declare.name) : declare.name.split('.').pop();
+    this.code.push(`function ${name}${this.getTemplateString(declare.templates)}${declare.type};`);
+  }
+
+  private outputClassDeclaration(declare: ClassInfo): void {
+    this.code.push(`/*${declare.comment.value}*/`);
+    let extend = '';
+    if (declare.parents.length > 0) {
+      if (declare.parents.length > 1) {
+        throw new Error('TypeScript does NOT allow multiple inheritance: ' + this.name);
+      }
+      extend = ` extends ${renameToId(declare.parents[0])}`;
     }
-  });
-  code.push(`}`);
+    if (declare.type === 'ClassType') {
+      this.code.push(
+        `class ${renameToId(declare.name)}${this.getTemplateString(declare.templates)}${extend} {`
+      );
+      this.code.push(`constructor${declare.cstr};`);
+    } else if (declare.type === 'InterfaceType') {
+      this.code.push(
+        `interface ${declare.name}${this.getTemplateString(declare.templates)}${extend} {`
+      );
+    }
+    declare.props.forEach(prop => {
+      this.code.push(`/*${prop.comment.value}*/`);
+      this.code.push(`${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
+    });
+    declare.methods.forEach(method => {
+      this.code.push(`/*${method.comment.value}*/`);
+      this.code.push(
+        `${method.isStatic ? 'static ' : ''}${method.name}${this.getTemplateString(
+          method.templates
+        )}${method.type};`
+      );
+    });
+    this.code.push('}');
+  }
+
+  private getTemplateString(templates: string[]): string {
+    if (templates && templates.length > 0) {
+      return `<${templates.join(', ')}>`;
+    } else {
+      return '';
+    }
+  }
 }
 
 export default function outputDeclarations(
@@ -59,132 +167,4 @@ export default function outputDeclarations(
   provides: string[]
 ): string {
   return '';
-}
-
-function outputProvides(declarations: Record<string, ModuleInfo>, provided: string[]): string {
-  if (!provided.length) {
-    return '';
-  }
-  let provides: string[] = [];
-  for (const moduleName in declarations) {
-    const module = declarations[moduleName];
-    const appendModule = (item: InfoBase) => `${moduleName}.${item.name}`;
-    if (module.vars.length > 0 || module.functions.length > 0) {
-      provides.push(moduleName);
-    }
-
-    provides = provides.concat(module.enums.map(appendModule));
-    provides = provides.concat(
-      module.classes.filter(c => c.type === 'ClassType').map(appendModule)
-    );
-  }
-  provides = intersection(provides, provided);
-  if (!provides.length) {
-    return '';
-  }
-  const output = ['declare module goog {'];
-  output.push(provides.map(outputProvide.bind(null)).join('\n'));
-  output.push('}');
-  return output.join('\n');
-}
-
-function outputProvide(name: string): string {
-  const resolvedName = renameReservedModuleName(name);
-  return `function require(name: '${name}'): typeof ${resolvedName};`;
-}
-
-/**
- * start `declare module` and `import` dependencies
- */
-function outputModuleStart(pkg: PakcageInfo, name: string): string {
-  const code = [`declare module 'goog:${name}' {`];
-  pkg.provides
-    .concat(pkg.requires)
-    .filter(provide => provide !== name)
-    .forEach(provide => {
-      code.push(`import ${renameToId(provide)} from 'goog:${provide}';`);
-    });
-  return code.join('\n');
-}
-
-/**
- * export and end `declare module`
- */
-function outputModuleEnd(pkg: PakcageInfo, name: string): string {
-  const code = [`export default ${renameToId(name)};`];
-  code.push('}');
-  return code.join('\n');
-}
-
-function outputTypedefDeclaration(declare: TypedefInfo): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  output.push(`type ${declare.name} = ${declare.type};`);
-  return `${output.join('\n')}`;
-}
-
-function outputEnumDeclaration(declare: EnumInfo): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  if (declare.original) {
-    // just copy
-    output.push(`export import ${declare.name} = ${declare.original};`);
-  } else {
-    output.push(`type ${declare.name} = ${declare.type};`);
-    output.push(`var ${declare.name}: {`);
-    declare.keys.forEach(key => {
-      output.push(`    ${key}: ${declare.name};`);
-    });
-    output.push('};');
-  }
-  return `${output.join('\n')}`;
-}
-
-function outputVarDeclaration(declare: VarInfo): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  output.push(`var ${declare.name}: ${declare.type};`);
-  return `${output.join('\n')}`;
-}
-
-function outputFunctionDeclaration(declare: FunctionInfo, isProvided = false): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  const name = isProvided ? renameToId(declare.name) : declare.name.split('.').pop();
-  output.push(`function ${name}${getTemplateString(declare.templates)}${declare.type};`);
-  return `${output.join('\n')}`;
-}
-
-function outputClassDeclaration(declare: ClassInfo): string {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  let extend = '';
-  if (declare.parents.length > 0) {
-    extend = ` extends ${declare.parents.map(renameToId).join(', ')}`;
-  }
-  if (declare.type === 'ClassType') {
-    output.push(
-      `class ${renameToId(declare.name)}${getTemplateString(declare.templates)}${extend} {`
-    );
-    output.push(`constructor${declare.cstr};`);
-  } else if (declare.type === 'InterfaceType') {
-    output.push(`interface ${declare.name}${getTemplateString(declare.templates)}${extend} {`);
-  }
-  declare.props.forEach(prop => {
-    output.push(`/*${prop.comment.value}*/`.split('\n').join(`\n`));
-    output.push(`${prop.isStatic ? 'static ' : ''}${prop.name}: ${prop.type};`);
-  });
-  declare.methods.forEach(method => {
-    output.push(`/*${method.comment.value}*/`.split('\n').join(`\n`));
-    output.push(
-      `${method.isStatic ? 'static ' : ''}${method.name}${getTemplateString(method.templates)}${
-        method.type
-      };`
-    );
-  });
-  output.push('}');
-  return `${output.join('\n')}`;
-}
-
-function getTemplateString(templates: string[]): string {
-  if (templates && templates.length > 0) {
-    return `<${templates.join(', ')}>`;
-  } else {
-    return '';
-  }
 }

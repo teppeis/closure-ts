@@ -3,6 +3,7 @@
 const fs = require('fs');
 const assert = require('assert');
 const printer = require('../lib/printer');
+const {PackagePrinter} = printer;
 
 const fixturePath = `${__dirname}/fixtures/printer`;
 
@@ -53,16 +54,10 @@ describe.only('printer', () => {
         'goog.ui.Component': otherInfo,
       },
     };
-    const actual = printer.outputPackage(pkg);
-    assert.deepEqual(actual, [
-      {
-        name: 'goog.ui.Control',
-        code: fs.readFileSync(`${fixturePath}/module-simple-control.d.ts`, 'utf8'),
-      },
-      {
-        name: 'goog.ui.Component',
-        code: fs.readFileSync(`${fixturePath}/module-simple-component.d.ts`, 'utf8'),
-      },
+    const actual = new PackagePrinter(pkg).output();
+    assert.deepEqual(Array.from(actual), [
+      ['goog.ui.Control', fs.readFileSync(`${fixturePath}/module-simple-control.d.ts`, 'utf8')],
+      ['goog.ui.Component', fs.readFileSync(`${fixturePath}/module-simple-component.d.ts`, 'utf8')],
     ]);
   });
 
@@ -91,12 +86,9 @@ describe.only('printer', () => {
         'goog.functions.hello': functionInfoHello,
       },
     };
-    const actual = printer.outputPackage(pkg);
-    assert.deepEqual(actual, [
-      {
-        name: 'goog.functions',
-        code: fs.readFileSync(`${fixturePath}/module-member.d.ts`, 'utf8'),
-      },
+    const actual = new PackagePrinter(pkg).output();
+    assert.deepEqual(Array.from(actual), [
+      ['goog.functions', fs.readFileSync(`${fixturePath}/module-member.d.ts`, 'utf8')],
     ]);
   });
 });
