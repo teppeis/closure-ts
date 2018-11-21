@@ -1,10 +1,20 @@
-'use strict';
+import intersection from 'lodash/intersection';
+import * as util from './util';
+import {
+  ModuleInfo,
+  TypeDefInfo,
+  EnumInfo,
+  VarInfo,
+  FunctionInfo,
+  ClassInfo,
+  InfoBase,
+} from './types';
 
-const util = require('./util');
-const intersection = require('lodash/intersection');
-
-function outputDeclarations(declarations, provides) {
-  const output = [];
+export default function outputDeclarations(
+  declarations: Record<string, ModuleInfo>,
+  provides: string[]
+): string {
+  const output: string[] = [];
   output.push(outputProvides(declarations, provides));
   for (const name in declarations) {
     output.push(outputModule(declarations[name], name));
@@ -16,14 +26,14 @@ function outputDeclarations(declarations, provides) {
   return outputString;
 }
 
-function outputProvides(declarations, provided) {
+function outputProvides(declarations: Record<string, ModuleInfo>, provided: string[]): string {
   if (!provided.length) {
     return '';
   }
-  let provides = [];
+  let provides: string[] = [];
   for (const moduleName in declarations) {
     const module = declarations[moduleName];
-    const appendModule = item => `${moduleName}.${item.name}`;
+    const appendModule = (item: InfoBase) => `${moduleName}.${item.name}`;
     if (module.vars.length > 0 || module.functions.length > 0) {
       provides.push(moduleName);
     }
@@ -44,12 +54,12 @@ function outputProvides(declarations, provided) {
   return output.join('\n');
 }
 
-function outputProvide(indent, name) {
+function outputProvide(indent: string, name: string): string {
   const resolvedName = util.renameReservedModuleName(name);
   return `${indent}function require(name: '${name}'): typeof ${resolvedName};`;
 }
 
-function outputModule(moduleDeclaration, name) {
+function outputModule(moduleDeclaration: ModuleInfo, name: string): string {
   name = util.renameReservedModuleName(name);
   const output = [`declare module ${name} {`];
   const indent = '    ';
@@ -57,9 +67,6 @@ function outputModule(moduleDeclaration, name) {
   output.push(moduleDeclaration.enums.map(outputEnumDeclaration.bind(null, indent)).join('\n'));
   output.push(
     moduleDeclaration.typedefs.map(outputTypedefDeclaration.bind(null, indent)).join('\n')
-  );
-  output.push(
-    moduleDeclaration.interfaces.map(outputInterfaceDeclaration.bind(null, indent)).join('\n')
   );
   output.push(moduleDeclaration.classes.map(outputClassDeclaration.bind(null, indent)).join('\n'));
   output.push(moduleDeclaration.vars.map(outputVarDeclaration.bind(null, indent)).join('\n'));
@@ -70,13 +77,13 @@ function outputModule(moduleDeclaration, name) {
   return output.filter(section => !!section).join('\n');
 }
 
-function outputTypedefDeclaration(indent, declare) {
+function outputTypedefDeclaration(indent: string, declare: TypeDefInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`type ${declare.name} = ${declare.type};`);
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function outputEnumDeclaration(indent, declare) {
+function outputEnumDeclaration(indent: string, declare: EnumInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   if (declare.original) {
     // just copy
@@ -92,29 +99,19 @@ function outputEnumDeclaration(indent, declare) {
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function outputVarDeclaration(indent, declare) {
+function outputVarDeclaration(indent: string, declare: VarInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`var ${declare.name}: ${declare.type};`);
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function outputFunctionDeclaration(indent, declare) {
+function outputFunctionDeclaration(indent: string, declare: FunctionInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   output.push(`function ${declare.name}${getTemplateString(declare.templates)}${declare.type};`);
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function outputInterfaceDeclaration(indent, declare) {
-  const output = `/*${declare.comment.value}*/`.split('\n');
-  output.push(`interface ${declare.name} {`);
-  declare.members.forEach(member => {
-    output.push(`    ${member};`);
-  });
-  output.push('}');
-  return `\n${output.map(line => indent + line).join('\n')}`;
-}
-
-function outputClassDeclaration(indent, declare) {
+function outputClassDeclaration(indent: string, declare: ClassInfo): string {
   const output = `/*${declare.comment.value}*/`.split('\n');
   let extend = '';
   if (declare.parents.length > 0) {
@@ -144,12 +141,10 @@ function outputClassDeclaration(indent, declare) {
   return `\n${output.map(line => indent + line).join('\n')}`;
 }
 
-function getTemplateString(templates) {
+function getTemplateString(templates: string[]): string {
   if (templates && templates.length > 0) {
     return `<${templates.join(', ')}>`;
   } else {
     return '';
   }
 }
-
-module.exports = outputDeclarations;
