@@ -22,7 +22,9 @@
     "lint:js": "eslint bin test",
     "lint:ts": "tslint -c tslint.js src/*.ts",
     "mocha": "mocha test --color",
-    "test": "npm-run-all --aggregate-output -p lint:ts build -p lint:js mocha"
+    "test": "npm-run-all --aggregate-output -p lint:ts build -p lint:js mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@teppeis/doctrine": "^3.1.0",
@@ -33,7 +35,8 @@
     "espurify": "^1.0.0",
     "estraverse": "^4.2.0",
     "lodash": "^4.17.11",
-    "mkdirp": "^0.5.0"
+    "mkdirp": "^0.5.0",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "@types/cli-color": "^0.3.29",
@@ -61,5 +64,6 @@
     "jsdoc",
     "typescript"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
